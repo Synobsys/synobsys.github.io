@@ -21,12 +21,16 @@ Title: OutSystems Naming Conventions
 1. [CSS](#css)
 1. [Test Code naming](#test-code-naming)
 
+---
+
 ## Language
 
-* All OutSystems code (Service Studio and Integration Studio), including comments and documentation will be in English.
-* Business terms in the OutSystems model will be in English and be taken from the [Common Glossary].
+* All OutSystems code (Service Studio and Integration Studio), including comments and documentation will be in English. [ADR-002](adr\ADR-002-standard-language-is-English.md)
+* Business terms in the OutSystems model will be in English and be taken from the **Common Glossary**.
 * All UI in the OutSystems model will be developed in English and may be translated using the standard OutSystems localization features if required.
-* Objects in the OutSystems environment have meaningful, unabbreviated names. Where naming limits prevent this (most OutSystems element names have a limit of 50 characters), standard abbreviations as provided in the [Common Glossary] must be used.
+* Objects in the OutSystems environment have meaningful, unabbreviated names. Where naming limits prevent this (most OutSystems element names have a limit of 50 characters), standard abbreviations as provided in the **Common Glossary** must be used.
+
+---
 
 ## Domains
 
@@ -35,6 +39,8 @@ Title: OutSystems Naming Conventions
 * Vertical domains have a meaningful business name (e.g. `Soccer Fields`, `Movies`)
 * Horizontal domains have a meaningful name, which may be more technical (e.g. `Identity`, `Back-end Style Guide`)
 * Define a 2 letter acronym for each domain. e.g. Soccer Fields :`SF`
+
+---
 
 ## Applications
 
@@ -48,6 +54,8 @@ Title: OutSystems Naming Conventions
     * Core - for a Core Services application exposing core business services
     * Library - for Foundation Services application that exposes business agnostic services
 * Define an acronym for each application e.g. Soccer Fields App : 'SFA'
+
+---
 
 ## Modules
 
@@ -102,15 +110,21 @@ Non Functional requirements or integration modules, reusable in any business con
 | Module | FLC_Field_IS |
 | Module | FLC_Field_Sync |
 
+---
+
 ## Entities and attributes
 
 * Primary identifiers of entities always have the attribute name `Id`.
 * Foreign key attributes are composed of the referenced entity name suffixed with `Id` (e.g. `CustomerId` for a reference to the Customer entity)
 * Include the Entity’s name in the record’s name (e.g. `Customer` instead of `record`)
 
+---
+
 ## Variables
 
 Local variables used as constants (i.e. have a fixed, default value that is not supposed to be changed over their lifetime) have a meaningful name, prefixed by the word `Const` (e.g. `ConstPollingInterval`)
+
+---
 
 ## Screens
 
@@ -128,9 +142,13 @@ Local variables used as constants (i.e. have a fixed, default value that is not 
     * ‘Delete’ to (logically) remove the current instance from the database
     * ‘Edit’ to start editing the current instance on an entity
 
+---
+
 ## Blocks
 
 * Reusable (web-)blocks have a name that describes their function followed by the suffix `_Block` e.g `Customer_Block`
+
+---
 
 ## Actions
 
@@ -145,6 +163,8 @@ Local variables used as constants (i.e. have a fixed, default value that is not 
 * Use Site Properties for “semi” static data
 * Use Pascal Case
 
+---
+
 ## Service Actions
 
 Service actions are also known as **O**utSystems **API**s
@@ -158,6 +178,8 @@ TBD *Should we adopt a similar naming as for REST APIs?*
 1. Don't use underscores in names
 
 Example: `CustomerCreateSAv1`
+
+---
 
 ## REST APIs
 
@@ -194,9 +216,13 @@ Note: This is an exception to the OutSystems rule that names are in PascalCase.
 }
 ```
 
+---
+
 ## SOAP Services
 
 The rules for SOAP services have not yet been established.
+
+---
 
 ## CSS
 

@@ -1,8 +1,9 @@
 ---
-Title: OutSystems Naming Conventions
+title: OutSystems Naming Conventions
+layout : default
 ---
 
-# OutSystems Naming Conventions
+# {{ page.title }}
 
 ## Language
 

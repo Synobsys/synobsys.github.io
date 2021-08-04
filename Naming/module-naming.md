@@ -3,7 +3,7 @@ title: Module naming conventions
 ---
 # Module naming conventions
 
-* Use PascalCase and don't use underscores except for the layer Suffix or Prefix.
+* Use **PascalCase** and don't use underscores except for the layer Suffix or Prefix.
 * Prefix the module name with the Application acronym except end user modules. (The module name is part of the url and we should not bother users with technicalities.)
 
 ## Core Layer Module Naming

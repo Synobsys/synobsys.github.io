@@ -9,7 +9,7 @@ layout : default
 
     TODO Issue #4 ADR and Template for Common Glossary1
 
-* All OutSystems code (Service Studio and Integration Studio), including comments and documentation will be in English. [ADR-002](adr\ADR-002-standard-language-is-English.md)
+* All OutSystems code (Service Studio and Integration Studio), including comments and documentation will be in English. [ADR-002](adr\ADR-002-standard-language-is-English.html)
 * Business terms in the OutSystems model will be in English and be taken from the **Common Glossary**.
 
 * All UI in the OutSystems model will be developed in English and may be translated using the standard OutSystems localization features if required.
@@ -17,14 +17,14 @@ layout : default
 
 ## Naming conventions per object type
 
-1. [Domains](naming\domain-naming.md)
-1. [Applications](naming\application-naming.md)
-1. [Modules](naming\module-naming.md)
-1. [Entities and attributes](naming\enitity-naming.md)
-1. [Variables](naming\variable-naming.md)
-1. [User Interface](naming\user-interface-naming.md)
-1. [Actions](naming\action-naming.md)
-1. [Service Actions (OutSystems APIs)](naming\service-action-naming.md)
-1. [REST APIs](naming\rest-api-naming.md)
-1. [CSS](naming\css-naming.md)
-1. [Test Code naming](naming\test-code-naming.md)
+1. [Domains](naming\domain-naming.html)
+1. [Applications](naming\application-naming.html)
+1. [Modules](naming\module-naming.html)
+1. [Entities and attributes](naming\enitity-naming.html)
+1. [Variables](naming\variable-naming.html)
+1. [User Interface](naming\user-interface-naming.html)
+1. [Actions](naming\action-naming.html)
+1. [Service Actions (OutSystems APIs)](naming\service-action-naming.html)
+1. [REST APIs](naming\rest-api-naming.html)
+1. [CSS](naming\css-naming.html)
+1. [Test Code naming](naming\test-code-naming.html)

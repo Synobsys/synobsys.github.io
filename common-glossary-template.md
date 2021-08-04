@@ -3,7 +3,7 @@ layout: default
 title: Common Glossary
 sorting: 100
 tags: [guide, glossary]
-projectname: YourProjectName
+projectname: Your ProjectName here
 ---
 
 # {{ page.title}}

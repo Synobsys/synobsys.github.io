@@ -26,7 +26,7 @@ All members involved in the OutSystems development such as:
 ## Contents
 
 1. [Standards and Guidelines](#outSystems-standards-and-guidelines)
-1. [Architecture Decision Records (ADR)](adr\intro.html)
+1. [Architecture Decision Records (ADR)](adr\intro.md)
 1. [Patterns](#patterns)
 1. [How-To Guides](#how-to-guides)
 1. [OutSystems Reference](#outSystems-reference)

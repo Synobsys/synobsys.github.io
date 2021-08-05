@@ -66,7 +66,7 @@ A description of communicating objects and classes that are customized to solve 
 
 ### [Domain](#domain)
 
-[Cambride Dictionary](https://dictionary.cambridge.org/dictionary/english/domain) definition:
+[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/domain) definition:
 
 An area of interest or an area over which a person has control:
 

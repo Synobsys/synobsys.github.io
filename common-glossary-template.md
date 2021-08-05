@@ -10,6 +10,22 @@ projectname: YourProjectName
 
 ## This glossary introduces {{page.projectname}} common terminology.
 
+### [Architectural Decision](#architectural-decision) (AD)
+
+Wikipedia [Architectural Decision](https://en.wikipedia.org/wiki/Architectural_decision):
+
+In software engineering and software architecture design, architectural decisions are design decisions that address architecturally significant requirements; they are perceived as hard to make and/or costly to change.
+
+---
+
+### [Architectural Decision Record](#architectural-decision-record) (ADR)
+
+An Architectural Decision Record (ADR) captures a single [AD](#architectural-decision), such as often done when writing personal notes or meeting minutes; the collection of ADRs created and maintained in a project constitute its decision log. All these are within the topic of Architectural Knowledge Management (AKM).
+
+See also: [Architectural Descision Records](adr\intro.html)
+
+---
+
 ### [Aggregate](#aggregate)
 
 1. A cluster of associated objects that are treated as a unit for the purpose of data changes. External references are restricted to one member of the AGGREGATE, designated as the root. A set of consistency rules applies within the AGGREGATE’S boundaries.

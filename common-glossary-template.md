@@ -10,6 +10,22 @@ projectname: Your ProjectName here
 
 ## This glossary introduces {{page.projectname}} common terminology.
 
+### [Architectural Decision](#architectural-decision) (AD)
+
+Wikipedia [Architectural Decision](https://en.wikipedia.org/wiki/Architectural_decision):
+
+In software engineering and software architecture design, architectural decisions are design decisions that address architecturally significant requirements; they are perceived as hard to make and/or costly to change.
+
+---
+
+### [Architectural Decision Record](#architectural-decision-record) (ADR)
+
+An Architectural Decision Record (ADR) captures a single [AD](#architectural-decision), such as often done when writing personal notes or meeting minutes; the collection of ADRs created and maintained in a project constitute its decision log. All these are within the topic of Architectural Knowledge Management (AKM).
+
+See also: [Architectural Descision Records](adr\intro.html)
+
+---
+
 ### [Aggregate](#aggregate)
 
 1. A cluster of associated objects that are treated as a unit for the purpose of data changes. External references are restricted to one member of the AGGREGATE, designated as the root. A set of consistency rules applies within the AGGREGATE’S boundaries.
@@ -33,6 +49,14 @@ A statement of the correct state of a program at some point, independent of how 
 ### [Behaviour Driven Development](#behaviour-driven-development)
 
 Behavior-Driven Development (BDD) is a set of software engineering practices designed to help teams build and deliver more valuable, higher quality software faster. It draws on Agile and lean practices including, in particular, Test-Driven Development (TDD) and Domain-Driven Design (DDD). But most importantly, BDD provides a common language based on simple, structured sentences expressed in English (or in the native language of the stakeholders) that facilitate communication between project team members and business stakeholders.
+
+---
+
+### [Boolean Flag](#boolean-flag)
+
+Boolean values are regularly used to help maintain the state of a given piece of code. It is common to describe boolean variables as “boolean flags” - these often are used to turn on and off different behaviors that might be useful.
+
+---
 
 ### [Design Pattern](#design-Pattern)
 

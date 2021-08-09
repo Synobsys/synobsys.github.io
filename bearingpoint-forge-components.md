@@ -6,7 +6,7 @@ title: BearinPoint forge components
 
 This page lists the forge components that are used in the BearingPoint projects.
 
-See [Curating Projects](https://success.outsystems.com/Support/Forge_Components/Forge_FAQs/Curating_Projects)
+[Curating Projects](https://success.outsystems.com/Support/Forge_Components/Forge_FAQs/Curating_Projects) explains the Curation colomn.
 
 ## Forge components
 

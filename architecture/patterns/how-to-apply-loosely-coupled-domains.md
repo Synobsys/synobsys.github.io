@@ -31,36 +31,41 @@ To provide a clear separation between intra- and extra domain logic use the foll
 
 ## Example Domain Architecture
 
-| Domain | Acronym     |
-| :------------- | :-------- |
-| Party       | PTY |
-| Product     | PRD |
-| Sales       | SLS |
+Domain | Acronym | Concepts
+---|---|---
+**Party** | PTY | Customer
+-|-| Shipper
+-|-| Supplier
+**Product**| PRD|Products
+**Sales**|SLS|Sales Orders
+**Organization**|ORG|Employees
 
-### Party applications
+### Party applications and modules
 
-* PTY Party Core (private)
-    * PTY_Customer_CS
-    * PTY_Customer_CBL
-    * PTY_Employee_CS
-    * PTY_Employee_CBL
-    * PTY_Shipper_CS
-    * PTY_Shipper_CBL
-    * PTY_Supplier_CS
-    * PTY_Supplier_CBL
-* PTY Party UI (private)
-    * customers
-    * PTY_Employees
-    * ...
-* PTY Party Library - shared
-    * PTY_Customer_Lib
-    * PTY_Employee_Lib
-    * ...
-* PTY Party OAPI - shared
-    * PTY_Customer_OAPI
-    * PTY_Employee_OAPI
-    * ...
-* PTY Party API - shared
-    * Not implemented
+Application | Module | Layer
+--- | --- | ---
+PTY Party UI (private)| Customers
+-| Suppliers
+-| Shippers
+PTY Party Core (private) | PTY_Customer_CS
+-| PTY_Customer_CBL
+-| PTY_Employee_CS
+-| PTY_Employee_CBL
+-| PTY_Shipper_CS
+-| PTY_Shipper_CBL
+-| PTY_Supplier_CS
+-| PTY_Supplier_CBL
+PTY Party Library - shared| PTY_Customer_Lib
+-| PTY_Employee_Lib
+-| * ...
+PTY Party OAPI - shared| PTY_Customer_OAPI
+-| PTY_Employee_OAPI
+-| * ...
+PTY Party API - shared | Not implemented
 
-### PTY Customer details
+### Product applications ans modules
+
+Application|Module
+---|---
+PRD Product Core | PRD_Product_CS
+PRD Product OAPI | PRD_Product_OAPI

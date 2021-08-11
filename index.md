@@ -98,6 +98,10 @@ This set of documents is an extension to the OutSystems standards and best pract
 
 ## Projects
 
+### Test Feature description
+
+* [news feed](news-feed.md)
+
 ### BearingPoint Online Portal
 
 * [forge components in use](bearingpoint-forge-components.html)

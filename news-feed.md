@@ -2,9 +2,14 @@
 title: HR can analyze adoption metrics to keep track of their KPIs
 ---
 
-# Ability: HR can analyze adoption metrics to keep track of their KPIs
+# {{page.title}}
 
-## Scenario Outline: Calculating adoption goals
+```gherkin
+
+Ability: HR can analyze adoption metrics to keep track of their KPIs
+
+Scenario Outline: Calculating adoption goals
+```
 
 Our assumption is that employee distribution
 between interests should be that every
@@ -28,14 +33,18 @@ Then it should be at <goal>
     And Mike's company <should> be meeting their KPIs
 ```
 
-### Examples: Must be enough active groups
+```gherkin
+Examples: Must be enough active groups
+```
 
 | users | groups | active | required | goal | should     |
 | --- | --- | --- | --- | --- | --- |
 | 200   | 20     | 12     | 10       | 60%  | should     |
 | 200   | 20     | 11     | 10       | 55%  | should not |
 
-### Examples: The size of the user base should affect the goal
+```gherkin
+Examples: The size of the user base should affect the goal
+```
 
 | users | groups | active | required | goal | should     |
 | --- | --- | --- | --- | --- | --- |

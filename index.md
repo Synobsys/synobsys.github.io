@@ -25,11 +25,11 @@ All members involved in the OutSystems development such as:
 
 ## Contents
 
-1. [Standards and Guidelines](#outSystems-standards-and-guidelines)
-1. [Architecture Decision Records (ADR)](adr\intro.html)
+1. [Standards and Guidelines](#outsystems-standards-and-guidelines)
+1. [Architecture Decision Records (ADR)](adr\intro.md)
 1. [Patterns](#patterns)
 1. [How-To Guides](#how-to-guides)
-1. [OutSystems Reference](#outSystems-reference)
+1. [OutSystems Reference](#outsystems-reference)
 1. [Publications](#publications)
 
 ## OutSystems Standards and Guidelines
@@ -39,8 +39,8 @@ All members involved in the OutSystems development such as:
 * [Code Style Guide](https://leonardo-monteiro-fernandes.medium.com/a-code-style-guide-for-outsystems-97a923084159)
 * [Server Action Security](ServerActionSecurity.html)
 * [User Story Template](UserStoryTemplate.html)
-* [**D**efinition **o**f **R**eady(DoR)](DefinitionOfReady.html)
-* [**D**efinition **o**f **D**one(DoD)](DefinitionOfDone.html)
+* [Definition of Ready(DoR)](DefinitionOfReady.html)
+* [Definition of Done(DoD)](DefinitionOfDone.html)
 * [Code Review Checklist](CodeReviewChecklist.html)
 * Apply the [The Boy Scout Rule](https://www.oreilly.com/library/view/97-things-every/9780596809515/ch08.html)
 
@@ -48,14 +48,14 @@ All members involved in the OutSystems development such as:
 
 ### Architectural Knowledge Management (AKM)
 
-* [Architecture Decision Records](adr\intro.html)
-* [Approved Forge Components](adr\approved-forge-components.html)
+* [Architecture Decision Records](adr\intro.md)
+* [Approved Forge Components](adr\approved-forge-components.md)
 
 ### Patterns
 
 * [Integration Patterns for Core Services Abstraction](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/05_Integration_Patterns_for_Core_Services_Abstraction)
 * [Circuit Breaker Pattern: Make Your Apps Ready to Deal with Timeouts](https://www.outsystems.com/blog/posts/circuit-breaker-pattern/)
-* TBD Localization Ready datamodel with Entity Layers for Translated Fields and Non-Translated Fields <https://vertabelo.com/blog/data-modeling-for-multiple-languages-how-to-design-a-localization-ready-system/>
+* TBD Localization Ready data model with Entity Layers for Translated Fields and Non-Translated Fields <https://vertabelo.com/blog/data-modeling-for-multiple-languages-how-to-design-a-localization-ready-system/>
 
 ## How to guides
 
@@ -104,4 +104,4 @@ This set of documents is an extension to the OutSystems standards and best pract
 
 ### BearingPoint Online Portal
 
-* [forge components in use](bearingpoint-forge-components.html)
+* [forge components in use](bearingpoint-forge-components.md)

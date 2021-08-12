@@ -26,7 +26,7 @@ All members involved in the OutSystems development such as:
 ## Contents
 
 1. [Standards and Guidelines](#outsystems-standards-and-guidelines)
-1. [Architecture Decision Records (ADR)](adr\intro.md)
+1. [Architecture Decision Records (ADR)](adr\intro.html)
 1. [Patterns](#patterns)
 1. [How-To Guides](#how-to-guides)
 1. [OutSystems Reference](#outsystems-reference)
@@ -48,8 +48,8 @@ All members involved in the OutSystems development such as:
 
 ### Architectural Knowledge Management (AKM)
 
-* [Architecture Decision Records](adr\intro.md)
-* [Approved Forge Components](adr\approved-forge-components.md)
+* [Architecture Decision Records](adr\intro.html)
+* [Approved Forge Components](adr\approved-forge-components.html)
 
 ### Patterns
 
@@ -75,8 +75,7 @@ This set of documents is an extension to the OutSystems standards and best pract
 * [Service-Oriented Architectures for OutSystems applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/04_Service-Oriented_Architectures_for_OutSystems_applications)
 * [Core Service abstraction](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Service_architecture_patterns/01_Core_Service_abstraction)
 
-<!--* [Loosely coupling modules](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Service_architecture_patterns/02_Loosely_coupling_modules)
--->
+* [Loosely coupling modules](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Service_architecture_patterns/02_Loosely_coupling_modules)
 
 ### Best practices
 
@@ -97,10 +96,6 @@ This set of documents is an extension to the OutSystems standards and best pract
 * [OutSystems and Microservices in Practice](https://itnext.io/outsystems-and-microservices-in-practice-9b8038e58cb4)
 
 ## Projects
-
-### Test Feature description
-
-* [news feed](news-feed.feature)
 
 ### BearingPoint Online Portal
 

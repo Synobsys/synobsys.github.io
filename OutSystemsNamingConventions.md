@@ -20,7 +20,7 @@ layout : default
 1. [Domains](naming\domain-naming.html)
 1. [Applications](naming\application-naming.html)
 1. [Modules](naming\module-naming.html)
-1. [Entities and attributes](naming\enitity-naming.html)
+1. [Entities and attributes](naming\entity-naming.html)
 1. [Variables](naming\variable-naming.html)
 1. [User Interface](naming\user-interface-naming.html)
 1. [Actions](naming\action-naming.html)

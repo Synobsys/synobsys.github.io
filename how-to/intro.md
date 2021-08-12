@@ -17,17 +17,17 @@ title: How-To Guides
 
 ## Development
 
-* [How to Create Customized Versions of a Base Application](https://itnext.io/how-to-dynamically-import-the-customized-product-theme-in-the-base-product-b10b534e3e1a)
+* <a href="https://itnext.io/how-to-dynamically-import-the-customized-product-theme-in-the-base-product-b10b534e3e1a" target="_blank">How to Create Customized Versions of a Base Application</a>
 
 ## Front-End
 
-* OutSystems [Front-End](https://success.outsystems.com/Documentation/How-to_Guides/Front-End) how-to guides
+* OutSystems <a href="https://success.outsystems.com/Documentation/How-to_Guides/Front-End" target="_blank">Front-End</a> how-to guides
 * [How to introduce a new style class](how-to-introduce-a-new-style-class.md)
 * [How to securely hide content](how-to-securely-hide-content.md)
 
 ## Logic
 
-* When heavily used prefer StringBuilder over "string" + "string" for better performance as it has a better memory allocation. See [How to create large strings with StringBuilder](https://success.outsystems.com/Documentation/How-to_Guides/Logic/How_to_create_large_strings_with_StringBuilder)
+* When heavily used prefer `StringBuilder()` over `string + string` for better performance as it has a better memory allocation. See <a href="https://success.outsystems.com/Documentation/How-to_Guides/Logic/How_to_create_large_strings_with_StringBuilder" target="_blank">How to create large strings with StringBuilder</a>
 
 ## Data
 
@@ -40,12 +40,12 @@ title: How-To Guides
 
 ## DevOps
 
-* [OutSystems deployment rollbacks](https://itnext.io/outsystems-deployment-rollbacks-8b3c010f5f90)
-* [Preparing for an application version rollback scenario in Production](https://www.outsystems.com/forums/discussion/15466/preparing-for-an-application-version-rollback-scenario-in-production/)
+* <a href="https://itnext.io/outsystems-deployment-rollbacks-8b3c010f5f90" target="_blank">OutSystems deployment rollbacks</a>
+* <a href="https://www.outsystems.com/forums/discussion/15466/preparing-for-an-application-version-rollback-scenario-in-production/" target="_blank">Preparing for an application version rollback scenario in Production</a>
 
-### Delivering Mobile Apps
+### Delivering Mobile Applications
 
-* [How to deploy a Mobile App](how-to-deploy-a-mobile-app.html)
+* [How to deploy a Mobile App](how-to-deploy-a-mobile-app.md)
 
 ## Integrations
 
@@ -55,5 +55,5 @@ title: How-To Guides
 
 ## Testing
 
-* [Test Automation in the Delivery Lifecycle](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Test_Automation_in_the_Delivery_Lifecycle)
-* [How to get started with the BDD testframework](How-to-get-started-with-the-BDD-testframework.md)
+* <a href= "https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Test_Automation_in_the_Delivery_Lifecycle" target="_blank">Test Automation in the Delivery Lifecycle</a>
+* [How to get started with the BDD test framework](How-to-get-started-with-the-BDD-testframework.md)

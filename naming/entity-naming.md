@@ -13,7 +13,7 @@ title: Entity and attributes naming conventions
 * Entity names must be descriptive
 * Use nouns for entity names e.g. `Customer`
 
-If you’re naming entities that represent real-world facts, you should use nouns. These are entities like `Employee`, `Customer`, `City`, and `Country`. If possible, use a single word that exactly describes what is in the table. On the example of our 4 Enitities, it’s more than clear what data can be found in these Entities.
+If you’re naming entities that represent real-world facts, you should use nouns. These are entities like `Employee`, `Customer`, `City`, and `Country`. If possible, use a single word that exactly describes what is in the table. On the example of our 4 Entities, it’s more than clear what data can be found in these Entities.
 
 For relations between two entities, it’s good to use these two entities’ names and maybe add a verb between these names to describe what that action is.
 

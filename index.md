@@ -100,7 +100,7 @@ This set of documents is an extension to the OutSystems standards and best pract
 
 ### Test Feature description
 
-* [news feed](news-feed.md)
+* [news feed](news-feed.feature)
 
 ### BearingPoint Online Portal
 

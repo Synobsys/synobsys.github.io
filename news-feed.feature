@@ -1,15 +1,6 @@
----
-title: HR can analyze adoption metrics to keep track of their KPIs
----
-
-# {{page.title}}
-
-```gherkin
-
 Ability: HR can analyze adoption metrics to keep track of their KPIs
 
 Scenario Outline: Calculating adoption goals
-```
 
 Our assumption is that employee distribution
 between interests should be that every
@@ -23,7 +14,6 @@ the adoption goal = (`active_groups` * 100%) / all interest groups
 `active_groups` = groups with more users than `required_users_per_group`
 `required_users_per_group` = 5% of all employees
 
-```gherkin
 Given HR set the adoption goal to 60%
     And the company has <users> employees registered
     And there are <groups> interest groups in the organization
@@ -31,11 +21,8 @@ Given HR set the adoption goal to 60%
 When the current adoption goal is calculated
 Then it should be at <goal>
     And Mike's company <should> be meeting their KPIs
-```
 
-```gherkin
 Examples: Must be enough active groups
-```
 
 | users | groups | active | required | goal | should     |
 | --- | --- | --- | --- | --- | --- |

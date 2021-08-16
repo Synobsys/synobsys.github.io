@@ -1,12 +1,20 @@
 ---
 title : Main page
-layout: default
 ---
-# Introduction
+# {{page.title}}
 
 ## Purpose
 
 The purpose of these documents is to describe the Synobsys OutSystems development standards and guidelines as well as the methods to enforce their proper use.
+
+## Contents
+
+1. [Standards and Guidelines](standards\intro.html)
+1. [Architecture Decision Records (ADR)](adr\intro.html)
+1. [Patterns](#patterns)
+1. [How-To Guides](#how-to-guides)
+1. [OutSystems Reference](#outsystems-reference)
+1. [Publications](#publications)
 
 ## Intended audience
 
@@ -22,27 +30,6 @@ All members involved in the OutSystems development such as:
 * Test Manager
 * Tester
 * End users
-
-## Contents
-
-1. [Standards and Guidelines](#outsystems-standards-and-guidelines)
-1. [Architecture Decision Records (ADR)](adr\intro.html)
-1. [Patterns](#patterns)
-1. [How-To Guides](#how-to-guides)
-1. [OutSystems Reference](#outsystems-reference)
-1. [Publications](#publications)
-
-## OutSystems Standards and Guidelines
-
-* [Naming Conventions](OutSystemsNamingConventions.html)
-* [OutSystems Platform Best Practices](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Platform_Best_Practices)
-* [Code Style Guide](https://leonardo-monteiro-fernandes.medium.com/a-code-style-guide-for-outsystems-97a923084159)
-* [Server Action Security](ServerActionSecurity.html)
-* [User Story Template](UserStoryTemplate.html)
-* [Definition of Ready(DoR)](DefinitionOfReady.html)
-* [Definition of Done(DoD)](DefinitionOfDone.html)
-* [Code Review Checklist](CodeReviewChecklist.html)
-* Apply the [The Boy Scout Rule](https://www.oreilly.com/library/view/97-things-every/9780596809515/ch08.html)
 
 ## Architecture
 

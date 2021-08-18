@@ -5,7 +5,7 @@ title: OutSystems Standards and Guidelines
 
 The following standards apply to all projects that are carried out under the direction of Synobsys.
 
-* [Naming Conventions](OutSystemsNamingConventions.html)
+* [Naming Conventions](standards\OutSystemsNamingConventions.html)
 * <a class="external" href="https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Platform_Best_Practices" target="_blank">OutSystems Platform Best Practices</a> :arrow_upper_right:
 * <a class="external" href="https://leonardo-monteiro-fernandes.medium.com/a-code-style-guide-for-outsystems-97a923084159" target="_blank">Code Style Guide</a>
 * [Server Action Security](ServerActionSecurity.html)

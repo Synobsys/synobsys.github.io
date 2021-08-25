@@ -6,14 +6,14 @@ title: How-to get started with BDD test framework
 
 **IMPORTANT!**
 
-Before you start watch this [How to Design Tests in OutSystems](https://www.outsystems.com/events/tech-talks/designing-application-testing/) in depth tech talk.
+* Before you start watch this <a class="external" href="https://www.outsystems.com/events/tech-talks/designing-application-testing/" target="_blank">How to Design Tests in OutSystems</a> in depth tech talk.
+* You **must read** the [BDD framework documentation](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1201&ProjectName=bddframework) and **do the exercises** in your personal environment.
 
 ## Setup the BDD framework
 
-1. You **must read** the [BDD framework documentation](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1201&ProjectName=bddframework) and **do the exercises** in your personal environment.
 1. Install the [BDD framework](https://www.outsystems.com/forge/component-overview/1201/bddframework) from the Forge
 1. Install the BDD framework reporting tool TBD forge component
-    * To install the BDD framework reporting tool go to <yourdevserver>/servicecenter/Applications_List.aspx and click on publish application. Upload the "BDD Framework Reporting.oap" and 1-Click Publish
+    * To install the BDD framework reporting tool go to <yourdevserver>/servicecenter/Applications_List.aspx and click on the publish application button. Upload the "BDD Framework Reporting.oap" and 1-Click Publish
 
     ![Publish BDD Framework Application](images\PublishBDDFrameworkApplication.png)
 
@@ -21,7 +21,7 @@ Before you start watch this [How to Design Tests in OutSystems](https://www.outs
 
     * In Service Center open the BDDFrameworkReporting module and open the integrations tab
     * Navigate to the Consumed REST APIs section and open the BDDFrameworkV1 REST API
-    * Set the effective url to your environment base url e.g. <https://synobsys.outsystemscloud.com/>
+    * Set the effective url to your environment base url e.g., `https://synobsys.outsystemscloud.com/`
 
 1. Set the Timer_ExecuteNewRoundOfTestSuites schedule and activate the timer
 
@@ -41,18 +41,19 @@ We create test scenarios based on the acceptance criteria written in the [Given 
 
 In LifeTime create a new application using the bddframework template.
 
-* Open your LifeTime environment users module `<yourlifetimeserver>`/lifetime/Users_List.aspx
-* Open the Teams tab
-* Open the Team where you want to create the application for ![Team](..\images\TeamCreateApplication.png)
-* Click on the Create Application link  to start creating a new application ![Create application screen](..\images\LifeTimeCreateApplication.png) parameters:
+* Open your LifeTime environment Applications screen: `<yourlifetimeserver>`/lifetime/Applications.aspx
+* Click on the button Create Application
+* Open the Team where you want to create the application for ![Team Create App screenshot](images\CreateApplicationInLifeTime.png)
+* Create a new application parameters:
+    * Owner Team: The team you application to test belongs to
     * environment: Development
     * What are you building : BDDFramework
-    * Give the app a name following the [naming convention](OutSystemsNamingConventions.html)
+    * Give the app a name following the [naming convention](..\standards\OutSystemsNamingConventions.html)
     * Fill the description
     * Upload an icon. (We recommend to use the same icon as the application with a test watermark added)
 
 * Open the new application in ServiceStudio and create a new BDDFramework module name it like the module you are testing with the suffix `_Test`
-* In the MainTestFlow add a new BDDFramework Scenario screen and name it `TestSuite`. Please note that you *must* name the screen `TestSuite` for the reporting tool to work.
+* In the MainTestFlow add a new BDDFramework Scenario screen and name it `TestSuite`. Please note that you ***must*** name the screen `TestSuite` for the reporting tool to work.
 
 ![Create TestSuite Screen](images\CreateTestSuiteScreen.png)
 

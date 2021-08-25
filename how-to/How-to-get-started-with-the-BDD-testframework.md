@@ -42,14 +42,13 @@ We create test scenarios based on the acceptance criteria written in the [Given 
 In LifeTime create a new application using the bddframework template.
 
 * Open your LifeTime environment Applications screen: `<yourlifetimeserver>`/lifetime/Applications.aspx
-* Click on the button Create Application
-* Open the Team where you want to create the application for ![Team Create App screenshot](images\CreateApplicationInLifeTime.png)
+* Click on the button Create Application ![Create Application screenshot](images\CreateApplicationInLifeTime.png)
 * Create a new application parameters:
-    * Owner Team: The team you application to test belongs to
-    * environment: Development
-    * What are you building : BDDFramework
+    * Choose owner team: The team you application to test belongs to e.g., Talent Manager Team
+    * Choose the environment: Development
+    * What are you building? : BDDFramework
     * Give the app a name following the [naming convention](..\standards\OutSystemsNamingConventions.html)
-    * Fill the description
+    * Fill the description.
     * Upload an icon. (We recommend to use the same icon as the application with a test watermark added)
 
 * Open the new application in ServiceStudio and create a new BDDFramework module name it like the module you are testing with the suffix `_Test`
@@ -66,7 +65,7 @@ In LifeTime create a new application using the bddframework template.
     * e_Teardown
 
 * Open the `TestSuite` screen and remove the `Sample_Test` WebBlock from the Mainflow
-* Set the module description to "<tested module name> tests module using BDDFramework"
+* Set the module description to "`<tested module name>` tests module using BDDFramework"
 * Publish the module
 
 ### Create Core Test Services
@@ -74,14 +73,13 @@ In LifeTime create a new application using the bddframework template.
 In LifeTime create a new application using the service template.
 
 * Open your LifeTime environment Applications screen: `<yourlifetimeserver>`/lifetime/Applications.aspx
-* Click on the button Create Application
-* Open the Team where you want to create the application for ![Team Create App screenshot](images\CreateApplicationInLifeTime.png)
+* Click on the button Create Application ![Team Create App screenshot](images\CreateApplicationInLifeTime.png)
 * Create a new application parameters:
-    * Owner Team: The team you application to test belongs to
-    * environment: Development
-    * What are you building : Service
-    * Give the app a name following the [naming convention](..\standards\OutSystemsNamingConventions.html)
-    * Fill the description
+    * Choose owner team: The team you application to test belongs to
+    * Choose the environment: Development
+    * What are you building? : Choose a service template e.g, Service, CoreServices_CS
+    * Name: `<tested module name>` Core Tests
+    * Description: Wrapper of common reused tests logic
     * Upload an icon. (We recommend to use the same icon as the application with a test watermark added)
 * Publish the Module
 

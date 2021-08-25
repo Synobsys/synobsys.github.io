@@ -12,7 +12,7 @@ The purpose of these documents is to describe the Synobsys OutSystems developmen
 1. [Standards and Guidelines](standards\intro.html)
 1. [Architecture Decision Records (ADR)](adr\intro.html)
 1. [Patterns](#patterns)
-1. [How-To Guides](#how-to-guides)
+1. [how to guides](how-to\intro.html)
 1. [OutSystems Reference](#outsystems-reference)
 1. [Publications](#publications)
 
@@ -43,10 +43,6 @@ All members involved in the OutSystems development such as:
 * [Integration Patterns for Core Services Abstraction](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/05_Integration_Patterns_for_Core_Services_Abstraction)
 * [Circuit Breaker Pattern: Make Your Apps Ready to Deal with Timeouts](https://www.outsystems.com/blog/posts/circuit-breaker-pattern/)
 * TBD Localization Ready data model with Entity Layers for Translated Fields and Non-Translated Fields <https://vertabelo.com/blog/data-modeling-for-multiple-languages-how-to-design-a-localization-ready-system/>
-
-## How to guides
-
-* [how to guides](how-to\intro.html)
 
 ## OutSystems reference
 

@@ -4,7 +4,9 @@ title: How-to get started with BDD test framework
 
 # How-to get started with BDD test framework
 
-**IMPORTANT** Before you start watch this [How to Design Tests in OutSystems](https://www.outsystems.com/events/tech-talks/designing-application-testing/) in depth tech talk.
+**IMPORTANT!**
+
+Before you start watch this [How to Design Tests in OutSystems](https://www.outsystems.com/events/tech-talks/designing-application-testing/) in depth tech talk.
 
 ## Setup the BDD framework
 
@@ -39,13 +41,13 @@ We create test scenarios based on the acceptance criteria written in the [Given 
 
 In LifeTime create a new application using the bddframework template.
 
-* Open your LifeTime environment users module <yourlifetimeserver>/lifetime/Users_List.aspx
+* Open your LifeTime environment users module `<yourlifetimeserver>`/lifetime/Users_List.aspx
 * Open the Teams tab
-* Open the Team where you want to create the application for ![Team](images\TeamCreateApplication.png)
-* Click on the Create Application link  to start creating a new application ![Create application screen](images\LifeTimeCreateApplication.png) parameters:
+* Open the Team where you want to create the application for ![Team](..\images\TeamCreateApplication.png)
+* Click on the Create Application link  to start creating a new application ![Create application screen](..\images\LifeTimeCreateApplication.png) parameters:
     * environment: Development
     * What are you building : BDDFramework
-    * Give the app a name following the [naming convention](OutSystemsNamingConventions.md)
+    * Give the app a name following the [naming convention](OutSystemsNamingConventions.html)
     * Fill the description
     * Upload an icon. (We recommend to use the same icon as the application with a test watermark added)
 
@@ -54,14 +56,15 @@ In LifeTime create a new application using the bddframework template.
 
 ![Create TestSuite Screen](images\CreateTestSuiteScreen.png)
 
-* This action also adds a webblock `sample_test` that we keep as a template
+* This action also adds a WebBlock `sample_test` that we keep as a template
 * Rename the sample_test screen actions to:
     * a_Setup
     * b_Given
     * c_When
     * d_Then
     * e_Teardown
-* Open the `TestSuite` screen and remove the `Sample_Test` webblock from the Mainflow
+
+* Open the `TestSuite` screen and remove the `Sample_Test` WebBlock from the Mainflow
 * Set the module description to "<tested module name> tests module using BDDFramework"
 * Publish the module
 
@@ -69,13 +72,14 @@ In LifeTime create a new application using the bddframework template.
 
 In LifeTime create a new application using the service template.
 
-* Open your LifeTime environment users module <yourlifetimeserver>/lifetime/Users_List.aspx
-* Open the Teams tab
-* Open the Team where you want to create the application for ![Team Create App screenshot](images\TeamCreateApplication.png)
+* Open your LifeTime environment Applications screen: `<yourlifetimeserver>`/lifetime/Applications.aspx
+* Click on the button Create Application
+* Open the Team where you want to create the application for ![Team Create App screenshot](images\CreateApplicationInLifeTime.png)
 * Create a new application parameters:
+    * Owner Team: The team you application to test belongs to
     * environment: Development
     * What are you building : Service
-    * Give the app a name following the [naming convention](OutSystemsNamingConventions.md)
+    * Give the app a name following the [naming convention](..\standards\OutSystemsNamingConventions.html)
     * Fill the description
     * Upload an icon. (We recommend to use the same icon as the application with a test watermark added)
 * Publish the Module

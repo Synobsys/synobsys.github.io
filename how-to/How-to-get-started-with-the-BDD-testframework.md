@@ -85,7 +85,7 @@ In LifeTime create a new application using the service template.
 
 ## Building a test scenario example
 
-As a Talent Manager I should be able to manage skill and categories
+**Feature:** As a Talent Manager I should be able to manage skill and categories
 
 **Scenario:** Add Skill Group
 
@@ -97,7 +97,7 @@ As a Talent Manager I should be able to manage skill and categories
 
 ### Preparation steps
 
-Create reusable actions in module TalentManagerCoreTests
+#### Create reusable actions in module TalentManagerCoreTests_CS
 
 * `UserTalentManagerGetOrCreate`: Gets or creates (if not already existing) a Talent Manager user. _Please note that as an exception we will **not** remove the user in the Teardown of the tests as this may interfere with other running tests and will polute the users administration._
 * `SkillGroupSampleGet`: Initializes a sample Skill Group record with given fields

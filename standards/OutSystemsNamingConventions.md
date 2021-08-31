@@ -1,8 +1,6 @@
 ---
 title: OutSystems Naming Conventions
-layout : default
 ---
-
 # {{ page.title }}
 
 ## Language

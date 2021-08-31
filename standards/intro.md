@@ -14,3 +14,4 @@ The following standards apply to all projects that are carried out under the dir
 * [Definition of Done(DoD)](DefinitionOfDone.html)
 * [Code Review Checklist](CodeReviewChecklist.html)
 * Apply the <a class="external" href="https://www.oreilly.com/library/view/97-things-every/9780596809515/ch08.html" target="_blank">The Boy Scout Rule</a>
+* [list of approved forge components](approved-forge-components.md)

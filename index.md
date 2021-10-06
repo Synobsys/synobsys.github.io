@@ -40,18 +40,18 @@ All members involved in the OutSystems development such as:
 
 ### Patterns
 
-* [Integration Patterns for Core Services Abstraction](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/05_Integration_Patterns_for_Core_Services_Abstraction)
-* [Circuit Breaker Pattern: Make Your Apps Ready to Deal with Timeouts](https://www.outsystems.com/blog/posts/circuit-breaker-pattern/)
-* TBD Localization Ready data model with Entity Layers for Translated Fields and Non-Translated Fields <https://vertabelo.com/blog/data-modeling-for-multiple-languages-how-to-design-a-localization-ready-system/>
+* <a href="https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/05_Integration_Patterns_for_Core_Services_Abstraction"  target="_blank">Integration Patterns for Core Services Abstraction</a>
+* <a href="https://www.outsystems.com/blog/posts/circuit-breaker-pattern/"  target="_blank">Circuit Breaker Pattern: Make Your Apps Ready to Deal with Timeouts</a>
+* TBD Localization Ready data model with Entity Layers for Translated Fields and Non-Translated Fields <a href="https://vertabelo.com/blog/data-modeling-for-multiple-languages-how-to-design-a-localization-ready-system/" target="_blank">How to Design a Localization-Ready System</a>
 
 ## Publications
 
-* <a class="external_link" href="https://itnext.io/how-to-dynamically-import-the-customized-product-theme-in-the-base-product-b10b534e3e1a" target="_blank">How to Create Customized Versions of a Base Application</a>
-* <a class="external_link" href="https://medium.com/@pschmeddes/avoiding-security-threats-when-sending-messages-from-outsystems-applications-79bb03dd7bf9" target="_blank">Avoiding security threats when sending messages from OutSystems Applications</a>
-* <a class="external_link" href="https://itnext.io/external-core-services-pattern-variations-in-practice-bdcb1da07b5b" target="_blank">External Core Services Pattern Variations in Practice</a>
-* <a class="external_link" href="https://itnext.io/best-practices-for-developing-high-quality-outsystems-apps-bfbfc6d67081" target="_blank">Best Practices for developing High-Quality OutSystems Apps</a>
-* <a class="external_link" href="https://itnext.io/how-to-connect-outsystems-web-screens-across-espaces-without-violating-the-no-side-reference-rule-b03f8aae16ac" target="_blank">How-to connect Screens across modules without violating the layered architecture reference rules</a>
-* <a class="external_link" href="https://itnext.io/outsystems-and-microservices-in-practice-9b8038e58cb4" target="_blank">OutSystems and Microservices in Practice</a>
+* <a href="https://itnext.io/how-to-dynamically-import-the-customized-product-theme-in-the-base-product-b10b534e3e1a" target="_blank">How to Create Customized Versions of a Base Application</a>
+* <a href="https://medium.com/@pschmeddes/avoiding-security-threats-when-sending-messages-from-outsystems-applications-79bb03dd7bf9" target="_blank">Avoiding security threats when sending messages from OutSystems Applications</a>
+* <a href="https://itnext.io/external-core-services-pattern-variations-in-practice-bdcb1da07b5b" target="_blank">External Core Services Pattern Variations in Practice</a>
+* <a href="https://itnext.io/best-practices-for-developing-high-quality-outsystems-apps-bfbfc6d67081" target="_blank">Best Practices for developing High-Quality OutSystems Apps</a>
+* <a href="https://itnext.io/how-to-connect-outsystems-web-screens-across-espaces-without-violating-the-no-side-reference-rule-b03f8aae16ac" target="_blank">How-to connect Screens across modules without violating the layered architecture reference rules</a>
+* <a href="https://itnext.io/outsystems-and-microservices-in-practice-9b8038e58cb4" target="_blank">OutSystems and Microservices in Practice</a>
 
 ## Projects
 

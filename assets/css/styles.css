@@ -1,8 +1,7 @@
 ---
 ---
 
-@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
-@import "minima/initialize";
+@import "";
 
 a[href^="https://"] {
     background: url(../images/external.png) center right no-repeat;

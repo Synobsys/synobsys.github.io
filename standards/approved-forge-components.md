@@ -16,6 +16,7 @@ This page lists the forge components that are approved for use in projects.
 
 | Name | Version | Link | Approved By | Approved on | Curation Log |
 | --- | -----: | --- | --- | --- |--- |
-| Broken References | 1.0.1 | <https://www.outsystems.com/forge/component-overview/10062/broken-references> | Paul | 29 July 2021 | [tk](tk) |
-| Shared Folder | 1.0.1 | <https://www.outsystems.com/forge/component-overview/8194/shared-folder> | Paul | 29 July 2021 | [tk](tk) |
+| Broken References | 1.0.1 | <https://www.outsystems.com/forge/component-overview/10062/broken-references> | Paul | 29 July 2021 | - |
+| Shared Folder | 1.0.1 | <https://www.outsystems.com/forge/component-overview/8194/shared-folder> | Paul | 29 July 2021 | - |
 | ReactFilePond | 1.2.7 |<https://www.outsystems.com/forge/component-overview/7405/reactfilepondupload> |Trusted | 30-8-2021 | - |
+|AutoRefresh Reactive|1.0.0|<https://www.outsystems.com/forge/component-overview/8460/autorefresh-reactive>| - | pending | [tbd](tbd) |

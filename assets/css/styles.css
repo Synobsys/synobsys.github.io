@@ -3,3 +3,13 @@
 
 @import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
 @import "minima/initialize";
+
+a[href^="https://"] {
+    background: url(../images/external.png) center right no-repeat;
+    padding-right: 13px;
+}
+
+a[href^="https://synobsys.github.io/"]  {
+    background: none;
+    padding-right: 0;
+}

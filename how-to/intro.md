@@ -3,7 +3,7 @@ title: How-To Guides
 ---
 # How-To Guides
 
-<a class="external text" href="https://success.outsystems.com/Documentation/How-to_Guides" target="_blank">OutSystems How-To Guides</a>
+<a href="https://success.outsystems.com/Documentation/How-to_Guides" target="_blank">OutSystems How-To Guides</a>
 
 ## Tips and Tricks
 
@@ -55,5 +55,5 @@ title: How-To Guides
 
 ## Testing
 
-* <a href= "https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Test_Automation_in_the_Delivery_Lifecycle" target="_blank">Test Automation in the Delivery Lifecycle</a>
+* <a href="https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Test_Automation_in_the_Delivery_Lifecycle" target="_blank">Test Automation in the Delivery Lifecycle</a>
 * [How to get started with the BDD test framework](How-to-get-started-with-the-BDD-testframework.md)

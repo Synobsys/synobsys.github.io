@@ -15,8 +15,8 @@ title: OutSystems Naming Conventions
 
 ## Naming conventions per object type
 
-1. [Domains](..\naming\domain-naming.md)
-1. [Applications](..\naming\application-naming.md)
+1. [Domains](..\naming\domain-naming.html)
+1. [Applications](..\naming\application-naming.html)
 1. [Modules](..\naming\module-naming.html)
 1. [Entities and attributes](..\naming\entity-naming.html)
 1. [Variables](..\naming\variable-naming.html)

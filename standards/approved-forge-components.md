@@ -1,18 +1,18 @@
 ---
-title: Approved forge components
+title: Approved forge assets
 ---
 
 # Approved forge components
 
-According to [ADR 006: Approved forge components only](ADR-006-approved-forge-components-only.html) allowed forge components are:
+According to [ADR 006: Approved forge assets only](ADR-006-approved-forge-components-only.html) allowed forge assets are:
 
 * Supported by OutSystems
 * Have the Trusted status
 * Are approved by the Synobsys curation team and listed on this page.
 
-This page lists the forge components that are approved for use in projects.
+This page lists the forge assets that are approved for use in projects.
 
-## Approved components
+## Approved forge assets
 
 | Name | Version | Link | Approved By | Approved on | Curation Log |
 | --- | -----: | --- | --- | --- |--- |

@@ -52,19 +52,16 @@ In LifeTime create a new application using the bddframework template.
     * Upload an icon. (We recommend to use the same icon as the application with a test watermark added)
 
 * Open the new application in ServiceStudio and create a new BDDFramework module name it like the module you are testing with the suffix `_Test`
-* In the MainTestFlow add a new BDDFramework Scenario screen and name it `TestSuite`. Please note that you ***must*** name the screen `TestSuite` for the reporting tool to work.
+* In the MainTestFlow add a new screen and select the BDDFramework Data Drive Scenario (Static Enitity) template and name it `TestSuite`. Please note that you ***must*** name the screen `TestSuite` for the reporting tool to work.
 
 ![Create TestSuite Screen](images\CreateTestSuiteScreen.png)
 
-* This action also adds a WebBlock `sample_test` that we keep as a template
-* Rename the sample_test screen actions to:
-    * a_Setup
-    * b_Given
-    * c_When
-    * d_Then
-    * e_Teardown
+* This action also adds a WebBlock `DataDrivenDb_Scenario` that we keep as a template
+Together with this webblock a static entity named TestData is created and an aggregate is added to the preparation.
 
-* Open the `TestSuite` screen and remove the `Sample_Test` WebBlock from the Mainflow
+* Open the `TestSuite` screen and remove the `ScenarioListRecords` from the widget tree
+* Move the WebBlock to the templates UIFlow
+* Delete the GetTestData aggregate from the preparation
 * Set the module description to "`<tested module name>` tests module using BDDFramework"
 * Publish the module
 
@@ -81,6 +78,9 @@ In LifeTime create a new application using the service template.
     * Name: `<tested module name>` Core Tests
     * Description: Wrapper of common reused tests logic
     * Upload an icon. (We recommend to use the same icon as the application with a test watermark added)
+
+**TODO Adjust howto from here!**
+
 * Publish the Module
 
 ## Building a test scenario example
@@ -99,8 +99,10 @@ In LifeTime create a new application using the service template.
 
 #### Create reusable actions in module TalentManagerCoreTests_CS
 
-* `UserTalentManagerGetOrCreate`: Gets or creates (if not already existing) a Talent Manager user. _Please note that as an exception we will **not** remove the user in the Teardown of the tests as this may interfere with other running tests and will polute the users administration._
+TODO describe the actions
+<!-- * `UserTalentManagerGetOrCreate`: Gets or creates (if not already existing) a Talent Manager user. _Please note that as an exception we will **not** remove the user in the Teardown of the tests as this may interfere with other running tests and will polute the users administration._
 * `SkillGroupSampleGet`: Initializes a sample Skill Group record with given fields
+-->
 
 ### Implement the scenario
 

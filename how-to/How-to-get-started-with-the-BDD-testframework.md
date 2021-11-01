@@ -79,7 +79,7 @@ In LifeTime create a new application using the service template.
     * Description: Wrapper of common reused tests logic
     * Upload an icon. (We recommend to use the same icon as the application with a test watermark added)
 
-TODO Adjust howto from here!
+**TODO Adjust howto from here!**
 
 * Publish the Module
 
@@ -99,8 +99,10 @@ TODO Adjust howto from here!
 
 #### Create reusable actions in module TalentManagerCoreTests_CS
 
-* `UserTalentManagerGetOrCreate`: Gets or creates (if not already existing) a Talent Manager user. _Please note that as an exception we will **not** remove the user in the Teardown of the tests as this may interfere with other running tests and will polute the users administration._
+TODO describe the actions
+<!-- * `UserTalentManagerGetOrCreate`: Gets or creates (if not already existing) a Talent Manager user. _Please note that as an exception we will **not** remove the user in the Teardown of the tests as this may interfere with other running tests and will polute the users administration._
 * `SkillGroupSampleGet`: Initializes a sample Skill Group record with given fields
+-->
 
 ### Implement the scenario
 

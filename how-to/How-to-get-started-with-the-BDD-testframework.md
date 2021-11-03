@@ -9,7 +9,7 @@ title: How-to get started with BDD test framework
 * Before you start watch this <a class="external" href="https://www.outsystems.com/events/tech-talks/designing-application-testing/" target="_blank">How to Design Tests in OutSystems</a> in depth tech talk.
 * You **must read** the [BDD framework documentation](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1201&ProjectName=bddframework) and **do the exercises** in your personal environment.
 
-## Setup the BDD framework
+## Setup the BDD framework and reporting tool
 
 1. Install the [BDD framework](https://www.outsystems.com/forge/component-overview/1201/bddframework) from the Forge
 1. Install the BDD framework reporting tool TBD forge component
@@ -36,6 +36,8 @@ Refer to the OutSystems [Top-Notch Acceptance Criteria](https://success.outsyste
 We create test scenarios based on the acceptance criteria written in the [Given When Then](https://www.agilealliance.org/glossary/gwt) format.
 
 ## Creating a new test suite
+
+Now we create a Test Suite appplication that will contain the component tests and a core test services application that contains reusable logic to be used across test modules.
 
 ### Create Test Suite application
 
@@ -79,10 +81,6 @@ In LifeTime create a new application using the service template.
     * Description: Wrapper of common reused tests logic
     * Upload an icon. (We recommend to use the same icon as the application with a test watermark added)
 
-**TODO Adjust howto from here!**
-
-* Publish the Module
-
 ## Building a test scenario example
 
 **Feature:** As a Talent Manager I should be able to manage skill and categories
@@ -99,10 +97,8 @@ In LifeTime create a new application using the service template.
 
 #### Create reusable actions in module TalentManagerCoreTests_CS
 
-TODO describe the actions
-<!-- * `UserTalentManagerGetOrCreate`: Gets or creates (if not already existing) a Talent Manager user. _Please note that as an exception we will **not** remove the user in the Teardown of the tests as this may interfere with other running tests and will polute the users administration._
+* `PersonaLoginByName`: GLogs in the with the specified persona name (Note this action may be already present in a generic test core service module)
 * `SkillGroupSampleGet`: Initializes a sample Skill Group record with given fields
--->
 
 ### Implement the scenario
 

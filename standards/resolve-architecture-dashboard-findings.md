@@ -6,7 +6,6 @@ title: Resolve architecture dashboard findings
 
 Next follows a list with findings and agreed resolutions
 
-
 Finding | Case | Resolution
 ---------|----------|---------
  Large Local Variable in ViewState | In BDD test | Resolve as wont fix reason For test purpose only.

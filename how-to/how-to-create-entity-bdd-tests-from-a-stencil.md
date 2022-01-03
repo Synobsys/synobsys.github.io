@@ -38,10 +38,10 @@ Decide if you require a new test block module or want to extend an existing one.
 1. Add a dependency to <YourEntity>Scenarios
 1. Open the TestSuite screen
 1. In the widget tree add a new container and name it <YourEntity>Tests
-1. Insert a text widget and set the text to : "Feature As a <concept>adminstrator I can maintain <yourentity"
+1. Insert a text widget and set the text to : "Feature As a <concept>administrator I can maintain <yourentity"
 1. Insert the scenario web blocks
 1. Publish the module
-1. Open the TestSuite screen in your browser and check that all tests are succesfull.
+1. Open the TestSuite screen in your browser and check that all tests have completed with success.
 
 ## Create tests in an existing module
 
@@ -79,24 +79,37 @@ Decide if you require a new test block module or want to extend an existing one.
 1. Publish the module (F5)
 1. Close the module
 
+### Test widget steps
 
+1. Open your test core widgets module e.g. `RA_SampleConceptTests_CW`
+1. Open the manage dependencies window (Ctrl+q)
+1. Add a dependency to all the `<yourentity>` BDDDataActions
+1. Go back to module `Stencil_Entity_Tests_CW`
 1. Switch to the data tab (Ctrl+4)
 1. Make sure the folder `TemplateEntityTestData` is collapsed
 1. Copy the folder `TemplateEntityTestData`
 1. Switch to your module's data tab (Ctrl+4) and paste the folder in the Database folder.
-1. Replace (Ctrl+R) "TemplateEntity" with `<yourentityname>`
 1. Go back to module `Stencil_Entity_Tests_CW`
+1. Switch to the Interface tab (Ctrl+2)
+1. Copy UIFlow `TemplateEntity_Scenarios`
+1. Manage Dependencies (Ctrl_q)
+1. Add dependencies to `YourEntity`DBActions
+1. Find all usages (F12) for the TemplateEntityDBActions and replace them with `YourEntity`DBActions
+1. Switch to the logic tab (Ctrl+3) and locate the folder `TemplateEntityBDDDataActions`
+1. Replace all the ServerActions with the corresponding action from your core concept test cs module e.g. `RA_CoreConcept_Tests_CS`
+1. Switch to the data tab (Ctrl_4)
+1. Locate the TemplateEntityTestData folder and replace all static entities with your copy of the static entities
+1. Locate TemplateEntity and find all usage (F12
+1. Replace all usages with `YourEntity`
+1. Remove the `Stencil_Entity_Tests_CW` unused dependencies
+1. Replace (Ctrl+R) "TemplateEntity" with `<yourentityname>`
 1. Fix all errors
+    1. Can't identify 'FunctionalKey' element in expression.: Replace with your entities functional key attribute e.g. Code
+    1. A valid expression must be set for parameter 'DemoMasterFunctionalKey'. => Use Unused argument ...
 1. Publish (F5) your module
 
-### CW steps
 
-1. Open your test core widgets module e.g. `RA_SampleConceptTests_CW`
-1. Open the manage dependencies window (Ctrl+q)
-1. Add a dependency to
-    1. all the `<yourentity>`testdata static entities
-    1. all the `<yourentity>` BDDDataActions
-1. Go back to module `Stencil_Entity_Tests_CW`
+
 1. Switch to the Interface tab (Ctrl+2)
 1. Make sure all ui flows are collapsed
 1. Select both the `TemplateEntityScenarios` UIFlow

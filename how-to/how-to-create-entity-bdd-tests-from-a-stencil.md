@@ -108,8 +108,6 @@ Decide if you require a new test block module or want to extend an existing one.
     1. A valid expression must be set for parameter 'DemoMasterFunctionalKey'. => Use Unused argument ...
 1. Publish (F5) your module
 
-
-
 1. Switch to the Interface tab (Ctrl+2)
 1. Make sure all ui flows are collapsed
 1. Select both the `TemplateEntityScenarios` UIFlow

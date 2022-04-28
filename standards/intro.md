@@ -16,3 +16,4 @@ The following standards apply to all projects that are carried out under the dir
 * Apply the <a class="external" href="https://www.oreilly.com/library/view/97-things-every/9780596809515/ch08.html" target="_blank">The Boy Scout Rule</a>
 * [list of approved forge components](approved-forge-components.md)
 * [Standard resolutions for architecture dashboard findings](resolve-architecture-dashboard-findings.md)
+* [API Design Rules](API-Design-rules.md)

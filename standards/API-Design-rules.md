@@ -381,6 +381,46 @@ Changes in APIs are inevitable. APIs should therefore always be versioned, facil
   <p>When releasing a new major API version, the old version must remain available for a limited and fixed deprecation period. Offering a deprecation period allows clients to carefully plan and execute the migration from the old to the new API version, as long as they do this prior to the end of the deprecation period. A maximum of 2 major API versions may be published concurrently.</p>
 </div>
 
+## Examples
+
+To insert (create) a new customer in the system, we might use:
+<code> POST <http://www.example.com/customers></code>
+
+To read a customer with Customer ID# 33245:
+<code>GET <http://www.example.com/customers/33245></code> The same URI would be used for PUT and DELETE, to update and delete, respectively.
+
+Here are proposed URIs for products:
+<code>POST <http://www.example.com/products></code> for creating a new product.
+
+<code>GET|PUT|DELETE <http://www.example.com/products/66432></code>
+for reading, updating, deleting product 66432, respectively.
+
+Now, here is where it gets fun... What about creating a new order for a customer? One option might be: <code>POST <http://www.example.com/orders></code> And that could work to create an order, but it's arguably outside the context of a customer.
+
+Because we want to create an order for a customer (note the relationship), this URI perhaps is not as intuitive as it could be. It could be argued that the following URI would offer better clarity: <code>POST <http://www.example.com/customers/33245/orders></code> Now we know we're creating an order for customer ID# 33245.
+
+Now what would the following return?
+<code>GET <http://www.example.com/customers/33245/orders></code>
+Probably a list of orders that customer #33245 has created or owns. Note: we may choose to not support DELETE or PUT for that url since it's operating on a collection.
+
+Now, to continue the hierarchical concept, what about the following URI?
+<code>POST <http://www.example.com/customers/33245/orders/8769/lineitems></code>
+That might add a line item to order #8769 (which is for customer #33245). Right! GET for that URI might return all the line items for that order. However, if line items don't make sense only in customer context or also make sense outside the context of a customer, we would offer a <code>POST www.example.com/orders/8769/lineitems</code> URI.
+
+Along those lines, because there may be multiple URIs for a given resource, we might also offer a <code>GET <http://www.example.com/orders/8769></code> URI that supports retrieving an order by number without having to know the customer number.
+
+To go one layer deeper in the hierarchy:
+<code>GET <http://www.example.com/customers/33245/orders/8769/lineitems/1></code>
+Might return only the first line item in that same order.
+
+By now you can see how the hierarchy concept works. There aren't any hard and fast rules, only make sure the imposed structure makes sense to consumers of your services. As with everything in the craft of Software Development, naming is critical to success.
+
+Look at some widely used APIs to get the hang of this and leverage the intuition of your teammates to refine your API resource URIs. Some example APIs are:
+
+* Twitter: <https://developer.twitter.com/en/docs/api-reference-index>
+* Facebook: <https://developers.facebook.com/docs/reference/api/>
+* LinkedIn: <https://developer.linkedin.com/apis>
+
 ## Glossary
 
 <dl>
@@ -406,6 +446,6 @@ Changes in APIs are inevitable. APIs should therefore always be versioned, facil
     <dfn id="dfn-uri" data-dfn-type="dfn">URI</dfn>
   </dt>
   <dd>
-    <p>A URI [[rfc3986]] (Uniform Resource Identifier) is a globally unique identifier for a resource.</p>
+    <p>A URI <a href="https://www.ietf.org/rfc/rfc3986.txt">[rfc3986]</a> (Uniform Resource Identifier) is a globally unique identifier for a resource.</p>
   </dd>
 </dl>

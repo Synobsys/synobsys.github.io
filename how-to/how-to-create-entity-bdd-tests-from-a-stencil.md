@@ -137,7 +137,7 @@ Decide if you require a new test block module or want to extend an existing one.
 1. Add a dependency to <YourEntity>Scenarios
 1. Open the TestSuite screen
 1. In the widget tree add a new container and name it <YourEntity>Tests
-1. Insert a text widget and set the text to : "Feature As a <concept>adminstrator I can maintain <yourentity"
+1. Insert a text widget and set the text to : "Feature As a <concept>administrator I can maintain <yourentity."
 1. Insert the scenario web blocks
 1. Publish the module
 1. Open the TestSuite screen in your browser and check that all tests are succesfull.

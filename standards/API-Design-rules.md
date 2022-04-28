@@ -74,17 +74,17 @@ A resource describing a single thing is called a [singular resource](#dfn-singul
   <p>Because a collection resource represents multiple things, the path segment describing the name of the collection resource must be written in the plural form.</p>
   <div class="example">
     <p>Example collection resources, describing a list of things:</p>
-    <pre>https://api.example.org/v1/gebouwen<br/>https://api.example.org/v1/vergunningen</pre>
+    <pre>https://api.example.org/v1/locations<br/>https://api.example.org/v1/permits</pre>
   </div>
   <p>Singular resources contained within a collection resource are generally named by appending a path segment for the identification of each individual resource.</p>
   <div class="example">
     <p>Example singular resource, contained within a collection resource:</p>
-    <pre>https://api.example.org/v1/gebouwen/3b9710c4-6614-467a-ab82-36822cf48db1<br/>https://api.example.org/v1/vergunningen/d285e05c-6b01-45c3-92d8-5e19a946b66f</pre>
+    <pre>https://api.example.org/v1/locations/3b9710c4-6614-467a-ab82-36822cf48db1<br/>https://api.example.org/v1/permits/d285e05c-6b01-45c3-92d8-5e19a946b66f</pre>
   </div>
   <p>Singular resources that stand on their own, i.e. which are not contained within a collection resource, must be named with a path segment that is written in the singular form.</p>
   <div class="example">
     <p>Example singular resource describing the profile of the currently authenticated user:</p>
-    <pre>https://api.example.org/v1/gebruikersprofiel</pre>
+    <pre>https://api.example.org/v1/userprofile</pre>
   </div>
 </div>
 
@@ -100,9 +100,9 @@ A resource describing a single thing is called a [singular resource](#dfn-singul
   <p>To avoid confusion and ambiguity, a URI must never contain a trailing slash. When requesting a resource including a trailing slash, this must result in a 404 (not found) error response and not a redirect. This enforces API consumers to use the correct URI.</p>
   <div class="example">
     <p>URI without a trailing slash (correct):</p>
-    <pre>https://api.example.org/v1/gebouwen</pre>
+    <pre>https://api.example.org/v1/locations</pre>
     <p>URI with a trailing slash (incorrect):</p>
-    <pre>https://api.example.org/v1/gebouwen/</pre>
+    <pre>https://api.example.org/v1/locations/</pre>
   </div>
 </div>
 

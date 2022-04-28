@@ -56,13 +56,13 @@ The REST architectural style is centered around the concept of a [resource](#dfn
   <div class="example">
     <p>A few correct examples of nouns as part of a URI:</p>
     <ul>
-      <li>Gebouw</li>
-      <li>Vergunning</li>
+      <li>Location</li>
+      <li>Customer</li>
     </ul>
     <p>This is different than RPC-style APIs, where verbs are often used to perform certain actions:</p>
     <ul>
-      <li>Opvragen</li>
-      <li>Registreren</li>
+      <li>Request</li>
+      <li>Register</li>
     </ul>
   </div>
 </div>
@@ -170,28 +170,28 @@ Although the REST architectural style does not impose a specific protocol, REST 
     </thead>
     <tbody>
       <tr>
-        <td><code>GET /rijksmonumenten</code></td>
-        <td>Retrieves a list of national monuments.</td>
+        <td><code>GET /companies</code></td>
+        <td>Retrieves a list of companies.</td>
       </tr>
       <tr>
-        <td><code>GET /rijksmonumenten/12</code></td>
-        <td>Retrieves an individual national monument.</td>
+        <td><code>GET /companies/12</code></td>
+        <td>Retrieves an individual company.</td>
       </tr>
       <tr>
-        <td><code>POST /rijksmonumenten</code></td>
-        <td>Creates a new national monument.</td>
+        <td><code>POST /companies</code></td>
+        <td>Creates a new company.</td>
       </tr>
       <tr>
-        <td><code>PUT /rijksmonumenten/12</code></td>
-        <td>Modifies national monument #12 completely.</td>
+        <td><code>PUT /companies/12</code></td>
+        <td>Modifies company #12 completely.</td>
       </tr>
       <tr>
-        <td><code>PATCH /rijksmonumenten/12</code></td>
-        <td>Modifies national monument #12 partially.</td>
+        <td><code>PATCH /companies/12</code></td>
+        <td>Modifies company #12 partially.</td>
       </tr>
       <tr>
-        <td><code>DELETE /rijksmonumenten/12</code></td>
-        <td>Deletes national monument #12.</td>
+        <td><code>DELETE /companies/12</code></td>
+        <td>Deletes company #12.</td>
       </tr>
     </tbody>
   </table>
@@ -303,8 +303,8 @@ Resources are often interconnected by relationships. Relationships can be modell
   <p class="rulelab"><b>API-07</b>: Model resource operations as a sub-resource or dedicated resource</p>
   <p>There are resource operations which might not seem to fit well in the CRUD interaction model. For example, approving of a submission or notifying a customer. Depending on the type of the operation, there are three possible approaches:</p>
   <ol>
-    <li>Re-model the resource to incorporate extra fields supporting the particular operation. For example, an approval operation can be modelled in a boolean attribute <code>goedgekeurd</code> that can be modified by issuing a <code>PATCH</code> request against the resource. Drawback of this approach is that the resource does not contain any metadata about the operation (when and by whom was the approval given? Was the submission declined in an earlier stage?). Furthermore, this requires a fine-grained authorization model, since approval might require a specific role.</li>
-    <li>Treat the operation as a sub-resource. For example, model a sub-collection resource <code>/inzendingen/12/beoordelingen</code> and add an approval or declination by issuing a <code>POST</code> request. To be able to retrieve the review history (and to consistently adhere to the REST principles), also support the <code>GET</code> method for this resource. The <code>/inzendingen/12</code> resource might still provide a <code>goedgekeurd</code> boolean attribute (same as approach 1) which gets automatically updated on the background after adding a review. This attribute should however be read-only.</li>
+    <li>Re-model the resource to incorporate extra fields supporting the particular operation. For example, an approval operation can be modelled in a boolean attribute <code>approved</code> that can be modified by issuing a <code>PATCH</code> request against the resource. Drawback of this approach is that the resource does not contain any metadata about the operation (when and by whom was the approval given? Was the submission declined in an earlier stage?). Furthermore, this requires a fine-grained authorization model, since approval might require a specific role.</li>
+    <li>Treat the operation as a sub-resource. For example, model a sub-collection resource <code>/submissions/12/reviews</code> and add an approval or declination by issuing a <code>POST</code> request. To be able to retrieve the review history (and to consistently adhere to the REST principles), also support the <code>GET</code> method for this resource. The <code>/submissions/12</code> resource might still provide a <code>approved</code> boolean attribute (same as approach 1) which gets automatically updated on the background after adding a review. This attribute should however be read-only.</li>
     <li>In exceptional cases, the approaches above still don't offer an appropriate solution. An example of such an operation is a global search across multiple resources. In this case, the creation of a dedicated resource, possibly nested under an existing resource, is the most obvious solution. Use the imperative mood of a verb, maybe even prefix it with a underscore to distinguish these resources from regular resources. For example: <code>/search</code> or <code>/_search</code>. Depending on the operation characteristics, <code>GET</code> and/or <code>POST</code> method may be supported for such a resource.</li>
   </ol>
   <p>In this design rule, approach 2 and 3 are preferred.</p>

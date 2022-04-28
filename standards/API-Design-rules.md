@@ -27,7 +27,7 @@ Design rules have unique and permanent numbers. In the event of design rules bei
 * <a href="#api-01">API-01</a>: Adhere to HTTP safety and idempotency semantics for operations
 * <a href="#api-02">API-02</a>: Do not maintain session state on the server
 * <a href="#api-03">API-03</a>: Only apply standard HTTP methods
-* <a href="#api-04">API-04</a>: Define interfaces in Dutch unless there is an official English glossary available
+* <a href="#api-04">API-04</a>: Define interfaces in English
 * <a href="#api-05">API-05</a>: Use nouns to name resources
 * <a href="#api-06">API-06</a>: Use nested URIs for child resources
 * <a href="#api-07">API-07</a>: Model resource operations as a sub-resource or dedicated resource
@@ -316,13 +316,13 @@ An API is as good as the accompanying documentation. The documentation has to be
 
 <div class="rule" id="api-08">
   <p class="rulelab"><b>API-08</b>: Use OpenAPI Specification for documentation</p>
-  <p>The OpenAPI Specification (OAS) [[OPENAPIS]] defines a standard, language-agnostic interface to RESTful APIs which allows both humans and computers to discover and understand the capabilities of the service without access to source code, documentation, or through network traffic inspection. When properly defined, a consumer can understand and interact with the remote service with a minimal amount of implementation logic.</p>
+  <p><a href="https://www.openapis.org/">The OpenAPI Specification</a> (OAS) defines a standard, language-agnostic interface to RESTful APIs which allows both humans and computers to discover and understand the capabilities of the service without access to source code, documentation, or through network traffic inspection. When properly defined, a consumer can understand and interact with the remote service with a minimal amount of implementation logic.</p>
   <p>API documentation must be provided in the form of an OpenAPI definition document which conforms to the OpenAPI Specification (from v3 onwards). As a result, a variety of tools can be used to render the documentation (e.g. Swagger UI or ReDoc) or automate tasks such as testing or code generation. The OAS document should provide clear descriptions and examples.</p>
 </div>
 
 <div class="rule" id="api-09">
   <p class="rulelab"><b>API-09</b>: Publish documentation in English</p>
-  <p>In line with design rule <a href="#api-04">API-04</a>, the OAS document (e.g. descriptions and examples) should be written in Dutch. If relevant, you may refer to existing documentation written in English.</p>
+  <p>In line with design rule <a href="#api-04">API-04</a>, the OAS document (e.g. descriptions and examples) should be written in English.</p>
 </div>
 
 <div class="rule" id="api-14">

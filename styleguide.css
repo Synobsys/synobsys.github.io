@@ -1,0 +1,308 @@
+/* ===================================================================== */
+/* How to maintiain this css see: https://success.outsystems.com/Documentation/Best_Practices/Development/Front-End_Architecture_Best_Practices */
+/* ===================================================================== */
+
+/*  Global Theme based on OutSystems UI                                  */
+/*  For more information, visit www.outsystems.com/outsystems-ui         */
+
+/*!  OutSystems UI                                                              */
+/*!  For more information, visit www.outsystems.com/outsystems-ui               */
+/*!                                                                             */
+/*!   Root - CSS Variables                                                      */
+/*!   Resets                                                                    */
+/*!   HTML Elements                                                             */
+/*!     - Links                                                                 */
+/*!     - Images                                                                */
+/*!     - Headings                                                              */
+/*!   Page Layout                                                               */
+/*!     - Header                                                                */
+/*!     - Layout Native - Header                                                */
+/*!     - Layout Side - Header                                                  */
+/*!     - Menu                                                                  */
+/*!     - Layout Native - Menu                                                  */
+/*!     - Layout Side - Menu                                                    */
+/*!     - Menu - Header Logo                                                    */
+/*!     - Menu - App Menu Link                                                  */
+/*!     - Menu - App Login Info                                                 */
+/*!     - Content                                                               */
+/*!     - ThemeGrid_Container                                                   */
+/*!     - Section                                                               */
+/*!     - Login                                                                 */
+/*!     - iOS Scroll Bounce                                                     */
+/*!   Widgets                                                                   */
+/*!     - Inputs and TextAreas                                                  */
+/*!     - Switch                                                                */
+/*!     - Checkbox                                                              */
+/*!     - Dropdown                                                              */
+/*!     - Button                                                                */
+/*!     - List                                                                  */
+/*!     - List Item                                                             */
+/*!     - Table                                                                 */
+/*!     - Table - Sortable Icon                                                 */
+/*!     - Table - Bulk Actions                                                  */
+/*!     - Form                                                                  */
+/*!     - Upload                                                                */
+/*!     - Button Group                                                          */
+/*!     - Popover                                                               */
+/*!     - Popup                                                                 */
+/*!     - Feedback Message                                                      */
+/*!     - Radio Button                                                          */
+/*!   Patterns                                                                  */
+/*!     - Adaptive                                                              */
+/*!         - Columns                                                           */
+/*!         - Gallery                                                           */
+/*!         - Master Detail                                                     */
+/*!     - Content                                                               */
+/*!         - Accordion                                                         */
+/*!         - Alert                                                             */
+/*!         - Blank Slate                                                       */
+/*!         - Card                                                              */
+/*!         - Card Background                                                   */
+/*!         - CardItem                                                          */
+/*!         - Card Sectioned                                                    */
+/*!         - Chat Message                                                      */
+/*!         - Flip_Content                                                      */
+/*!         - Floating Content                                                  */
+/*!         - List Item Content                                                 */
+/*!         - Section                                                           */
+/*!         - Tag                                                               */
+/*!         - Tooltip                                                           */
+/*!         - User Avatar                                                       */
+/*!     - Interaction                                                           */
+/*!         - Action Sheet                                                      */
+/*!         - Animate                                                           */
+/*!         - Animated Label                                                    */
+/*!         - Carousel                                                          */
+/*!         - Date Picker                                                       */
+/*!         - Dropdown Search and Tags, common styles                           */
+/*!         - Dropdown Search                                                   */
+/*!         - Dropdown Tags                                                     */
+/*!         - Floating Actions                                                  */
+/*!         - Horizontal Scroll                                                 */
+/*!         - Input With Icon                                                   */
+/*!         - Lightbox Image                                                    */
+/*!         - Notification                                                      */
+/*!         - Range Slider                                                      */
+/*!         - Scrollable Area                                                   */
+/*!         - Search                                                            */
+/*!         - Sidebar                                                           */
+/*!         - Stacked Cards                                                     */
+/*!         - Video                                                             */
+/*!     - Navigation                                                            */
+/*!         - Bottom Bar Item                                                   */
+/*!         - Breadcrumbs                                                       */
+/*!         - Pagination                                                        */
+/*!         - Section Index                                                     */
+/*!         - Tabs                                                              */
+/*!         - Timeline                                                          */
+/*!         - Wizard                                                            */
+/*!     - Numbers                                                               */
+/*!         - Badge                                                             */
+/*!         - Counter                                                           */
+/*!         - Icon Badge                                                        */
+/*!         - Progress Bar                                                      */
+/*!         - Progress Circle                                                   */
+/*!         - Progress Circle Fraction                                          */
+/*!         - Rating                                                            */
+/*!     - Utilities                                                             */
+/*!         - Align Center                                                      */
+/*!         - Button Loading                                                    */
+/*!         - Center Content                                                    */
+/*!         - Margin Container                                                  */
+/*!         - Separator                                                         */
+/*!         - Pull to Refresh                                                   */
+/*!         - List Updating                                                     */
+/*!   Usefull Classes                                                           */
+/*!     - a11y (Accessibility)                                                  */
+/*!     - Colors Brand                                                          */
+/*!     - Colors Neutral                                                        */
+/*!     - Colors Palette                                                        */
+/*!     - Colors Semantic                                                       */
+/*!     - Colors Other                                                          */
+/*!     - Text                                                                  */
+/*!     - Typography                                                            */
+/*!     - Border Size                                                           */
+/*!     - Border Radius                                                         */
+/*!     - Margin                                                                */
+/*!     - Padding                                                               */
+/*!     - Shadow                                                                */
+/*!     - Box Width                                                             */
+/*!     - Box Height                                                            */
+/*!     - Display                                                               */
+/*!     - Display Flex                                                          */
+/*!     - Display Align                                                         */
+/*!     - Images                                                                */
+/*!     - Overflow                                                              */
+/*!     - Visibility                                                            */
+/*!     - Position                                                              */
+/*!     - Position Absolute                                                     */
+/*!     - Miscellaneous                                                         */
+/*!                                                                             */
+/*! =========================================================================== */
+/* ===================================================================== */
+
+/* ===================================================================== */
+/*  $0 - Root - CSS Variables                                            */
+/* ===================================================================== */
+:root {
+    
+    /* Color - Brand */
+    --color-primary: #42a7d6;
+    --color-secondary: #42a7d6;
+
+    --color-primary-hover: #1b3761;
+    --color-primary-selected: rgba(50, 166, 222, .12);
+    
+    /* Dark Theme */
+    --background-dark-theme: rgba(255, 255, 255, .1);
+    --background-dark-theme-hover: rgba(255, 255, 255, .2);
+    
+    /* Header */
+    --header-color: var(--color-primary);
+    --header-font-color: #ffffff;
+    
+    /* PRD specific */
+    --color-background-tspec: #b7e9bb;
+    --color-background-wspec: #b7cee9;
+    --color-background-wtc: #ecc89c;
+}
+
+.app-menu-links a{
+  color:var(--color-neutral-3);
+}
+.app-menu-links a{
+  -servicestudio-color:var(--color-neutral-3);
+}
+.app-menu-links a:hover, .app-menu-links a.active{
+  color:var(--color-primary);
+  text-decoration:none;
+}
+
+.side-navigation {
+    background-color: var(--color-neutral-0)
+    }
+
+.side-navigation .osui-accordion-item__title{
+    font-size: var(--font-size-s);
+    font-weight: var(--font-regular);
+    padding: var(--space-s);
+}
+
+.table-header th{
+  height:48px;
+}
+
+.table-row-small td{
+    height:24px;
+    font-size: var(--font-size-s);
+    line-height: 21px;
+    padding:var(--space-none) var(--space-m);
+}
+
+/* ===================================================================== */
+/*  $? - .domain-sidemenu                                                */
+/* ===================================================================== */
+
+.domain-sidemenu{
+    flex: 0 0 200px;
+    margin-right: var(--space-s);
+    
+}
+
+/* ===================================================================== */
+/*  $? - .submenu switch                                                 */
+/* ===================================================================== */
+
+.submenu-switch {
+    -webkit-box-flex: 0 0 10px;
+    -ms-flex: 0 0 10px;
+    flex: 0 0 20px;
+    margin-bottom: var(--space-l);
+    text-align: center;
+    align-self: top;
+    font-size: var(--font-size-h1);
+}
+
+/*!   Widgets                                                                   */
+
+/*!     - Inputs and TextAreas                                                  */
+
+.custom-validation-message {
+    color: var(--color-error);
+    font-size: var(--font-size-xs);
+    margin-left: var(--space-none);
+}
+
+/*! Patterns - Interaction - Dropdown Search and Tags, common styles */
+.choices.Not_Valid .choices__inner{
+    border: var(--border-size-s) solid var(--color-error);
+    border-radius: var(--border-radius-soft);
+}
+
+/*! Patterns - Utilities - ButtonLoading */
+.osui-btn-loading {
+    margin-left: var(--space-base);
+}
+/*! Layout sidenavigation */
+.main-content .columns.columns-small-left > .columns-item:first-child{
+    max-width: 300px;
+}
+
+.detailview > * {
+    margin-top: var(--space-s);
+}
+
+.label {
+    color: var(--color-primary);
+}
+
+.form input[data-input]{
+   margin-bottom: var(--space-xs);
+}
+
+.form .dropdown{
+   margin-bottom: var(--space-xs);
+}
+.form.card > Div{
+    margin-top: var(--space-xs);
+}
+
+/* ===================================================================== */
+/*  $? - TO DO Refactor                                                  */
+/*  These classes need to be redefined                                   */
+/* ===================================================================== */
+
+.table-row-very-small td {
+    height: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+
+.prd-infobox{
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+}
+
+.prd-tspec{
+    background-color: #b7e9bb;
+}
+
+.prd-wspec{
+    background-color: #b7cee9;
+}
+
+.prd-wtc{
+    background-color: #ecc89c;
+}
+
+.prd-bom{
+    background-color: #f5f57d;
+}
+
+.quarter-width { width: 25%; }
+

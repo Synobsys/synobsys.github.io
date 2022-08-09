@@ -26,4 +26,4 @@ title: OutSystems Naming Conventions
 1. [REST APIs](..\naming\rest-api-naming.html)
 1. [CSS](..\naming\css-naming.html)
 1. [Test Code naming](..\naming\test-code-naming.html)
-1. [BPT Naming](..\naming\bpt-naming.md)
+1. [BPT Naming](..\naming\bpt-naming.html)

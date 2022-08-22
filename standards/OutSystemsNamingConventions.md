@@ -1,7 +1,7 @@
 ---
 title: OutSystems Naming Conventions
 ---
-# {{ page.title }}
+# OutSystems Naming Conventions
 
 ## Language
 

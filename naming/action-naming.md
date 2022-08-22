@@ -4,11 +4,11 @@ title: Action naming conventions
 
 # Action naming conventions
 
-[ ] **tbd check for completeness**
+* [ ] **tbd check for completeness**
 
 * Prefix actions invoked by Timers with **Timer_**
 * Use Entity/Structure names in variables
-* Avoid empty labels, for example in in assigments
+* Avoid empty labels, for example in in assignments
 * Comment unclear or complex logic.
 * Set the example string of Expressions
 * Use Static Entities instead of hard-coded values

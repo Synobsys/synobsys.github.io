@@ -9,7 +9,7 @@ The purpose of these documents is to describe the Synobsys OutSystems developmen
 
 ## Contents
 
-1. [Standards and Guidelines](standards\intro.html)
+1. [Standards and Guidelines](standards\1-standards.html)
 1. [Architecture Decision Records (ADR)](adr\intro.html)
 1. [Patterns](#patterns)
 1. [how to guides](how-to\intro.html)

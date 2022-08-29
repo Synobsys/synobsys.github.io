@@ -4,6 +4,8 @@ title: Resolve architecture dashboard findings
 
 # Standard resolutions for architecture dashboard findings
 
+See this article how to [Properly Dispositioning OutSystems Architecture Dashboard Findings](https://medium.com/@jmjames/properly-dispositioning-outsystems-architecture-dashboard-findings-e3b7db1aca34)
+
 Next follows a list with findings and agreed resolutions
 
 Finding | Case | Resolution

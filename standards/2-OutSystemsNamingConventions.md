@@ -25,5 +25,5 @@ title: OutSystems Naming Conventions
 1. [Service Actions (OutSystems APIs)](../naming/service-action-naming.md)
 1. [REST APIs](../naming/rest-api-naming.md)
 1. [CSS](../naming/css-naming.md)
-1. [Test Code naming](..naming/test-code-naming.md)
+1. [Test Code naming](../naming/test-code-naming.md)
 1. [BPT Naming](../naming\bpt-naming.md)

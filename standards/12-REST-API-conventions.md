@@ -34,7 +34,7 @@ Use HTTP verbs to operate on the collections and elements.
 * Client needs to implement more logic
 * The starting point is two base URLs per resource: collection and object
 
-Example: User
+Example: Dog
 
 | Resource | POST (Create) | GET (Read) | PUT(Update) | DELETE (delete) | PATCH (Update) |
 | -------- | ------------- | ---------- | ----------- | --------------- | -------------- |
@@ -161,8 +161,12 @@ To add scope to your search, you can prepend with the scope of the search. For e
 ### Authentication
 
 Authentication methods:
-* 
- using an API Key
+
+* Basic - UserId and Password
+* Custom using an API Key
+* Custom using an Authorisation token e.g. JWT, ...
+
+#### Custom authenthication with an API Key
 
 Following the steps described in [Add Custom Authentication to an Exposed REST API](https://success.outsystems.com/documentation/11/extensibility_and_integration/rest/expose_rest_apis/add_custom_authentication_to_an_exposed_rest_api/) we will implement authentication using an API Key.
 

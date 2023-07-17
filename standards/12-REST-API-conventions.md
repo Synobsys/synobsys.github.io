@@ -164,13 +164,11 @@ Authentication methods:
 
 * Basic - UserId and Password
 * Custom using an API Key
-* Custom using an Authorisation token e.g. JWT, ...
+* Custom using an Authorisation token e.g. JWT, OpenId etc. see [Protect OutSystems REST APIs using OpenID Connect](https://itnext.io/protect-outsystems-rest-apis-using-openid-connect-87a2ac7575c1)
 
 #### Custom authenthication with an API Key
 
 Following the steps described in [Add Custom Authentication to an Exposed REST API](https://success.outsystems.com/documentation/11/extensibility_and_integration/rest/expose_rest_apis/add_custom_authentication_to_an_exposed_rest_api/) we will implement authentication using an API Key.
-
-<https://www.outsystems.com/blog/posts/implementing-http-status-code-exposing-rest/>
 
 ## References
 

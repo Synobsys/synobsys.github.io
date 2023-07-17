@@ -1,11 +1,9 @@
 # REST API conventions
 
-## Abstract
+## Contents
 
-TODO
-
-* Eigenschappen van een REST API
-* Anatomie van een OpenAPI Specificatie
+* [Properties of a REST API](#properties-of-a-rest-api)
+* [API design rules](#api-design-rules)
 * Wanneer maak je een API?
 * Hoe bepaal je de scope en het doel van de API?
 * Resource en proces operaties
@@ -16,8 +14,6 @@ TODO
 * Case study: Connections API
 * Design authority
 
-## How to draft reusable APIs for your businessobjects according to ths Synobsys conventions
-
 ## Properties of a REST API
 
 ### Synchronous communication
@@ -27,7 +23,7 @@ TODO
 * The response does not have to mean that the request is fully processed
 * With a success response, the producer is responsible for any further processing, with an error response, the consumer remains responsible
 
-## API Design Rules
+## API design rules
 
 ### Standard (HTTP) operations
 
@@ -91,7 +87,14 @@ Code for code
 
 Message for people
 
-`{"developerMessage" : "Verbose, plain language description of the problem for the app developer with hints about how to fix it.", "userMessage":"Pass this message on to the app user if needed.", "errorCode" : 12345, "more info": "http://dev.teachdogrest.com/errors/12345"}`
+```json
+{"developerMessage" : "Verbose, plain language description of the problem for the app developer with hints about how to fix it.", 
+"userMessage":"Pass this message on to the app user if needed.", 
+"errorCode" : 12345, 
+"more info": "http://dev.teachdogrest.com/errors/12345"}
+```
+
+You can use the [REST Customized Errors](https://www.outsystems.com/forge/component-overview/15593/rest-customized-errors) forge component to create these messages.
 
 ### Versioning
 
@@ -155,7 +158,11 @@ To add scope to your search, you can prepend with the scope of the search. For e
 
 `/owners/5678/dogs?q=fluffy+fur`
 
-## Authentication using an API Key
+### Authentication
+
+Authentication methods:
+* 
+ using an API Key
 
 Following the steps described in [Add Custom Authentication to an Exposed REST API](https://success.outsystems.com/documentation/11/extensibility_and_integration/rest/expose_rest_apis/add_custom_authentication_to_an_exposed_rest_api/) we will implement authentication using an API Key.
 

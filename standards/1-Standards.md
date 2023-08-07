@@ -17,7 +17,8 @@ a[href^="https://"]::after
   background-size: contain;
   display: inline-block;
 }
-article a[href^="https://synobsys.github.io/"]::after
+a[href^="https://synobsys.github.io"]::after,
+a[href^="https://synobsys.github.io"]::after
 {
   display: none !important;
 }

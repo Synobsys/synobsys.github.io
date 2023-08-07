@@ -1,10 +1,10 @@
 ---
-title: BearinPoint forge components
+title: Approved forge components
 ---
 
 # {{page.title}}
 
-This page lists the forge components that are used in the BearingPoint projects.
+This page lists the forge components that are approved for use in projects.
 
 [Curating Projects](https://success.outsystems.com/Support/Forge_Components/Forge_FAQs/Curating_Projects) explains the Curation colomn.
 

@@ -1,19 +1,15 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
 /* "{{ site.theme }}" = Your theme name */
 /* Eg: @import 'jekyll-theme-cayman';   */
 
 /* Your css rules goes after this */
-@import "xexternal.css";
+
 /* adding an icon to external links     */
-.page-header {
-  background: green;
-}
-a {
-  color: red;
-}
 a[href^="http"]::after,
 a[href^="https://"]::after
 {

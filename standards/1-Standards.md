@@ -3,10 +3,22 @@ title: OutSystems Standards and Guidelines
 ---
 # {{page.title}}
 
+<style>
+
+a[href^="http://"] {
+    background: url(/images/external.png) center right no-repeat;
+    padding-right: 13px;
+}
+a[href^="https://synobsys.github.io/"]  {
+    background: none;
+    padding-right: 0;
+}
+</style>
+
 The following standards apply to all projects that are carried out under the direction of Synobsys.
 
 1. [Naming Conventions](2-OutSystemsNamingConventions.md)
-1. <a class="external" href="https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Platform_Best_Practices" target="_blank">OutSystems Platform Best Practices</a> :arrow_upper_right:
+1. <a class="external" href="https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Platform_Best_Practices" target="_blank">OutSystems Platform Best Practices</a>
 1. <a class="external" href="https://leonardo-monteiro-fernandes.medium.com/a-code-style-guide-for-outsystems-97a923084159" target="_blank">Code Style Guide</a>
 1. [Server Action Security](4-ServerActionSecurity.md)
 1. [User Story Template](5-UserStoryTemplate.md)

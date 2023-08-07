@@ -1,8 +1,11 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-/* adding an icon to external links */
+@import "{{ jekyll-theme-minimal }}";
+/* "{{ site.theme }}" = Your theme name */
+/* Eg: @import 'jekyll-theme-cayman';   */
+/*                                      */
+/* adding an icon to external links     */
 a[href^="http"]::after,
 a[href^="https://"]::after
 {

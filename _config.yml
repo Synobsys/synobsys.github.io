@@ -16,4 +16,4 @@ defaults:
     values:
       layout: "default"
 
-theme: minima
+theme: minimal

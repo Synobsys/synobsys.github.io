@@ -53,8 +53,6 @@ All members involved in the OutSystems development such as:
 * <a href="https://itnext.io/how-to-connect-outsystems-web-screens-across-espaces-without-violating-the-no-side-reference-rule-b03f8aae16ac" target="_blank">How-to connect Screens across modules without violating the layered architecture reference rules</a>
 * <a href="https://itnext.io/outsystems-and-microservices-in-practice-9b8038e58cb4" target="_blank">OutSystems and Microservices in Practice</a>
 
-## Projects
+## Forge Components
 
-### BearingPoint Online Portal
-
-* [forge components in use](bearingpoint-forge-components.md)
+* [Approved forge components](forge-components.md)

@@ -1,4 +1,7 @@
-# REST API conventions
+---
+title : REST API conventions
+---
+# {{page.title}}
 
 ## Contents
 

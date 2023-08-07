@@ -4,7 +4,9 @@
 @import "{{ jekyll-theme-minimal }}";
 /* "{{ site.theme }}" = Your theme name */
 /* Eg: @import 'jekyll-theme-cayman';   */
-/*                                      */
+
+/* Your css rules goes after this */
+
 /* adding an icon to external links     */
 a[href^="http"]::after,
 a[href^="https://"]::after

@@ -3,7 +3,7 @@ title: OutSystems Standards and Guidelines
 ---
 # {{page.title}}
 
-<style>
+<!--style>
 a[href^="http"]::after,
 a[href^="https://"]::after
 {
@@ -22,7 +22,7 @@ a[href^="https://synobsys.github.io"]::after
 {
   display: none !important;
 }
-</style>
+</style-->
 
 The following standards apply to all projects that are carried out under the direction of Synobsys.
 

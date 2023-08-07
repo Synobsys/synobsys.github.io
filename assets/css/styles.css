@@ -1,5 +1,0 @@
----
----
-
-@import "{{ site.theme }}";
-@import "external.css"; /* Add icon to an external link */

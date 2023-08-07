@@ -2,7 +2,6 @@
 ---
 
 @import "{{ site.theme }}";
-
 a[href^="http"]::after,
 a[href^="https://"]::after
 {

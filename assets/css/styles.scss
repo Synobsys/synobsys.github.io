@@ -1,9 +1,14 @@
 ---
 ---
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+@import "{{ site.theme }}";
+.main-content {
+  h1 {
+   color: #ff0000;
+ }
+}
+
+/* @import {{ site.theme }} */
 /* "{{ site.theme }}" = Your theme name */
 /* Eg: @import 'jekyll-theme-cayman';   */
 
@@ -27,4 +32,4 @@ a[href^="https://synobsys.github.io"]::after,
 a[href^="https://synobsys.github.io"]::after
 {
   display: none !important;
-}
+} 

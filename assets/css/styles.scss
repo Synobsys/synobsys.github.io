@@ -1,13 +1,16 @@
 ---
 ---
 
-@import "{{ jekyll-theme-minimal }}";
+@import "{{ site.theme }}";
 /* "{{ site.theme }}" = Your theme name */
 /* Eg: @import 'jekyll-theme-cayman';   */
 
 /* Your css rules goes after this */
 
 /* adding an icon to external links     */
+a {
+  color: red;
+}
 a[href^="http"]::after,
 a[href^="https://"]::after
 {

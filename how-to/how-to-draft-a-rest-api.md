@@ -1,4 +1,7 @@
-# How to draft reusable APIs for your businessobjects according to the Synobsys conventions
+---
+title : How to draft reusable APIs for your businessobjects according to the Synobsys conventions
+---
+# {{page.title}}
 
 ## Sample Data
 

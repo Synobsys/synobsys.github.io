@@ -38,6 +38,10 @@ title: How-To Guides
 
 * Nothing here yet
 
+## Exposing API's
+
+* [How to draft a REST API](how-to-draft-a-rest-api.md)
+
 ## DevOps
 
 * <a href="https://itnext.io/outsystems-deployment-rollbacks-8b3c010f5f90" target="_blank">OutSystems deployment rollbacks</a>

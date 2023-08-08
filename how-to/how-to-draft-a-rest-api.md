@@ -9,10 +9,10 @@ In this how to we'll create an xxx REST API for the OutSystems Sample Data
 
 TODO revies this material:
 
-* [https://www.restapitutorial.com/](REST API Tutorial)
-* [https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet](API Design Cheat Sheet)
-* [https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet](Canonical Models Should Be A Core Component Of Your API Strategy)
-* [https://en.wikipedia.org/wiki/Canonical_schema_pattern](\[Wikipedia\] Canonical schema pattern)
+* [REST API Tutorial](https://www.restapitutorial.com/)
+* [API Design Cheat Sheet](https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet)
+* [Canonical Models Should Be A Core Component Of Your API Strategy](https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet)
+* [\[Wikipedia\] Canonical schema pattern](https://en.wikipedia.org/wiki/Canonical_schema_pattern)
 
 ## Design the API with Postman
 

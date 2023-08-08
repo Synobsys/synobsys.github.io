@@ -13,6 +13,7 @@ TODO revies this material:
 * [API Design Cheat Sheet](https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet)
 * [Canonical Models Should Be A Core Component Of Your API Strategy](https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet)
 * [\[Wikipedia\] Canonical schema pattern](https://en.wikipedia.org/wiki/Canonical_schema_pattern)
+* [The Web API Checklist -- 43 Things To Think About When Designing, Testing, and Releasing your API](https://mathieu.fenniak.net/the-api-checklist/)
 
 ## Design the API with Postman
 

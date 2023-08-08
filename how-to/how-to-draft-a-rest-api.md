@@ -15,9 +15,9 @@ TODO revies this material:
 * [\[Wikipedia\] Canonical schema pattern](https://en.wikipedia.org/wiki/Canonical_schema_pattern)
 * [The Web API Checklist -- 43 Things To Think About When Designing, Testing, and Releasing your API](https://mathieu.fenniak.net/the-api-checklist/)
 
-## Design the API with Postman
+## Design the API
 
-In this example we'll use Postman API Builder to design the API in Postman
+TODO design canonical schema and api methods.
 
 ## Setup OutSystems Applications and modules
 

@@ -5,7 +5,7 @@ title : How to draft reusable APIs for your businessobjects according to the Syn
 
 ## Sample Data
 
-In this how to we'll create an xxx REST API for the OutSystems Sample Data 
+In this how to we'll create an xxx REST API for the OutSystems Sample Data
 
 TODO revies this material:
 
@@ -18,6 +18,8 @@ TODO revies this material:
 ## Design the API
 
 TODO design canonical schema and api methods.
+
+<https://dzone.com/articles/schema-first-api-design>
 
 ## Setup OutSystems Applications and modules
 

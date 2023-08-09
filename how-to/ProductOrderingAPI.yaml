@@ -1,0 +1,160 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Product Ordering API
+paths:
+  /products:
+    get:
+      summary: Retrieve a list of products
+      parameters:
+        - name: category
+          in: query
+          description: Filter products by category
+          type: string
+        - name: sort
+          in: query
+          description: Sort products by field (e.g., price)
+          type: string
+        - name: order
+          in: query
+          description: Sorting order (asc or desc)
+          type: string
+        - name: page
+          in: query
+          description: Page number for pagination
+          type: integer
+        - name: per_page
+          in: query
+          description: Number of items per page
+          type: integer
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: object
+            properties:
+              total_products:
+                type: integer
+              products:
+                type: array
+                items:
+                  $ref: '#/definitions/Product'
+  /products/{product_id}:
+    get:
+      summary: Retrieve details of a specific product
+      parameters:
+        - name: product_id
+          in: path
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Product'
+  /orders:
+    get:
+      summary: Retrieve a list of orders
+      parameters:
+        - name: status
+          in: query
+          description: Filter orders by status
+          type: string
+        - name: sort
+          in: query
+          description: Sort orders by field (e.g., order_id)
+          type: string
+        - name: order
+          in: query
+          description: Sorting order (asc or desc)
+          type: string
+        - name: page
+          in: query
+          description: Page number for pagination
+          type: integer
+        - name: per_page
+          in: query
+          description: Number of items per page
+          type: integer
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: object
+            properties:
+              total_orders:
+                type: integer
+              orders:
+                type: array
+                items:
+                  $ref: '#/definitions/Order'
+    post:
+      summary: Place an order
+      consumes:
+        - application/json
+      parameters:
+        - name: order
+          in: body
+          description: Order details
+          required: true
+          schema:
+            $ref: '#/definitions/NewOrder'
+      responses:
+        201:
+          description: Order placed successfully
+          schema:
+            $ref: '#/definitions/Order'
+  /orders/{order_id}:
+    get:
+      summary: Retrieve details of a specific order
+      parameters:
+        - name: order_id
+          in: path
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Order'
+definitions:
+  Product:
+    type: object
+    properties:
+      id:
+        type: integer
+      name:
+        type: string
+      category:
+        type: string
+      price:
+        type: number
+  NewOrder:
+    type: object
+    properties:
+      products:
+        type: array
+        items:
+          type: object
+          properties:
+            product_id:
+              type: integer
+            quantity:
+              type: integer
+      customer_name:
+        type: string
+      shipping_address:
+        type: string
+      payment_method:
+        type: string
+  Order:
+    allOf:
+      - $ref: '#/definitions/NewOrder'
+      - type: object
+        properties:
+          order_id:
+            type: integer
+          total_amount:
+            type: number
+          status:
+            type: string

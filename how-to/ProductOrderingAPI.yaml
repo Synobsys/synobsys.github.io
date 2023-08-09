@@ -3,6 +3,20 @@ info:
   version: 1.0.0
   title: Product Ordering API
 paths:
+  /product_categories:
+    get:
+      summary: Retrieve a list of product categories
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: object
+            properties:
+              categories:
+                type: array
+                items:
+                  type: string
+                example: ["electronics", "clothing", "books"]
   /products:
     get:
       summary: Retrieve a list of products

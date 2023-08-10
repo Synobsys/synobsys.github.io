@@ -58,4 +58,45 @@ TODO Insert picture
         * Set the description to: "REST API Exposing the sample product concept."
         * Publish the module
 
+## Build the API
+
+Because there is no naming convention for rest apis we adhere to the OutSystem
+[PascalCase](https://www.theserverside.com/definition/Pascal-case) naming convention
+
+### Build the Canonical schema model
+
+1. Open module  NorthwindSchema_Lib
+1. Set the module description to: "Northwind Canonical schema. Provides the canonical structures for use in exposing data with API's"
+1. Create a structure for the following exposed entities:
+    * Category
+    * Customer
+    * Employee
+    * Order
+    * Product
+    * Shipper
+    * Supplier
+1. Steps:
+    1. Open the NorthwindDB module.
+    1. Select an entity to be exposed e.g. Order.
+    1. Copy the Order entity and past it in the library module as a structure
+    1. Remove the Id attribute. As a rule we don't expose internal table record id's
+    1. There will be errors for all references to other entities resolve this by copying the referenced entity and change the attribute to the coresponding structure. E.g. Order.CustomerId - Customer Identifier -> Order.Customer - Customer structure
+1. Set the Public attribute of the structures to Yes.
+1. Publish the module
+1. To accomodate pagination we need to create a list with count structure so that we can return a page of records and a count of the total available records. Steps:
+    1. Create a new "list" structure e.g. ProductsPage
+    1. Add a structure attribute Products type product list
+    1. Add a structure attribute Count, type Integer
+    1. Repeat these steps for CustomersPage and OrdersPage
+1. Publish the module
+
+### Build the Canonical Business Logic
+
 TODO
+
+### Build the API
+
+1. Install the following forge components:
+    * [REST Customized Errors](https://www.outsystems.com/forge/component-overview/15593/rest-customized-errors)
+    * ...
+1. TODO

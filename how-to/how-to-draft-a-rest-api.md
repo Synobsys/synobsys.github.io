@@ -86,13 +86,43 @@ Because there is no naming convention for rest apis we adhere to the OutSystem
 1. To accomodate pagination we need to create a list with count structure so that we can return a page of records and a count of the total available records. Steps:
     1. Create a new "list" structure e.g. ProductsPage
     1. Add a structure attribute Products type product list
-    1. Add a structure attribute Count, type Integer
+    1. Add a structure attribute Count, type LongInteger
     1. Repeat these steps for CustomersPage and OrdersPage
 1. Publish the module
 
 ### Build the Canonical Business Logic
 
-TODO
+For each method of the API we must provide a Canonical Business logic server action. This ensures that we don't put business logic in the api implementation and have it available for reuse when exposing other protocols e.g. SOAP.
+
+#### Example retrieve a paged Product list
+
+1. Open the Norhtwind_CBL Module
+1. Add a dependency to NorthwindSchemaLib Category, Product and ProductsPage
+1. Add a new server action "ProductGet
+1. Add the following input parameters:
+    * CategoryName, type: text, description: Search on category
+    * Search, type: text, description: Search on Name
+    * Page, type: Integer, description: Page number for pagination
+    * PerPage, type: Integer, description: Number of items per page
+1. Add an output parameter result, type ProductsPage
+1. Add the following logic:
+    * Trim the inputs
+    * Validate the inputs
+    * Add wildcards to the non empty Search parameter
+    * Add an aggregate with Product and Category as sources
+    * Filter the aggregate on Category and Search
+    * Set Results.Products to the AgregateName.List
+    * Set Results.Count to the AggrageteName.Count
+    * Convert the aggregate to SQL
+    * Add input parameters StartIndex and MaxRecords to the SQL
+    * Add an Integer structure to the output of the SQL
+    * Append `, COUNT(*), OVER() AS TotalCount` to the select
+    * Add the following line to the end of the SQL: `OFFSET @StartIndex ROWS FETCH NEXT @MaxRecords  ROWS ONLY`
+    * Set the SQL.StartIndex to (Page-1)*PerPage
+    * Set MaxRecords to PerPage
+    * Check that the Results output is correct.
+
+
 
 ### Build the API
 

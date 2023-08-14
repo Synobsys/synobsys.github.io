@@ -5,11 +5,11 @@ title : How to draft reusable APIs for your businessobjects according to the Syn
 
     DRAFT This page is under construction
 
-## Sample Data
+## Northwind data
 
-In this how to we'll create an xxx REST API for the OutSystems Sample Data
+In this how to we'll create an ProductOrdering REST API for the [Northwind](https://www.outsystems.com/forge/component-overview/4152/northwind) forge component.
 
-TODO revies this material:
+    TODO review this material:
 
 * [REST API Tutorial](https://www.restapitutorial.com/)
 * [API Design Cheat Sheet](https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet)
@@ -19,7 +19,7 @@ TODO revies this material:
 
 ## Design the API
 
-TODO design canonical schema and api methods.
+    TODO design canonical schema and api methods.
 
 <https://dzone.com/articles/schema-first-api-design>
 
@@ -27,7 +27,7 @@ TODO design canonical schema and api methods.
 
 ### Architecture
 
-TODO Insert picture
+    TODO Insert picture
 
 * Canonical Schema Library: A library containing the canonical schemas used in the apo
 * Canonical Business Logic:  A service module exposing Server Actions in canonical schema format.
@@ -118,7 +118,7 @@ For each method of the API we must provide a Canonical Business logic server act
     * Convert the aggregate to SQL
     * Add input parameters StartIndex and MaxRecords to the SQL
     * Add an Integer structure to the output of the SQL
-    * Append `, COUNT(*), OVER() AS TotalCount` to the select
+    * Append `, COUNT(*), OVER() AS TotalCount` to the select. TODO this results in a [Inefficient query count](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/#inefficient-query-count) finding in ai mentor studio. Thus create a separate count query.
     * Add the following line to the end of the SQL: `OFFSET @StartIndex ROWS FETCH NEXT @MaxRecords  ROWS ONLY`
     * Set the SQL.StartIndex to (Page-1)*PerPage
     * Set MaxRecords to PerPage
@@ -126,7 +126,27 @@ For each method of the API we must provide a Canonical Business logic server act
 
 ### Build the API
 
-1. Install the following forge components:
+1. Install required forge components
     * [REST Customized Errors](https://www.outsystems.com/forge/component-overview/15593/rest-customized-errors)
     * ...
-1. TODO
+
+1. Define the API and methods
+
+    1. In service studio open module `ProductOrderingAPI`
+    1. Open the logic tab `<Ctrl_3>`
+    1. Expand `Integrations`
+    1. Right click on REST and select `Expose REST API`
+        * Name: V1
+        * Description: Product Ordering API Version 1
+    1. Right click on `V1` and select Add REST API Method
+        * Name: Categories_Get
+        * Input parameters: none
+        * Output parameters: categories (Category list)
+        * Description: Returns a list of categories.
+        * URL Path: /categories
+        * HTTP Method: GET
+    1. Repeat this step for each of the following methods:
+
+[Appropriate record counting](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/appropriate_record_counting/)
+
+    TODO

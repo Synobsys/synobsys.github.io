@@ -3,6 +3,8 @@ title : How to draft reusable APIs for your businessobjects according to the Syn
 ---
 # {{page.title}}
 
+    DRAFT This page is under construction
+
 ## Sample Data
 
 In this how to we'll create an xxx REST API for the OutSystems Sample Data
@@ -121,8 +123,6 @@ For each method of the API we must provide a Canonical Business logic server act
     * Set the SQL.StartIndex to (Page-1)*PerPage
     * Set MaxRecords to PerPage
     * Check that the Results output is correct.
-
-
 
 ### Build the API
 

@@ -118,7 +118,7 @@ For each method of the API we must provide a Canonical Business logic server act
     * Convert the aggregate to SQL
     * Add input parameters StartIndex and MaxRecords to the SQL
     * Add an Integer structure to the output of the SQL
-    * Append `, COUNT(*), OVER() AS TotalCount` to the select. TODO this results in a [Inefficient query count](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/#inefficient-query-count) finding in ai mentor studio. Thus create a separate count query.
+    * Add a seperate count aggregate and minimize the joins.
     * Add the following line to the end of the SQL: `OFFSET @StartIndex ROWS FETCH NEXT @MaxRecords  ROWS ONLY`
     * Set the SQL.StartIndex to (Page-1)*PerPage
     * Set MaxRecords to PerPage
@@ -136,10 +136,18 @@ For each method of the API we must provide a Canonical Business logic server act
     1. Open the logic tab `<Ctrl_3>`
     1. Expand `Integrations`
     1. Right click on REST and select `Expose REST API`
+
         * Name: V1
         * Description: Product Ordering API Version 1
+        * Authentication: Basic see [how to Add Custom Authentication to an Exposed REST API](/how-to/how-to-add-custom-authentication-to-an-exposed-rest-api.md) for other authentication methods.
+        * OnResponse : New OnResponse
+    1. Add the following logic to the OnResponse action
+        * REST_CustomErrors_Lib/REST_CustomizeResponse
+        * Assign CustomizedResponse = REST_CustomizeResponse.CustomizedResponse
+        * AddHeader Name: Version Value: "1.0.0"
     1. Right click on `V1` and select Add REST API Method
-        * Name: Categories_Get
+
+        * Name: CategoriesGet
         * Input parameters: none
         * Output parameters: categories (Category list)
         * Description: Returns a list of categories.
@@ -147,6 +155,20 @@ For each method of the API we must provide a Canonical Business logic server act
         * HTTP Method: GET
     1. Repeat this step for each of the following methods:
 
-[Appropriate record counting](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/appropriate_record_counting/)
+        | Name | Inputs | Output | Description | URL Path | Method |
+        | ---- | ------ | ------ | ----------- | -------- | ------ |
+        | CustomerGetById | customer_id | customer |Returns the customer details for a given customer. | /customers/{customer_id} | GET |
+        | CustomerCreate | customer | customer_id | Creates a new customer | /customers | POST |
+        | CustomerDelete | customer_id | - | Deletes a specific customer | /customers/{customer_id} | DELETE |
+        | CustomersGet | - | customers | Retrieves a list of customers | /customers | GET |
+        | CustomerUpdate | customer | - | Updates a customer | /customers | PUT |
+        | OrderCreate | order | order_id | Place an order | /orders | POST |
+        | OrderGetById | order_id | order | Return the details of a specific order | /orders/{order_id}| GET |
+        | OrdersGet | page, per_page | orders | Retrieve a paginated list of orders | /orders | GET |
+        | CustomerOrdersGet | customer_id, status, page, per_page | orders | Retrieves a list of orders for a specific customer | /customers//customers/{customer_id}/orders | GET |
+        | ProductsGet | category, search, per_page, page | products | Retrieve a paginated list of products that meet the search parameters. | /products | GET|
+        | ProductGetById | product_id | product | Retrieve details of a specific product | /products/{product_id} | GET |
+
+    TODO [Appropriate record counting](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/appropriate_record_counting/)
 
     TODO

@@ -1,0 +1,903 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "V1",
+        "description": "Product Ordering API Version 1\n\nDemonstrates how to draft a REST API following the [Synobsys REST API conventions](https://synobsys.github.io/standards/12-REST-API-conventions)",
+        "version": "1"
+    },
+    "basePath": "/ProductOrderingAPI/rest/V1",
+    "schemes": [
+        "https"
+    ],
+    "paths": {
+        "/categories": {
+            "get": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "Returns a list of categories.",
+                "operationId": "Categories_Get",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Category"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/customer/{customerid}": {
+            "put": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "Updates a customer",
+                "operationId": "Customers_Update",
+                "parameters": [
+                    {
+                        "name": "CustomerId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string",
+                        "default": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/customers": {
+            "get": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "Retrieves a list of customers",
+                "operationId": "Customers_Get",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Search",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "default": "",
+                        "description": "Search by Name etc"
+                    },
+                    {
+                        "name": "Page",
+                        "in": "query",
+                        "required": true,
+                        "type": "integer",
+                        "x-example": 0,
+                        "format": "int32",
+                        "description": "Page number for pagination"
+                    },
+                    {
+                        "name": "PerPage",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "x-example": 0,
+                        "format": "int32",
+                        "description": "Number of items per page"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/CustomersPage"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "Creates a new customer",
+                "operationId": "Customers_Create",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain"
+                ],
+                "parameters": [
+                    {
+                        "name": "Customer",
+                        "in": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Customer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "string",
+                            "default": ""
+                        }
+                    }
+                }
+            }
+        },
+        "/customers/{customer_id}": {
+            "get": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "",
+                "operationId": "Customer_GetById",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customer_Id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string",
+                        "default": "",
+                        "description": "Customer identifier"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Customer details",
+                        "schema": {
+                            "$ref": "#/definitions/Customer"
+                        }
+                    }
+                }
+            }
+        },
+        "/customers/{customerid}": {
+            "delete": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "Deletes a specific customer",
+                "operationId": "Customers_Delete",
+                "parameters": [
+                    {
+                        "name": "CustomerId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string",
+                        "default": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/customers/{CustomerId}/orders": {
+            "get": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "Retrieves a list of orders for a specific customer",
+                "operationId": "Orders_GetByCustomerId",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "CustomerId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string",
+                        "default": ""
+                    },
+                    {
+                        "name": "Status",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "default": "",
+                        "description": "Filter orders by status"
+                    },
+                    {
+                        "name": "Sort",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "default": "",
+                        "description": "Sort orders by field (e.g. order_id)"
+                    },
+                    {
+                        "name": "Order",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "default": "",
+                        "description": "Sorting order (asc or desc)"
+                    },
+                    {
+                        "name": "Page",
+                        "in": "query",
+                        "required": true,
+                        "type": "integer",
+                        "x-example": 0,
+                        "format": "int32",
+                        "description": "Page numver for pagination"
+                    },
+                    {
+                        "name": "PerPage",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "default": "",
+                        "description": "Number of items per page"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/OrdersPage"
+                        }
+                    }
+                }
+            }
+        },
+        "/orders": {
+            "post": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "Place an order",
+                "operationId": "Orders_Create",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain"
+                ],
+                "parameters": [
+                    {
+                        "name": "Order",
+                        "in": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/OrderObject"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "string",
+                            "default": ""
+                        }
+                    }
+                }
+            },
+            "get": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "Retrieve a list of orders",
+                "operationId": "Orders_Get",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": true,
+                        "type": "integer",
+                        "x-example": 0,
+                        "format": "int32",
+                        "description": "Page numver for pagination"
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "x-example": 0,
+                        "format": "int32",
+                        "description": "Number of items per page"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/OrdersPage"
+                        }
+                    }
+                }
+            }
+        },
+        "/orders/{orderid}": {
+            "get": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "Return the details of a specific order",
+                "operationId": "Orders_GetById",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "OrderId",
+                        "in": "path",
+                        "required": true,
+                        "type": "integer",
+                        "x-example": 0,
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/Order"
+                        }
+                    }
+                }
+            }
+        },
+        "/products": {
+            "get": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "Retrieve a list of products",
+                "operationId": "Products_Get",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Category",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "default": "",
+                        "description": "Filter products by category. Use the GET catories to select an existing category."
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "default": "",
+                        "description": "Query parameter to search in all text elements"
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "x-example": 0,
+                        "format": "int32",
+                        "description": "Number of items per page"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": true,
+                        "type": "integer",
+                        "x-example": 0,
+                        "format": "int32",
+                        "description": "Page number for pagination"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/ProductsPage"
+                        }
+                    }
+                }
+            }
+        },
+        "/products/{product_id}": {
+            "get": {
+                "tags": [
+                    "V1"
+                ],
+                "description": "Retrieve details of a specific product",
+                "operationId": "Products_GetById",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Product_Id",
+                        "in": "path",
+                        "required": true,
+                        "type": "integer",
+                        "x-example": 0,
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Product details",
+                        "schema": {
+                            "$ref": "#/definitions/Product"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Category": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "CategoryId": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                },
+                "CategoryName": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Description": {
+                    "type": "string",
+                    "default": ""
+                }
+            },
+            "required": [
+                "CategoryId",
+                "CategoryName",
+                "Description"
+            ]
+        },
+        "Customer": {
+            "description": "Customer",
+            "type": "object",
+            "properties": {
+                "CustomerId": {
+                    "type": "string",
+                    "default": ""
+                },
+                "CompanyName": {
+                    "type": "string",
+                    "default": ""
+                },
+                "ContactName": {
+                    "type": "string",
+                    "default": ""
+                },
+                "ContactTitle": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Address": {
+                    "type": "string",
+                    "default": ""
+                },
+                "City": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Region": {
+                    "type": "string",
+                    "default": ""
+                },
+                "PostalCode": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Country": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Phone": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Fax": {
+                    "type": "string",
+                    "default": ""
+                }
+            },
+            "required": [
+                "CustomerId",
+                "CompanyName",
+                "ContactName",
+                "ContactTitle",
+                "Address",
+                "City",
+                "Country",
+                "Phone"
+            ]
+        },
+        "CustomersPage": {
+            "description": "List of customers and count",
+            "type": "object",
+            "properties": {
+                "Count": {
+                    "type": "integer",
+                    "example": 1234567891234567,
+                    "format": "int64",
+                    "description": "Total number of customers found"
+                },
+                "Customers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Customer"
+                    }
+                }
+            }
+        },
+        "Employee": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "EmployeeId": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                },
+                "LastName": {
+                    "type": "string",
+                    "default": ""
+                },
+                "FirstName": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Title": {
+                    "type": "string",
+                    "default": ""
+                },
+                "TitleOfCourtesy": {
+                    "type": "string",
+                    "default": ""
+                },
+                "BirthDate": {
+                    "type": "string",
+                    "format": "date",
+                    "example": "2014-12-31"
+                },
+                "HireDate": {
+                    "type": "string",
+                    "format": "date",
+                    "example": "2014-12-31"
+                },
+                "Address": {
+                    "type": "string",
+                    "default": ""
+                },
+                "City": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Region": {
+                    "type": "string",
+                    "default": ""
+                },
+                "PostalCode": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Country": {
+                    "type": "string",
+                    "default": ""
+                },
+                "HomePhone": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Extension": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                },
+                "Photo": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Notes": {
+                    "type": "string",
+                    "default": ""
+                },
+                "ReportsTo": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                }
+            },
+            "required": [
+                "EmployeeId",
+                "LastName",
+                "FirstName",
+                "Title",
+                "TitleOfCourtesy",
+                "BirthDate",
+                "HireDate",
+                "Address",
+                "City",
+                "PostalCode",
+                "Country",
+                "HomePhone",
+                "Extension",
+                "Photo",
+                "Notes"
+            ]
+        },
+        "Order": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "OrderId": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                },
+                "Customer": {
+                    "$ref": "#/definitions/Customer"
+                },
+                "Employee": {
+                    "$ref": "#/definitions/Employee"
+                },
+                "OrderDate": {
+                    "type": "string",
+                    "format": "date",
+                    "example": "2014-12-31"
+                },
+                "RequiredDate": {
+                    "type": "string",
+                    "format": "date",
+                    "example": "2014-12-31"
+                },
+                "ShippedDate": {
+                    "type": "string",
+                    "format": "date",
+                    "example": "2014-12-31"
+                },
+                "ShipVia": {
+                    "$ref": "#/definitions/Shipper"
+                },
+                "Freight": {
+                    "type": "number",
+                    "example": 0.1
+                },
+                "ShipName": {
+                    "type": "string",
+                    "default": ""
+                },
+                "ShipAddress": {
+                    "type": "string",
+                    "default": ""
+                },
+                "ShipCity": {
+                    "type": "string",
+                    "default": ""
+                },
+                "ShipRegion": {
+                    "type": "string",
+                    "default": ""
+                },
+                "ShipPostalCode": {
+                    "type": "string",
+                    "default": ""
+                },
+                "ShipCountry": {
+                    "type": "string",
+                    "default": ""
+                }
+            },
+            "required": [
+                "OrderId",
+                "Customer",
+                "Employee",
+                "OrderDate",
+                "RequiredDate",
+                "ShipVia",
+                "Freight",
+                "ShipName",
+                "ShipAddress",
+                "ShipCity",
+                "ShipCountry"
+            ]
+        },
+        "OrderObject": {
+            "description": "Order and OrderDetails details",
+            "type": "object",
+            "properties": {
+                "Order": {
+                    "$ref": "#/definitions/Order"
+                },
+                "OrderDetails": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/OrdersDetail"
+                    },
+                    "description": "List of orderdetails"
+                }
+            },
+            "required": [
+                "Order",
+                "OrderDetails"
+            ]
+        },
+        "OrdersDetail": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "Product": {
+                    "$ref": "#/definitions/Product"
+                },
+                "UnitPrice": {
+                    "type": "number",
+                    "example": 0.1
+                },
+                "Quantity": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                },
+                "Discount": {
+                    "type": "number",
+                    "example": 0.1
+                }
+            },
+            "required": [
+                "Product",
+                "UnitPrice",
+                "Quantity",
+                "Discount"
+            ]
+        },
+        "OrdersPage": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "Orders": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Order"
+                    }
+                },
+                "Count": {
+                    "type": "integer",
+                    "example": 1234567891234567,
+                    "format": "int64"
+                }
+            }
+        },
+        "Product": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "ProductId": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                },
+                "ProductName": {
+                    "type": "string",
+                    "default": ""
+                },
+                "SupplierId": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                },
+                "CategoryName": {
+                    "type": "string",
+                    "default": ""
+                },
+                "QuantityPerUnit": {
+                    "type": "string",
+                    "default": ""
+                },
+                "UnitPrice": {
+                    "type": "number",
+                    "example": 0.1
+                },
+                "UnitsInStock": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                },
+                "UnitsOnOrder": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                },
+                "ReorderLevel": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                },
+                "Discontinued": {
+                    "type": "boolean",
+                    "example": false
+                }
+            },
+            "required": [
+                "ProductId",
+                "ProductName",
+                "SupplierId",
+                "CategoryName",
+                "QuantityPerUnit",
+                "UnitPrice",
+                "UnitsInStock",
+                "UnitsOnOrder",
+                "ReorderLevel",
+                "Discontinued"
+            ]
+        },
+        "ProductsPage": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "Count": {
+                    "type": "integer",
+                    "example": 1234567891234567,
+                    "format": "int64"
+                },
+                "Products": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Product"
+                    }
+                }
+            }
+        },
+        "Shipper": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "ShipperId": {
+                    "type": "integer",
+                    "example": 0,
+                    "format": "int32"
+                },
+                "CompanyName": {
+                    "type": "string",
+                    "default": ""
+                },
+                "Phone": {
+                    "type": "string",
+                    "default": ""
+                }
+            },
+            "required": [
+                "ShipperId",
+                "CompanyName",
+                "Phone"
+            ]
+        }
+    },
+    "tags": [
+        {
+            "name": "V1"
+        }
+    ]
+}

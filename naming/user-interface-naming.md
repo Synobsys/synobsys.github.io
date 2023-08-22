@@ -2,20 +2,18 @@
 title: User interface naming conventions
 ---
 
-# User interface naming conventions
+# {{page.title}}
 
 ## UI Flows
 
-* TBD add rules
-
----
+    TBD add rules
 
 ## Screens
 
 * Screen names start with the name of the (main) entity followed by a suffixes showing the purpose of the screen names. Use the following suffixes:
-    * _List - Listing instances e.g. `Customer_List`
-    * _Edit - for editing a record e.g. `Customer_Edit`
-    * _Show - showing a record e.g. `Customer_Show`
+    * List - Listing instances e.g. `CustomerList`
+    * Edit - for editing a record e.g. `CustomerEdit`
+    * Show - showing a record e.g. `CustomerShow`
     * tbd add more suffixes
 
 * Set the name property of ShowRecords, EditRecords and TableRecords 
@@ -27,9 +25,6 @@ title: User interface naming conventions
     * **Delete** to (logically) remove the current instance from the database
     * **Edit** to start editing the current instance on an entity
 
----
-
 ## Blocks
 
-* Reusable (web-)blocks have a name that describes their function followed by the suffix **Block** e.g **CustomerBlock**
-
+* Reusable (web-)blocks have a name that describes their function followed by the suffix **Block** e.g **CustomerShowBlock**

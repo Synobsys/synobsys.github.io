@@ -22,7 +22,6 @@ title: OutSystems Naming Conventions
 1. [Variables](../naming/variable-naming.md)
 1. [User Interface](../naming/user-interface-naming.md)
 1. [Actions](../naming/action-naming.md)
-1. [Service Actions (OutSystems APIs)](../naming/service-action-naming.md)
 1. [REST APIs](../naming/rest-api-naming.md)
 1. [CSS](../naming/css-naming.md)
 1. [Test Code naming](../naming/test-code-naming.md)

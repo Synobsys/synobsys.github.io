@@ -2,7 +2,7 @@
 title: Variable naming conventions
 ---
 
-# Variable naming conventions
+# {{page.title}}
 
 The following rules apply to all types of variables:
 

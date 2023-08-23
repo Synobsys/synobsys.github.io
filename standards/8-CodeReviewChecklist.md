@@ -13,7 +13,7 @@ Use this checklist as an aid to the code review, but don't be limited to it. Giv
 * [ ] All code and documentation is in English [ADR 2 standard language is English.](ADR-002-standard-language-is-English.md)
 * [ ] Have the best practices been applied. That is, it is built correctly and efficiently.
 * [ ] There are no hard coded values
-* [ ] There are Zero warnings.
+* [ ] There are Zero warnings. See the [Service Studio Warnings](https://www.outsystems.com/forge/component-overview/16101/service-studio-warnings) forge component to get a report of warnings for all modules
 * [ ] There is documentation explaining the decision to hide a warning.
 * [ ] No findings in Discovery
 * [ ] No findings in the [Architecture Dashboard](https://architecture.outsystems.com/)

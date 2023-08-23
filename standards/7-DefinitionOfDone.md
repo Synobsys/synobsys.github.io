@@ -22,6 +22,7 @@ The **D**efinition **o**f **D**one (DoD) is used to determine when a task or use
 * BDD tests written and passing. I.e. meeting the acceptance criteria.
 * No (new) findings in [Discovery](https://www.outsystems.com/forge/component-overview/409/discovery)
 * No technical debt added in [Architecture Dashboard](https://www.outsystems.com/platform/architecture-dashboard/)
+* No Service Studio Warnings
 * [DevOps configuration](TBD) is updated. E.g. Turn Light BPT on, data export/import is described.
 
 ## When is a Sprint DONE?
@@ -30,4 +31,4 @@ The **D**efinition **o**f **D**one (DoD) is used to determine when a task or use
 * Deployed to system test environment and passed system tests;
 * Any build- deployment- configuration changes implemented documented and communicated.
 
-You can use the [Code Review Checklist](CodeReviewChecklist.html) for your reviews.
+You can use the [Code Review Checklist](8-CodeReviewChecklist.md) for your reviews.

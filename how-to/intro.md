@@ -24,6 +24,7 @@ title: How-To Guides
 * OutSystems <a href="https://success.outsystems.com/Documentation/How-to_Guides/Front-End" target="_blank">Front-End</a> how-to guides
 * [How to introduce a new style class](how-to-introduce-a-new-style-class.md)
 * [How to securely hide content](how-to-securely-hide-content.md)
+* [How to style external links](how-to-style-externallinks.md)
 
 ## Logic
 

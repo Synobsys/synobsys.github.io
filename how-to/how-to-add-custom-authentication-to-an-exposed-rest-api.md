@@ -7,11 +7,18 @@ title: How to Add Custom Authentication to an Exposed REST API
 
 See [Add Custom Authentication to an Exposed REST API](https://success.outsystems.com/documentation/11/extensibility_and_integration/rest/expose_rest_apis/add_custom_authentication_to_an_exposed_rest_api/)
 
-## API Token
+In this how to we'll demonstrate the following custom authentication methods:
 
-When using api token for authentication you need a method to associate api-keys with a consumer user. For this you can create a api key management solution.
+* [API key](#api-key)
+* [OAuth token](#oauth-token)
 
-To keep the example simple we use site properties to store the api key and the associated user. It is recommended that you create your own api key management solution based on your business needs.
+## API Key
+
+When using api key for authentication you need a method to associate api-keys with a consumer user. For this you can create a api key management solution.
+
+To keep the example simple we use site properties to store the api key and the associated user.
+
+It is recommended that you create your own api key management solution based on your business needs. This can be a token per Customer, or per user with an API Key self service. Like the one's OutSystems is providing for their API's. E.g. [AI Mentor Studio API authentication](https://success.outsystems.com/documentation/11/reference/outsystems_apis/ai_mentor_studio_api/ai_mentor_studio_api_authentication/)
 
 ### API Key validation
 
@@ -43,13 +50,36 @@ To keep the example simple we use site properties to store the api key and the a
     * Set Isvalid = True
     * End
 
-Your action flow should now look like this [APIKeyValidate](#api-key-validation)
+Your action flow should now look like this ![APIKeyValidate](images/APIKeyValidate.png)
 
 ### Custom Authentication
 
-Set the API authentication property to custom.
-Now the 
+Set the API authentication property to custom. This adds an OnAuthentication callback action.
 
-## OAuth tokem
+Add the following depencies:
+
+* System - Login
+* HTTPRequestHandler - GetRequestHeader
+
+In the OnAuthentication flow add the following actions:
+
+1. GetRequestHeader
+    * HeaderName : "x-api-key"
+1. APIKeyValidate
+    * APIKeyL GetRequestHeader.Value
+1. Add an If
+    * APIKeyValidate.IsValid = True
+1. In the false branch add REST_RaiseErrorByID
+    * HTTPStatusId: Entities.HTTPResponseStatus.HTTP401
+1. Add an End flow to the false branch
+1. In the true branch add a Login
+    * UserId: APIKeyValidate.ConsumerUserId
+    * Pesistent: False
+1. Hide the Unexpected Login Warning
+1. Add a comment next to the login: "Hide Enxexpected Login warning."
+
+Your action flow should now look likt this: ![OnAuthenticationFlow](images/OnAuthentication.png)
+
+## OAuth token
 
     TODO

@@ -9,6 +9,7 @@ The purpose of these documents is to describe the Synobsys OutSystems developmen
 
 ## Contents
 
+1. [Project Delivery Methodology](/delivery-methodology/index.md)
 1. [Standards and Guidelines](standards\1-Standards.html)
 1. [Architecture Decision Records (ADR)](adr\intro.html)
 1. [Patterns](#patterns)

@@ -10,9 +10,9 @@ The purpose of these documents is to describe the [Synobsys](https://www.synobsy
 ## Contents
 
 1. [Project Delivery Methodology](/delivery-methodology/index.md)
-1. [Standards and Guidelines](standards\1-Standards.md)
-1. [Architecture](#architecture)
-1. [How to guides](how-to\intro.md)
+1. [Standards and Guidelines](/standards/1-Standards.md1-Standards.md)
+1. [Architecture](/architecture/intro.md)
+1. [How to guides](/how-to/intro.md)
 1. [Referenced OutSystems documentation](outsystems-reference.html)
 1. [Publications](/publications.md)
 
@@ -24,8 +24,8 @@ Everyone involved in the OutSystems development projects
 
 ### Architectural Knowledge Management (AKM)
 
-* [Architecture Decision Records](adr\intro.html)
-* [Approved Forge Components](adr\approved-forge-components.html)
+* [Architecture Decision Records](/adr/intro.mdintro.md)
+* [Approved Forge Components](/standards/10-approved-forge-components.md)
 
 ### Patterns
 

@@ -14,7 +14,7 @@ In the OutSystems reference is described <a href="https://success.outsystems.com
 * Changing the Length property of a Text Attribute
 * Adding a unique index
 * Make a foreign key mandatory
-*- Make an attribute mandatory
+* Make an attribute mandatory
 
 ## Deleting an Attribute
 

@@ -3,7 +3,7 @@ title : How to draft reusable APIs for your businessobjects according to the Syn
 ---
 # {{page.title}}
 
-    DRAFT This page is under construction
+    🏗️ DRAFT This page is under construction 
 
 ## Northwind data
 
@@ -19,7 +19,7 @@ In this how to we'll create an ProductOrdering REST API for the [Northwind](http
 
 ## Design the API
 
-    TODO design canonical schema and api methods.
+[TODO] design canonical schema and api methods.
 
 <https://dzone.com/articles/schema-first-api-design>
 

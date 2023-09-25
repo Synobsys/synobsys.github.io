@@ -1,11 +1,12 @@
 ---
-title: Code review checklist
+title: OutSystem 11 Code review checklist
 layout: default
 ---
+# {{page.title}}
 
-# Code review checklist
+For use with ==OutSystem 11==
 
-Use this checklist as an aid to the code review, but don't be limited to it. Give suggestions on how the can be improved. Most important discuss the review result with your colleague and keep an open mind.
+Use this checklist as an aid to the code review, but don't be limited to it. Give suggestions on how the code can be improved. Most important discuss the review result with your colleague and keep an open mind.
 
 | Check | Rule |
 | ---- | --- |

@@ -10,19 +10,19 @@ Use this checklist as an aid to the code review, but don't be limited to it. Giv
 
 ### Solar System Exploration, 1950s – 1960s
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+* [ ] Mercury
+* [x] Venus
+* [x] Earth (Orbit/Moon)
+* [x] Mars
+* [ ] Jupiter
+* [ ] Saturn
+* [ ] Uranus
+* [ ] Neptune
+* [ ] Comet Haley
 
 |   | Rule |
 | --- | ---- |
-| - [ ] | No broken references shown in the [Broken References](https://www.outsystems.com/forge/component-overview/10062/broken-references) tool |
+| * [ ] | No broken references shown in the [Broken References](https://www.outsystems.com/forge/component-overview/10062/broken-references) tool |
 | <input type="checkbox"> | No modules exists in application Independent Modules |
 | <input type="checkbox"> | Naming is in accordance with the [OutSystems Naming Conventions](OutSystemsNamingConventions.md) |
 | <input type="checkbox"> | All code and documentation is in English [ADR 2 standard language is English.](ADR-002-standard-language-is-English.md) |

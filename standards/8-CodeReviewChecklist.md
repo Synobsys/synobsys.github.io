@@ -53,6 +53,16 @@ that could substantially improve this code?
 * Are error messages user-friendly?
 * Are there enough log events and are they written in a way that allows for easy debugging?
 
+## Ethics and Morality
+
+* Does this change make use of user data in a way that might raise privacy concerns?
+* Does the change exploit behavioral patterns or human weaknesses?
+* Might the code, or what it enables, lead to mental and physical harm for (some) users?
+* If the code adds or alters ways in which people interact with each other, are appropriate measures in place to prevent/limit/report harassment or abuse?
+* Does this change lead to an exclusion of a certain group of people or users?
+* Does this code change introduce any algorithm, AI, or machine learning bias?
+* Does this code change introduce any gender/racial/political/religious/ableist bias?
+
 ## Testing and Testability
 
 * Is the code testable?
@@ -75,6 +85,23 @@ addition?
 * Would more comments make the code more understandable?
 * Could some comments be removed by making the code itself more readable?
 * Is there any commented out code?
+
+## Usability and Accessibility
+
+* Is the proposed solution well designed from a usability perspective?
+* Is the API well documented?
+* Is the proposed solution (UI) accessible?
+* Is the API/UI intuitive to use?
+
+## Performance
+
+* Do you think this code change will impact system performance in a negative way?
+* Do you see any potential to improve the performance of the code?
+
+## Experts Opinion
+
+* Do you think a specific expert, like a security expert or a usability expert, should look over the code before it can be committed?
+* Will this code change impact different teams? Should they have a say on the change as well?
 
 ## Service Studio
 

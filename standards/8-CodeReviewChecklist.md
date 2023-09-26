@@ -8,7 +8,7 @@ For use with **OutSystem 11**
 
 Use this checklist as an aid to the code review, but don't be limited to it. Give suggestions on how the code can be improved. Most important discuss the review result with your colleague and keep an open mind.
 
-### Solar System Exploration, 1950s – 1960s
+## Solar System Exploration, 1950s – 1960s
 
 * [ ] Mercury
 * [x] Venus

@@ -81,7 +81,7 @@ Use this checklist as an aid to the code review, but don't be limited to it. Giv
 
 ---
 
-    TODO Adapt en merge this list taken from <https://www.michaelegreiler.com>
+***TODO Adapt en merge this list taken from <https://www.michaelegreiler.com>***
 
 ## Implementation
 

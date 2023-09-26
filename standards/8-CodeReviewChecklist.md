@@ -4,12 +4,12 @@ layout: default
 ---
 # {{page.title}}
 
-For use with ==OutSystem 11==
+For use with **OutSystem 11**
 
 Use this checklist as an aid to the code review, but don't be limited to it. Give suggestions on how the code can be improved. Most important discuss the review result with your colleague and keep an open mind.
 
 |   | Rule |
-| - | --- |
+| - | ---- |
 | <input type="checkbox"> | No broken references shown in the [Broken References](https://www.outsystems.com/forge/component-overview/10062/broken-references) tool |
 | <input type="checkbox"> | No modules exists in application Independent Modules |
 | <input type="checkbox"> | Naming is in accordance with the [OutSystems Naming Conventions](OutSystemsNamingConventions.md) |
@@ -19,7 +19,7 @@ Use this checklist as an aid to the code review, but don't be limited to it. Giv
 | <input type="checkbox"> | There are Zero warnings. See the [Service Studio Warnings](https://www.outsystems.com/forge/component-overview/16101/service-studio-warnings) forge component to get a report of warnings for all modules |
 | <input type="checkbox"> | There is documentation explaining the decision to hide a warning. |
 | <input type="checkbox"> | No findings in Discovery |
-| <input type="checkbox"> | No findings in the [Architecture Dashboard](https://architecture.outsystems.com/) |
+| <input type="checkbox"> | No findings in the [AI Mentor Studio](https://architecture.outsystems.com/) |
 | <input type="checkbox"> | [DevOps configuration](TBD) is updated. E.g. Turn Light BPT on, data export/import is described. |
 | <input type="checkbox"> | Unused dependencies are removed |
 
@@ -28,7 +28,7 @@ Use this checklist as an aid to the code review, but don't be limited to it. Giv
 ## Screen
 
 |   | Rule |
-| - | --- |
+| - | ---- |
 | <input type="checkbox"> | There is a clear description |
 | <input type="checkbox"> | Screen rendering is checked the browser zoom at 100% and all applicable screensizes for Tablets etc. (Chrome Developer Tools \<Ctrl + Shift + I\> and Toggle device toolbar \<Ctrl + Shift + M\> |
 | <input type="checkbox"> | The screen is compatible with the browsers defined in the project see or the OutSystems supported browsers [End User Requirements](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_system_requirements#End_User_Requirements) for the OutSystems supported browsers |
@@ -41,7 +41,7 @@ Use this checklist as an aid to the code review, but don't be limited to it. Giv
 ## Actions
 
 |   | Rule |
-| - | =--- |
+| - | --- |
 | <input type="checkbox"> | There is a clear description |
 | <input type="checkbox"> | Is the name of the action self explanatory? |
 | <input type="checkbox"> |All variables have a clear description |
@@ -78,5 +78,3 @@ Use this checklist as an aid to the code review, but don't be limited to it. Giv
 |   | Rule |
 | - | ---- |
 | <input type="checkbox"> | Have large resources such as Excel files and images been placed in a seperate module? |
-
----

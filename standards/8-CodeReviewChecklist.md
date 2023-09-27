@@ -102,10 +102,10 @@ that could substantially improve this code?
 * [ ] Do you think a specific expert, like a security expert or a usability expert, should look over the code before it can be committed?
 * [ ] Will this code change impact different teams? Should they have a say on the change as well?
 
-## Service Studio
+## Module
 
 * [ ] Are there no broken references shown in the [Broken References](https://www.outsystems.com/forge/component-overview/10062/broken-references) tool?
-* [ ] Are there no modules in application Independent Modules?
+* [ ] Is the module placed in the right application? Excluding Independent Modules?
 * [ ] Is naming is in accordance with the [OutSystems Naming Conventions](OutSystemsNamingConventions.md)?
 * [ ] Is all code and documentation is in [English](ADR-002-standard-language-is-English.md)?
 * [ ] Have the best practices been applied. That is, it is built correctly and efficiently.

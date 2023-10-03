@@ -5,31 +5,29 @@ title : How to draft reusable APIs for your businessobjects according to the Syn
 
     🏗️ DRAFT This page is under construction 
 
+* [ ] TODO Table of content
+
 ## Northwind data
 
-In this how to we'll create an ProductOrdering REST API for the [Northwind](https://www.outsystems.com/forge/component-overview/4152/northwind) forge component.
+In this how to we'll create an ProductOrdering REST API for the [Northwind] forge component.
 
-    TODO review this material:
+* [ ] TODO review this material:
 
-* [REST API Tutorial](https://www.restapitutorial.com/)
-* [API Design Cheat Sheet](https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet)
-* [Canonical Models Should Be A Core Component Of Your API Strategy](https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet)
-* [\[Wikipedia\] Canonical schema pattern](https://en.wikipedia.org/wiki/Canonical_schema_pattern)
-* [The Web API Checklist -- 43 Things To Think About When Designing, Testing, and Releasing your API](https://mathieu.fenniak.net/the-api-checklist/)
-* [Securing Your OutSystems APIs
-With OAuth 2.0](https://www.outsystems.com/blog/posts/securing-outsystems-apis-oauth2/)
-* [Exposing an OutSystems REST service with an OAuth-style authorization](https://itnext.io/exposing-an-outsystems-rest-service-with-an-oauth-style-authorization-fded258cbe14)
-* [Protect OutSystems REST APIs using OpenID Connect](https://medium.com/itnext/protect-outsystems-rest-apis-using-openid-connect-87a2ac7575c1)
+* [REST API Tutorial]
+* [API Design Cheat Sheet]
+* [Canonical Models Should Be A Core Component Of Your API Strategy]
+* [\[Wikipedia\] Canonical schema pattern]
+* [The Web API Checklist -- 43 Things To Think About When Designing, Testing, and Releasing your API]
 
 ## Design the API
 
-* [ ] TODO design canonical schema and api methods see <https://dzone.com/articles/schema-first-api-design>
+* [ ] TODO design canonical schema and api methods see [Schema-First API Design]
 
 ## Setup OutSystems Applications and modules
 
 ### Architecture
 
-    TODO Insert picture
+* [ ] TODO Insert picture
 
 * Canonical Schema Library: A library containing the canonical schemas used in the apo
 * Canonical Business Logic:  A service module exposing Server Actions in canonical schema format.
@@ -65,7 +63,7 @@ With OAuth 2.0](https://www.outsystems.com/blog/posts/securing-outsystems-apis-o
 ## Build the API
 
 Because there is no naming convention for rest apis we adhere to the OutSystem
-[PascalCase](https://www.theserverside.com/definition/Pascal-case) naming convention
+[PascalCase] naming convention
 
 ### Build the Canonical schema model
 
@@ -129,26 +127,21 @@ For each method of the API we must provide a Canonical Business logic server act
 ### Build the API
 
 1. Install required forge components
-    * [REST Customized Errors](https://www.outsystems.com/forge/component-overview/15593/rest-customized-errors)
-    * ...
-
+    * [REST Customized Errors][REST Customized Errors]
 1. Define the API and methods
-
     1. In service studio open module `ProductOrderingAPI`
     1. Open the logic tab `<Ctrl_3>`
     1. Expand `Integrations`
     1. Right click on REST and select `Expose REST API`
-
         * Name: V1
         * Description: Product Ordering API Version 1
-        * Authentication: Basic see [how to Add Custom Authentication to an Exposed REST API](/how-to/how-to-add-custom-authentication-to-an-exposed-rest-api.md) for other authentication methods.
+        * Authentication: Basic See [how to Add Custom Authentication to an Exposed REST API] for other authentication methods.
         * OnResponse : New OnResponse
     1. Add the following logic to the OnResponse action
         * REST_CustomErrors_Lib/REST_CustomizeResponse
         * Assign CustomizedResponse = REST_CustomizeResponse.CustomizedResponse
         * AddHeader Name: Version Value: "1.0.0"
     1. Right click on `V1` and select Add REST API Method
-
         * Name: CategoriesGet
         * Input parameters: none
         * Output parameters: categories (Category list)
@@ -171,6 +164,17 @@ For each method of the API we must provide a Canonical Business logic server act
         | ProductsGet | category, search, per_page, page | products | Retrieve a paginated list of products that meet the search parameters. | /products | GET|
         | ProductGetById | product_id | product | Retrieve details of a specific product | /products/{product_id} | GET |
 
-    TODO [Appropriate record counting](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/appropriate_record_counting/)
+* [ ] TODO [Appropriate record counting]
+* [ ] Add remaining steps...
 
-    TODO
+[Northwind]: https://www.outsystems.com/forge/component-overview/4152/northwind
+[REST API Tutorial]: https://www.restapitutorial.com/
+[API Design Cheat Sheet]: https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet
+[Canonical Models Should Be A Core Component Of Your API Strategy]: https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet
+[\[Wikipedia\] Canonical schema pattern]: https://en.wikipedia.org/wiki/Canonical_schema_pattern
+[The Web API Checklist -- 43 Things To Think About When Designing, Testing, and Releasing your API]: https://mathieu.fenniak.net/the-api-checklist/
+[Schema-First API Design]: https://dzone.com/articles/schema-first-api-design
+[PascalCase]: https://www.theserverside.com/definition/Pascal-case
+[REST Customized Errors]: https://www.outsystems.com/forge/component-overview/15593/rest-customized-errors
+[how to Add Custom Authentication to an Exposed REST API]: /how-to/how-to-add-custom-authentication-to-an-exposed-rest-api.md
+[Appropriate record counting]: https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/appropriate_record_counting/

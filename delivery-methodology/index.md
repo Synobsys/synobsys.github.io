@@ -3,12 +3,9 @@ title: Project Delivery Methodology
 ---
 # {{page.title}}
 
-* TOC
-{:toc}
-
 ## Introduction
 
-    TODO
+* [] TODO write intro
 
-* Delivery Practice
-* [Roles and Responsibilities](/delivery-methodology/roles-and-responsibilities.md)
+* [ ] TODO Delivery Practice
+* [Roles and Responsibilities](roles-and-responsibilities.md)

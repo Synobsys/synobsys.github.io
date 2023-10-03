@@ -3,12 +3,19 @@ layout: default
 title: Common Glossary
 sorting: 100
 tags: [guide, glossary]
-projectname: Your ProjectName here
+projectname: Synobsys OutSystems
+# Replaces with your ProjectName
 ---
 
 # {{ page.title}}
 
+* TOC
+{:TOC}
+
 ## This glossary introduces {{page.projectname}} common terminology.
+
+1. Term
+: Definition of the term
 
 ### [Architectural Decision](#architectural-decision) (AD)
 

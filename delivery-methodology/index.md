@@ -3,6 +3,9 @@ title: Project Delivery Methodology
 ---
 # {{page.title}}
 
+* TOC
+{:toc}
+
 ## Introduction
 
     TODO

@@ -7,10 +7,13 @@ title: How to Add Custom Authentication to an Exposed REST API
 
 See [Add Custom Authentication to an Exposed REST API]
 
-In this how to we'll demonstrate the following custom authentication methods:
+In this how-to we'll demonstrate the following custom authentication methods:
 
 * [API key](#api-key)
 * [OAuth token](#oauth-token)
+
+* TOC
+{:toc}
 
 ## API Key
 

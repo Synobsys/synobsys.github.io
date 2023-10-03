@@ -2,7 +2,10 @@
 title: Definition of Ready
 ---
 
-# Definition of Ready
+# {{page.title}}
+
+* TOC
+{:toc}
 
 A Story is ready for sprint when:
 

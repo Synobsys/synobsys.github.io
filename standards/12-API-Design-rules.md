@@ -1,4 +1,11 @@
-# API Design rules
+---
+title: API Design rules
+---
+
+# {{page.title}}
+
+* TOC
+{:toc}
 
 ## Abstract
 

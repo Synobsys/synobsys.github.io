@@ -1,8 +1,12 @@
 ---
 summary:
 tags:
+title: Loosely coupled domains with OutSystems
 ---
-# Loosely coupled domains with OutSystems
+# {{page.title}}
+
+* TOC
+{:toc}
 
 We use a [Domain Driven Architecture with OutSystems](https://success.outsystems.com/Documentation/Best_Practices/Architecture/OutSystems_Domain_Driven_Architecture) this pattern
 describes how to apply the principles of Full Isolated domains as decided in [ADR ??]()

@@ -8,7 +8,10 @@ For use with **OutSystem 11**
 
 Use this checklist as an aid to the code review, but don't be limited to it. Give suggestions on how the code can be improved. Most important discuss the review result with your colleague and keep an open mind.
 
-***TODO Adapt en merge this list taken from <https://www.michaelegreiler.com>***
+***TODO Adapt en merge this list taken from <https://www.michaelagreiler.com/>***
+
+* TOC
+{:toc}
 
 ## Implementation
 
@@ -24,8 +27,6 @@ Use this checklist as an aid to the code review, but don't be limited to it. Giv
 functionality reused?
 * [ ] Are there any best practices, design patterns or language-specific patterns
 that could substantially improve this code?
-* [ ] Does this code follow Object-Oriented Analysis and Design Principles, like the
-[Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle), [Openclose Principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle), [Liskov Substitution Principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle), [Interface Segregation](https://en.wikipedia.org/wiki/Interface_segregation_principle), [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection)? *How does this apply to OutSystems Code?*
 
 ## Dependencies
 

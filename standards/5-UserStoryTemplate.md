@@ -1,8 +1,10 @@
 ---
 title: User Story template
 ---
+# {{page.title}}
 
-# User Story template
+* TOC
+{:toc}
 
 ## Summary
 

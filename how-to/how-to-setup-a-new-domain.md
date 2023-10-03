@@ -10,6 +10,9 @@ To setup a new domain follow these instructions.
 * [Create LifeTime applications](#CreateApps)
 * [Create Domain Base modules](#CreateModules)
 
+* TOC
+{:toc}
+
 ## Domain and Team setup {#DomainTeam}
 
 ### Define and register a domain prefix

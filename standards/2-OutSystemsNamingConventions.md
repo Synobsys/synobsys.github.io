@@ -3,6 +3,9 @@ title: OutSystems Naming Conventions
 ---
 # OutSystems Naming Conventions
 
+* TOC
+{:toc}
+
 ## Language
 
     TODO Issue #4 ADR and Template for Common Glossary

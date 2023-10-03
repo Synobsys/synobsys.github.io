@@ -1,7 +1,10 @@
 ---
 title: ADR 5 - Centralized Styling
 ---
-# ADR 5: Centralized Styling
+# {{page.title}}
+
+* TOC
+{:toc}
 
 ## Context
 

@@ -3,7 +3,11 @@
 title: ADR 2 - Standard language is English
 
 ---
-# ADR 2: Standard language is English
+# {{page.title}}
+
+* TOC
+{:toc}
+
 
 ## Context
 

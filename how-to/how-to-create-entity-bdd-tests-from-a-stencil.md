@@ -8,6 +8,9 @@ Use this how to to create bdd tests for an entity's database actions
 
 Decide if you require a new test block module or want to extend an existing one.
 
+* TOC
+{:toc}
+
 ## Create a tests in a new core widgets modules
 
 1. To create a new module open module `Stencil_Entity_Tests_CW` in ServiceStudio

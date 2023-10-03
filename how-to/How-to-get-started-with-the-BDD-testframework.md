@@ -9,6 +9,9 @@ title: How-to get started with BDD test framework
 * Before you start watch this <a class="external" href="https://www.outsystems.com/events/tech-talks/designing-application-testing/" target="_blank">How to Design Tests in OutSystems</a> in depth tech talk.
 * You **must read** the [BDD framework documentation](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1201&ProjectName=bddframework) and **do the exercises** in your personal environment.
 
+* TOC
+{:toc}
+
 ## Setup the BDD framework and reporting tool
 
 1. Install the [BDD framework](https://www.outsystems.com/forge/component-overview/1201/bddframework) from the Forge

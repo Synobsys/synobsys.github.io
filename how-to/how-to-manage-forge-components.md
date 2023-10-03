@@ -2,6 +2,9 @@
 
 All forge components must be approved by the Center of Excellence (CoE) see [ADR 6 Approved forge components only](adr\ADR-006-approved-forge-components-only.md)
 
+* TOC
+{:toc}
+
 ## Selecting a forge component
 
 We prefer forge components in with the following priority:

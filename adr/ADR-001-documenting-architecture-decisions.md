@@ -4,7 +4,10 @@ title: ADR 1 - Documenting Architecture Decisions
 
 ---
 
-# ADR 1: Documenting Architecture Decisions
+# {{page.title}}
+
+* TOC
+{:toc}
 
 ## Context
 

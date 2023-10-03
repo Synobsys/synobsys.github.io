@@ -3,6 +3,9 @@ title: How to securely hide content in reactive web applications
 ---
 # How-to Setup a domain concept
 
+* TOC
+{:toc}
+
 For each domain concept perform the following steps
 
 1. [Create LifeTime Applications](#CreateApps)

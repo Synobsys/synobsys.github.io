@@ -3,6 +3,9 @@ title: How to introduce a new style classes
 ---
 # How to introduce a new style classes
 
+* TOC
+{:toc}
+
 ## StyleGuide Team
 
 All styling is centralized in the applicable theme. E.g. the Enterprise style guide theme.

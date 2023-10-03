@@ -1,7 +1,10 @@
 ---
 title: ADR N - brief decision title
 ---
-# ADR N: brief decision title
+# {{page.title}}
+
+* TOC
+{:toc}
 
 ## Context
 

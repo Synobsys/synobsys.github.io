@@ -3,6 +3,9 @@ title: Action naming conventions
 ---
 # {{page.title}}
 
+* TOC
+{:toc}
+
     TODO check for completeness
 
 ## Server Actions

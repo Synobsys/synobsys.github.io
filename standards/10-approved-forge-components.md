@@ -2,7 +2,10 @@
 title: Approved forge assets
 ---
 
-# Approved forge components
+# {{page.title}}
+
+* TOC
+{:toc}
 
 According to [ADR 006: Approved forge assets only](ADR-006-approved-forge-components-only.html) allowed forge assets are:
 

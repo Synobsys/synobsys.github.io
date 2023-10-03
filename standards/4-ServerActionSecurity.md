@@ -4,6 +4,9 @@ title: Server Action Security
 
 # Server Action Security
 
+* TOC
+{:toc}
+
 Following [ADR 3 Core Services must be secured](ADR-003-secure-core-services.md) we will always check the authentication and authorization in server side logic.
 
 Each server action must include the following checks

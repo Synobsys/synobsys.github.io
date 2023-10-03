@@ -2,7 +2,10 @@
 title: Domain Driven Design with OutSystems
 ---
 
-# Domain Driven Design with OutSystems
+# {{page.title}}
+
+* TOC
+{:toc}
 
 With OutSystems 11, several features were introduced allowing users to create a domain architecture based in Domain Driven Design.
 
@@ -144,7 +147,7 @@ Reference objects between domains **are allowed within the following rules**:
 
 All remaining relationships between domains are considered architectural findings and not allowed.
 
-As a note to remember, the orchestration domain in the [domain types section](#heading=h.wl92bhe3n2go) is to be considered as a vertical domain when validating domain relationships.
+As a note to remember, the orchestration domain in the [domain types section](#domain-types) is to be considered as a vertical domain when validating domain relationships.
 
 ### Architecture Principles
 

@@ -3,11 +3,14 @@ title: How to securely hide content in reactive web applications
 ---
 # How to securely hide content in reactive web applications
 
-This how-to guide describes follows the  [Reactive web security best practices](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices) and shows you how-to securely hide content from unauthorized users in the following situations.
+This how-to guide describes follows the  [Reactive web security best practices](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices) and shows you how-to securely hide content from unauthorized users in the following situations:
 
 * displaying sensitive data
 * editing sensitive data
 * redirecting users to a role based page
+
+* TOC
+{:toc}
 
 ## Showing sensitive data to authorized users only
 

@@ -1,8 +1,10 @@
 ---
 title: ADR 6 - Approved forge components only
 ---
+# {{page.title}}
 
-# ADR 6: Approved forge components only
+* TOC
+{:toc}
 
 ## Context
 

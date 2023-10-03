@@ -7,14 +7,8 @@ title: Data Model Change Management
 When you make changes to the Data Model this may impact modules in all environments of your factory an can potentially raise blocking deployment issues.
 In the OutSystems reference is described <a href="https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Database_Reference/How_Data_Model_Changes_are_Handled" target="_blank">how Data Model changes are handled</a>. This article describes how to manage data model changes in your factory and when distributing your application (Forge component or ISV delivery) for the following:
 
-* Deleting an Attribute
-* Adding an Attribute
-* Renaming an Attribute
-* Changing the data type of an Attribute
-* Changing the Length property of a Text Attribute
-* Adding a unique index
-* Make a foreign key mandatory
-* Make an attribute mandatory
+* TOC
+{:toc}
 
 ## Deleting an Attribute
 

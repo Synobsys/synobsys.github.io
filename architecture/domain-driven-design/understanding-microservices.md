@@ -4,11 +4,14 @@ summary:
 tags:
 ---
 
-# Understanding microservices
+# {{page.title}}
+
+* TOC
+{:toc}
 
 Microservices (also known as the microservices architecture), according to James Lewis and Martin Fowler:
 
-*is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies*.
+> is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies*.
 
 With the hype of microservices and the fall of monoliths, it became clear that as the constituent services are small, they can be built by one or more small teams from the beginning, separated by service boundaries. All in all, this makes it easier to scale up the development effort.
 

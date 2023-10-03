@@ -1,7 +1,11 @@
 ---
 title: how to generate and distrubute a mobile app
 ---
-# {{ module.title}}
+# {{page.title}}
+
+* TOC
+{:toc}
+
 
 See the OutSystems documentation:
 

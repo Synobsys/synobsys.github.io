@@ -4,7 +4,10 @@ title: Business Process Technology (BPT) naming conventions
 
 # Business Process Technology (BPT) naming conventions
 
-[ ] **tbd check for completeness**
+* TOC
+{:toc}
+
+* [ ] **tbd check for completeness**
 
 > Adapted from [Fundamentals of Business Process Management](http:/fundamentals-of-bpm.org), Chapter 3 Essential Process Modeling. [book web site archive](https://web.archive.org/web/20220308011419/http://fundamentals-of-bpm.org/)
 

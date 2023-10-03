@@ -4,7 +4,10 @@ summary: Learn the how OutSystems approach a Domain Driven architecture.
 tags:
 ---
 
-# OutSystems Domain Driven architecture
+# {{page.title}}
+
+* TOC
+{:toc}
 
 In this section you can find information on all aspects of using a Domain Driven Architecture in OutSystems. The when and how to leverage and validate such solution is discussed, along with the existing methods and tools that you can use to validate your architecture.
 

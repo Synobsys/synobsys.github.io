@@ -1,7 +1,10 @@
 ---
 title: How-to apply loosely coupled domains
 ---
-# How-to apply loosely coupled domains
+# {{page.title}}
+
+* TOC
+{:toc}
 
 This how-to explains how to apply a strict loosely coupled domain architecture
 

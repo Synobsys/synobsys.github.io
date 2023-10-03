@@ -2,7 +2,10 @@
 title: Definition of Done
 ---
 
-# Definition of Done
+# {{page.title}}
+
+* TOC
+{:toc}
 
 The **D**efinition **o**f **D**one (DoD) is used to determine when a task or user story is completed: DONE!
 

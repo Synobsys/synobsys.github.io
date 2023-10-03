@@ -3,6 +3,9 @@ title : Main page
 ---
 # {{page.title}}
 
+* TOC
+{:toc}
+
 ## Purpose
 
 The purpose of these documents is to describe the [Synobsys](https://www.synobsys.nl/) and [Whyellow](https://whyellow.nl/) OutSystems development standards and guidelines as well as the methods to enforce their proper use.

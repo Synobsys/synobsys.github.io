@@ -3,6 +3,9 @@ title: Tips and Tricks
 ---
 # Tips and Tricks
 
+* TOC
+{:toc}
+
 ## Clear Browser Cache to see client side code changes
 
 Be aware to clear your browser cache before testing client side code changes. Alternatively test your app in an anonymous window.

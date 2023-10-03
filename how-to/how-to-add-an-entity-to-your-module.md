@@ -7,6 +7,9 @@ title: How-to add an entity to your module
 The standards require entities to be exposed read only. Therefore we require public database actions (aka crud wrappers).
 Follow this guideline to setup the database actions.
 
+* TOC
+{:toc}
+
 ## Setup security
 
 1. Identify the role that that has permissions to modify the entity. E.g. FieldsAdmin

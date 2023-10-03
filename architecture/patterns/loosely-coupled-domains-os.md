@@ -9,7 +9,7 @@ title: Loosely coupled domains with OutSystems
 {:toc}
 
 We use a [Domain Driven Architecture with OutSystems](https://success.outsystems.com/Documentation/Best_Practices/Architecture/OutSystems_Domain_Driven_Architecture) this pattern
-describes how to apply the principles of Full Isolated domains as decided in [ADR ??]()
+describes how to apply the principles of Full Isolated domains as decided in [ADR ??]
 
 ## Concepts and mapping to OutSystems
 
@@ -89,33 +89,33 @@ Reference objects between domains **are allowed within the following rules**:
 
 ( ) optional references set by configuration
 
-**Allowed references between vertical domains**
+#### Allowed references between vertical domains
 
 * Weak references like Service Actions and Structures (optionally references to Entities are allowed upon configuration)
 
-**Allowed references between horizontal domains**
+#### Allowed references between horizontal domains
 
 * Weak references like Service Actions, Structures and Entities (optionally references to Server Actions are allowed depending on configuration)
 
 * Weak downward reference between a Vertical and Horizontal Domain Service Actions, Structures and Entities
 
-**Allowed references vertical to horizontal domains**
+#### Allowed references vertical to horizontal domains
 
 * Weak references like Service Actions and Structures
 
 * Strong reference between a Vertical and Horizontal if the referenced element is part of a Foundation App
 
-![](images/outsystems_domain_driven_architecture_22.png?width=900)
+![ddd picture](images/outsystems_domain_driven_architecture_22.png?width=900)
 
 All remaining relationships between domains are considered architectural findings and not allowed.
 
-As a note to remember, the orchestration domain in the [domain types section](#heading=h.wl92bhe3n2go) is to be considered as a vertical domain when validating domain relationships.
+As a note to remember, the orchestration domain in the [domain types section](#domain-types) is to be considered as a vertical domain when validating domain relationships.
 
 ### Architecture Principles
 
 The same Architecture Canvas principles are applicable both within and across domains.
 
-![](images/outsystems_domain_driven_architecture_23.png?width=900)
+![ddd picture](images/outsystems_domain_driven_architecture_23.png?width=900)
 
 ### Advanced Architecture Patterns
 
@@ -129,7 +129,7 @@ Sometimes it is necessary to orchestrate seamlessly in one single transaction lo
 
 The way we achieve this is by creating a Service Action that will then centralize in a single transaction multiple server actions, as follows:
 
-![](images/outsystems_domain_driven_architecture_24.png?width=900)
+![domain driven architecture](/images/outsystems_domain_driven_architecture_24.png?width=900)
 
 ### How to validate the domain architecture
 

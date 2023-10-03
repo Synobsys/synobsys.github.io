@@ -5,7 +5,8 @@ title : How to design and build reusable APIs for your businessobjects according
 
     🏗️ DRAFT This page is under construction 
 
-* [ ] TODO Table of content
+* TOC
+{:toc}
 
 ## Northwind data
 

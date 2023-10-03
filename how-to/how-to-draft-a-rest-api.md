@@ -16,12 +16,14 @@ In this how to we'll create an ProductOrdering REST API for the [Northwind](http
 * [Canonical Models Should Be A Core Component Of Your API Strategy](https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet)
 * [\[Wikipedia\] Canonical schema pattern](https://en.wikipedia.org/wiki/Canonical_schema_pattern)
 * [The Web API Checklist -- 43 Things To Think About When Designing, Testing, and Releasing your API](https://mathieu.fenniak.net/the-api-checklist/)
+* [Securing Your OutSystems APIs
+With OAuth 2.0](https://www.outsystems.com/blog/posts/securing-outsystems-apis-oauth2/)
+* [Exposing an OutSystems REST service with an OAuth-style authorization](https://itnext.io/exposing-an-outsystems-rest-service-with-an-oauth-style-authorization-fded258cbe14)
+* [Protect OutSystems REST APIs using OpenID Connect](https://medium.com/itnext/protect-outsystems-rest-apis-using-openid-connect-87a2ac7575c1)
 
 ## Design the API
 
-[TODO] design canonical schema and api methods.
-
-<https://dzone.com/articles/schema-first-api-design>
+* [ ] TODO design canonical schema and api methods see <https://dzone.com/articles/schema-first-api-design>
 
 ## Setup OutSystems Applications and modules
 

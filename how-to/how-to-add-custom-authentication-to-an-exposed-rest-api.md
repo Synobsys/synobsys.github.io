@@ -5,7 +5,7 @@ title: How to Add Custom Authentication to an Exposed REST API
 
     This page is under construction
 
-See [Add Custom Authentication to an Exposed REST API](https://success.outsystems.com/documentation/11/extensibility_and_integration/rest/expose_rest_apis/add_custom_authentication_to_an_exposed_rest_api/)
+See [Add Custom Authentication to an Exposed REST API]
 
 In this how to we'll demonstrate the following custom authentication methods:
 
@@ -18,7 +18,7 @@ When using api key for authentication you need a method to associate api-keys wi
 
 To keep the example simple we use site properties to store the api key and the associated user.
 
-It is recommended that you create your own api key management solution based on your business needs. This can be a token per Customer, or per user with an API Key self service. Like the one's OutSystems is providing for their API's. E.g. [AI Mentor Studio API authentication](https://success.outsystems.com/documentation/11/reference/outsystems_apis/ai_mentor_studio_api/ai_mentor_studio_api_authentication/)
+It is recommended that you create your own api key management solution based on your business needs. This can be a token per Customer, or per user with an API Key self service. Like the one's OutSystems is providing for their API's. E.g. [AI Mentor Studio API authentication]
 
 ### API Key validation
 
@@ -82,4 +82,16 @@ Your action flow should now look likt this: ![OnAuthenticationFlow](images/OnAut
 
 ## OAuth token
 
-    TODO
+* [] TODO
+
+### References
+
+* [Securing Your OutSystems APIs With OAuth 2.0]
+* [Exposing an OutSystems REST service with an OAuth-style authorization]
+* [Protect OutSystems REST APIs using OpenID Connect]
+
+[Securing Your OutSystems APIs With OAuth 2.0]: https://www.outsystems.com/blog/posts/securing-outsystems-apis-oauth2/
+[Exposing an OutSystems REST service with an OAuth-style authorization]: https://itnext.io/exposing-an-outsystems-rest-service-with-an-oauth-style-authorization-fded258cbe14
+[Protect OutSystems REST APIs using OpenID Connect]: https://medium.com/itnext/protect-outsystems-rest-apis-using-openid-connect-87a2ac7575c1
+[Add Custom Authentication to an Exposed REST API]: https://success.outsystems.com/documentation/11/extensibility_and_integration/rest/expose_rest_apis/add_custom_authentication_to_an_exposed_rest_api/
+[AI Mentor Studio API authentication]: https://success.outsystems.com/documentation/11/reference/outsystems_apis/ai_mentor_studio_api/ai_mentor_studio_api_authentication/

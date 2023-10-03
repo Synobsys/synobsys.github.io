@@ -3,6 +3,9 @@ title: Roles & Responisibilities
 ---
 # {{page.title}}
 
+* TOC
+{:toc}
+
 ## Management Team
 
 Composed by customer and deliveryteam members

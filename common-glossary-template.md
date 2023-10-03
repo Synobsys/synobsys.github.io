@@ -27,73 +27,41 @@ Aggregate
 : A cluster of associated objects that are treated as a unit for the purpose of data changes. External references are restricted to one member of the AGGREGATE, designated as the root. A set of consistency rules applies within the AGGREGATE’S boundaries.
 : An OutSystems method to fetch data using an optimized query. Aggregates can load data from the server of the local database, and they support combining several Entities and advanced filtering. [Aggregate](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Queries/Aggregate)
 
----
+Analysis Pattern
+: A group of concepts that represents a common construction in business modeling. It may be relevant to only one domain or may span many domains (Fowler 1997, p. 8).
 
-## [Analysis Pattern](#analysis-pattern)
+Assertion
+: A statement of the correct state of a program at some point, independent of how it does it. Typically, an ASSERTION specifies the result of an operation or an invariant of a design element.
 
-A group of concepts that represents a common construction in business modeling. It may be relevant to only one domain or may span many domains (Fowler 1997, p. 8).
+Behaviour Driven Development
+: Behavior-Driven Development (BDD) is a set of software engineering practices designed to help teams build and deliver more valuable, higher quality software faster. It draws on Agile and lean practices including, in particular, Test-Driven Development (TDD) and Domain-Driven Design (DDD). But most importantly, BDD provides a common language based on simple, structured sentences expressed in English (or in the native language of the stakeholders) that facilitate communication between project team members and business stakeholders.
 
----
+Boolean Flag
+: Boolean values are regularly used to help maintain the state of a given piece of code. It is common to describe boolean variables as “boolean flags” - these often are used to turn on and off different behaviors that might be useful.
 
-## [Assertion](#assertion)
+Design Pattern
+: A description of communicating objects and classes that are customized to solve a general design problem in a particular context. (Gamma et al. 1995, p. 3)
 
-A statement of the correct state of a program at some point, independent of how it does it. Typically, an ASSERTION specifies the result of an operation or an invariant of a design element.
-
----
-
-## [Behaviour Driven Development](#behaviour-driven-development)
-
-Behavior-Driven Development (BDD) is a set of software engineering practices designed to help teams build and deliver more valuable, higher quality software faster. It draws on Agile and lean practices including, in particular, Test-Driven Development (TDD) and Domain-Driven Design (DDD). But most importantly, BDD provides a common language based on simple, structured sentences expressed in English (or in the native language of the stakeholders) that facilitate communication between project team members and business stakeholders.
-
----
-
-## [Boolean Flag](#boolean-flag)
-
-Boolean values are regularly used to help maintain the state of a given piece of code. It is common to describe boolean variables as “boolean flags” - these often are used to turn on and off different behaviors that might be useful.
-
----
-
-## [Design Pattern](#design-Pattern)
-
-A description of communicating objects and classes that are customized to solve a general design problem in a particular context. (Gamma et al. 1995, p. 3)
-
----
-
-## [Domain](#domain)
-
-[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/domain) definition:
-
-An area of interest or an area over which a person has control:
+Domain
+: [Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/domain) definition: An area of interest or an area over which a person has control:
 
 * She treated the business as her private domain.
 * These documents are in the public domain (= available to everybody).
 
-[DDD Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) defintion
+: [DDD Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) defintion: A sphere of knowledge (ontology), influence, or activity. The subject area to which the user applies a program is the domain of the software.
 
-A sphere of knowledge (ontology), influence, or activity. The subject area to which the user applies a program is the domain of the software.
-
----
-
-## [Domain-Driven Design](#domain-driven-design)
-
-An approach to software development that suggests that:
+Domain-Driven Design
+: An approach to software development that suggests that:
 
 1. For most software projects, the primary focus should be on the domain and domain logic; and
 1. Complex domain designs should be based on a [model](#model).
 
----
+Domain Expert
+: A member of a software project whose field is the domain of the application, rather than software development. Not just any user of the software, the domain expert has deep knowledge of the subject.
 
-## [Domain Expert](#domain-expert)
+Domain Layer
 
-A member of a software project whose field is the domain of the application, rather than software development. Not just any user of the software, the domain expert has deep knowledge of the subject.
-
----
-
-## [Domain Layer](#domain-layer)
-
-That portion of the design and implementation responsible for domain logic within a [layered architecture](#layered-architecture). The domain layer is where the software expression of the domain model lives.
-
----
+: That portion of the design and implementation responsible for domain logic within a [layered architecture](#layered-architecture). The domain layer is where the software expression of the domain model lives.
 
 ## [Entity](#entity)
 

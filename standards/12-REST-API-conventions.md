@@ -9,12 +9,11 @@ title : REST API conventions
 * [API design rules](#api-design-rules)
 * Wanneer maak je een API?
 * Hoe bepaal je de scope en het doel van de API?
-* Resource en proces operaties
+* Resource and proces operations
 * Chaining
-* API Conventies
+* API Conventions
 * API of messaging
-* Design van events en callbacks
-* Case study: Connections API
+* Design of events and callbacks
 * Design authority
 
 ## Properties of a REST API

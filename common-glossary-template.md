@@ -9,16 +9,18 @@ projectname: Synobsys OutSystems
 
 # {{ page.title}}
 
+This glossary introduces {{page.projectname}} common terminology.
+
 * TOC
 {:toc}
 
-This glossary introduces {{page.projectname}} common terminology.
+## Architectural Decision
 
-Architectural Decision
-: Wikipedia [Architectural Decision](https://en.wikipedia.org/wiki/Architectural_decision): In software engineering and software architecture design, architectural decisions are design decisions that address architecturally significant requirements; they are perceived as hard to make and/or costly to change.
+Wikipedia [Architectural Decision](https://en.wikipedia.org/wiki/Architectural_decision): In software engineering and software architecture design, architectural decisions are design decisions that address architecturally significant requirements; they are perceived as hard to make and/or costly to change.
 
-Architectural Decision Record
-: An Architectural Decision Record (ADR) captures a single architectural-decision, such as often done when writing personal notes or meeting minutes; the collection of ADRs created and maintained in a project constitute its decision log. All these are within the topic of Architectural Knowledge Management (AKM). See also: [Architectural Descision Records](adr/intro.md)
+## Architectural Decision Record
+
+An Architectural Decision Record (ADR) captures a single architectural-decision, such as often done when writing personal notes or meeting minutes; the collection of ADRs created and maintained in a project constitute its decision log. All these are within the topic of Architectural Knowledge Management (AKM). See also: [Architectural Descision Records](adr/intro.md)
 
 ## Aggregate
 

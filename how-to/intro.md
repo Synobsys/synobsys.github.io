@@ -41,7 +41,7 @@ title: How-To Guides
 
 ## Exposing API's
 
-* [How to draft a REST API](how-to-draft-a-rest-api.md)
+* [How to design and build a REST API](how-to-draft-a-rest-api.md)
 * [How to Add Custom Authentication to an Exposed REST API](how-to-add-custom-authentication-to-an-exposed-rest-api.md)
 
 ## DevOps

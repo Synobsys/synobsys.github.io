@@ -10,11 +10,11 @@ projectname: Synobsys OutSystems
 # {{ page.title}}
 
 * TOC
-{:TOC}
+{:toc}
 
 ## This glossary introduces {{page.projectname}} common terminology.
 
-1. Term
+Term
 : Definition of the term
 
 ### [Architectural Decision](#architectural-decision) (AD)

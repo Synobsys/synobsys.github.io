@@ -24,9 +24,8 @@ Everyone involved in OutSystems development projects
 1. [Publications](/publications.md)
 1. [Glossary](/common-glossary-template.md)
 
-1. TOC
+* TOC
 {:toc}
-
 
 ## Architecture
 

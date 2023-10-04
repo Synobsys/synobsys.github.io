@@ -6,14 +6,17 @@ title: OutSystems Standards and Guidelines
 The following standards apply to all projects that are carried out under the direction of Synobsys.
 
 1. [Naming Conventions](2-OutSystemsNamingConventions.md)
-1. <a href="https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Platform_Best_Practices" target="_blank">OutSystems Platform Best Practices</a>
-1. <a href="https://leonardo-monteiro-fernandes.medium.com/a-code-style-guide-for-outsystems-97a923084159" target="_blank">Code style guide for OutSystems</a>
+1. [OutSystems Platform Best Practices]
+1. [Code Style Guide](3-CodeStyleGuide.md)
 1. [Server Action Security](4-ServerActionSecurity.md)
 1. [User Story Template](5-UserStoryTemplate.md)
 1. [Definition of Ready(DoR)](6-DefinitionOfReady.md)
 1. [Definition of Done(DoD)](7-DefinitionOfDone.md)
 1. [Code Review Checklist](8-CodeReviewChecklist.md)
-1. Apply the <a href="https://www.oreilly.com/library/view/97-things-every/9780596809515/ch08.html" target="_blank">The Boy Scout Rule</a>
+1. Apply the [The Boy Scout Rule]
 1. [list of approved forge components](10-approved-forge-components.md)
 1. [Standard resolutions for AI Mentor Studio findings](11-resolve-architecture-dashboard-findings.md)
 1. [REST API Conventions](12-REST-API-conventions)
+
+[OutSystems Platform Best Practices]: https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Platform_Best_Practices
+[The Boy Scout Rule]: https://www.oreilly.com/library/view/97-things-every/9780596809515/ch08.html

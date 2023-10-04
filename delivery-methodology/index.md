@@ -3,9 +3,7 @@ title: Project Delivery Methodology
 ---
 # {{page.title}}
 
-## Introduction
+* [ ] TODO write introduction
 
-* [] TODO write intro
-
-* [ ] TODO Delivery Practice
+* [Delivery Practice](delivery-practice.md)
 * [Roles and Responsibilities](roles-and-responsibilities.md)

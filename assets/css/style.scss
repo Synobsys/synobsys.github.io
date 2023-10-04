@@ -22,5 +22,9 @@ a[href^="https://synobsys.github.io"]::after
   display: none !important;
 } 
 footer{ 
+  margin-top: 10px;
   width: 100%;
+}
+footer > input {
+  width: 500px;
 }

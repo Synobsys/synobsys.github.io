@@ -7,10 +7,17 @@ en_title: Architecture
 * TOC
 {:toc}
 
-<pre class="script">
-template('MindTouch/Controls/PageOverview');
-</pre>
+## Architectural Knowledge Management (AKM)
 
-<pre class="script">
-template('MindTouch/IDF3/Views/Guide');
-</pre>
+* [Architecture Decision Records](/adr/intro.mdintro.md)
+* [Approved Forge Components](/standards/10-approved-forge-components.md)
+
+## Patterns
+
+* [Integration Patterns for Core Services Abstraction]
+* [Circuit Breaker Pattern: Make Your Apps Ready to Deal with Timeouts]
+* [ ] TBD Localization Ready data model with Entity Layers for Translated Fields and Non-Translated Fields [How to Design a Localization-Ready System]
+
+[Integration Patterns for Core Services Abstraction]: https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/05_Integration_Patterns_for_Core_Services_Abstraction
+[Circuit Breaker Pattern: Make Your Apps Ready to Deal with Timeouts]: https://www.outsystems.com/blog/posts/circuit-breaker-pattern/
+[How to Design a Localization-Ready System]: https://vertabelo.com/blog/data-modeling-for-multiple-languages-how-to-design-a-localization-ready-system/

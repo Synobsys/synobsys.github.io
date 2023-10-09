@@ -1,5 +1,5 @@
 ---
-title : How to design and build reusable APIs for your businessobjects according to the Synobsys conventions
+title : How to design and build reusable APIs for your business objects according to the Synobsys conventions
 ---
 # {{page.title}}
 
@@ -10,10 +10,11 @@ title : How to design and build reusable APIs for your businessobjects according
 
 ## Northwind data
 
-In this how to we'll create an ProductOrdering REST API for the [Northwind] forge component.
+In this how-to we'll create an ProductOrdering REST API for the [Northwind] database forge component using a design first approach.
 
 * [ ] TODO review this material:
 
+* [Api stylebook - design guidelines](http://apistylebook.com/design/guidelines/)
 * [REST API Tutorial]
 * [API Design Cheat Sheet]
 * [Canonical Models Should Be A Core Component Of Your API Strategy]
@@ -23,6 +24,12 @@ In this how to we'll create an ProductOrdering REST API for the [Northwind] forg
 ## Design the API
 
 * [ ] TODO design canonical schema and api methods see [Schema-First API Design]
+
+### Create a canonical schema
+
+<!-- see https://synobsys.outsystemscloud.com/ServiceCenter/Application_Edit.aspx?ApplicationKey=46cc85c0-9123-417e-9ee9-94125d3b0ec0 -->
+
+
 
 ## Setup OutSystems Applications and modules
 
@@ -171,7 +178,7 @@ For each method of the API we must provide a Canonical Business logic server act
 [Northwind]: https://www.outsystems.com/forge/component-overview/4152/northwind
 [REST API Tutorial]: https://www.restapitutorial.com/
 [API Design Cheat Sheet]: https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet
-[Canonical Models Should Be A Core Component Of Your API Strategy]: https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet
+[Canonical Models Should Be A Core Component Of Your API Strategy]: https://bostonfan.net/canonical-schema-best-practices
 [\[Wikipedia\] Canonical schema pattern]: https://en.wikipedia.org/wiki/Canonical_schema_pattern
 [The Web API Checklist -- 43 Things To Think About When Designing, Testing, and Releasing your API]: https://mathieu.fenniak.net/the-api-checklist/
 [Schema-First API Design]: https://dzone.com/articles/schema-first-api-design

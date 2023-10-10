@@ -14,7 +14,10 @@ In this how-to we'll create an ProductOrdering REST API for the [Northwind] data
 
 * [ ] TODO review this material:
 
-* [Api stylebook - design guidelines](http://apistylebook.com/design/guidelines/)
+* Forum standaardisatie - open standaarden [REST-API Design Rules]
+* [NLGov API Design Rules]
+* [Api stylebook - design guidelines]
+* [REST API Design Guidance]
 * [REST API Tutorial]
 * [API Design Cheat Sheet]
 * [Canonical Models Should Be A Core Component Of Your API Strategy]
@@ -24,12 +27,12 @@ In this how-to we'll create an ProductOrdering REST API for the [Northwind] data
 ## Design the API
 
 * [ ] TODO design canonical schema and api methods see [Schema-First API Design]
+* [RESTful API Design — Step By Step Guide]
+* [How to build a REST API?]
 
 ### Create a canonical schema
 
 <!-- see https://synobsys.outsystemscloud.com/ServiceCenter/Application_Edit.aspx?ApplicationKey=46cc85c0-9123-417e-9ee9-94125d3b0ec0 -->
-
-
 
 ## Setup OutSystems Applications and modules
 
@@ -186,3 +189,9 @@ For each method of the API we must provide a Canonical Business logic server act
 [REST Customized Errors]: https://www.outsystems.com/forge/component-overview/15593/rest-customized-errors
 [how to Add Custom Authentication to an Exposed REST API]: /how-to/how-to-add-custom-authentication-to-an-exposed-rest-api.md
 [Appropriate record counting]: https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/appropriate_record_counting/
+[REST API Design Guidance]: https://microsoft.github.io/code-with-engineering-playbook/design/design-patterns/rest-api-design-guidance/
+[Api stylebook - design guidelines]: http://apistylebook.com/design/guidelines/
+[REST-API Design Rules]: https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules
+[NLGov API Design Rules]: https://gitdocumentatie.logius.nl/publicatie/api/adr/
+[RESTful API Design — Step By Step Guide]: https://betterprogramming.pub/restful-api-design-step-by-step-guide-2f2c9f9fcdbf
+[How to build a REST API?]: https://blog.back4app.com/how-to-build-a-rest-api/

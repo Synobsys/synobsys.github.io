@@ -5,6 +5,9 @@ title : REST API conventions
 
 ## Contents
 
+* TOC
+{:toc}
+
 * [Properties of a REST API](#properties-of-a-rest-api)
 * [API design rules](#api-design-rules)
 * Wanneer maak je een API?

@@ -8,16 +8,16 @@ title : REST API conventions
 * TOC
 {:toc}
 
-* [Properties of a REST API](#properties-of-a-rest-api)
-* [API design rules](#api-design-rules)
-* Wanneer maak je een API?
-* Hoe bepaal je de scope en het doel van de API?
-* Resource and proces operations
-* Chaining
-* API Conventions
-* API of messaging
-* Design of events and callbacks
-* Design authority
+TODO:
+
+* [ ] When to expose an API?
+* [ ] How to determin the scope and the purpose of the API?
+* [ ] Resource and proces operations
+* [ ] Chaining
+* [ ] API Conventions
+* [ ] API of messaging
+* [ ] Design of events and callbacks
+* [ ] Design authority
 
 ## Properties of a REST API
 

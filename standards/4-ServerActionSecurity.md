@@ -2,7 +2,7 @@
 title: Server Action Security
 ---
 
-# Server Action Security
+# {{page.title}}
 
 * TOC
 {:toc}

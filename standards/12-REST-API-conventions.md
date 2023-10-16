@@ -11,7 +11,7 @@ title : REST API conventions
 TODO:
 
 * [ ] When to expose an API?
-* [ ] How to determin the scope and the purpose of the API?
+* [ ] How to determine the scope and the purpose of the API?
 * [ ] Resource and proces operations
 * [ ] Chaining
 * [ ] API Conventions

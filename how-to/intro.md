@@ -1,16 +1,16 @@
 ---
 title: How-To Guides
 ---
-# How-To Guides
+# {{page.title}}
 
 * TOC
 {:toc}
 
-[OutSystems How-To Guides]<a href="https://success.outsystems.com/Documentation/How-to_Guides" target="_blank"></a>
+[OutSystems How-to guides]
 
 ## Tips and Tricks
 
-* [Tips and Tricks](TipsAndTricks.md)
+* [Tips and tricks]
 
 ## Architecture
 
@@ -70,3 +70,5 @@ title: How-To Guides
 * [How to get started with the BDD test framework](How-to-get-started-with-the-BDD-testframework.md)
 
 [OutSystems How-To Guides]: https://success.outsystems.com/Documentation/How-to_Guides
+[OutSystems How-to guides]: https://success.outsystems.com/Documentation/How-to_Guides
+[Tips and tricks]: TipsAndTricks.md

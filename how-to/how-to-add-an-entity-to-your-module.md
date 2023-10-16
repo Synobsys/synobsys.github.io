@@ -10,6 +10,10 @@ Follow this guideline to setup the database actions.
 * TOC
 {:toc}
 
+## Instal Forge components
+
+Install the latest version of the [CRUD wrappers stencils](https://www.outsystems.com/forge/component-overview/13991/crud-wrappers-stencils) forge component
+
 ## Setup security
 
 1. Identify the role that that has permissions to modify the entity. E.g. FieldsAdmin
@@ -22,9 +26,9 @@ Follow this guideline to setup the database actions.
 
 ## Creating a new entity
 
-1. In ServiceStudio open \<YourCoreServices\> module
-1. With \<Ctrl+O\> open the Stencil_CoreServices_Pat module
-1. Go to the Stencil_CoreServices_Pat data tab \<Ctrl+4\>
+1. In ServiceStudio open `<YourCoreServices>` module
+1. With \<Ctrl+O\> open the `Stencil_DBActions_Pat` module
+1. Go to the Stencil_DBActions_Pat data tab \<Ctrl+4\>
 1. Copy **TemplateEntity** to your module
 1. Rename **TemplateEntity** to the **\<new entity name\>**
 1. Open the entity editor and enter a proper description for the entity
@@ -37,10 +41,10 @@ Follow this guideline to setup the database actions.
 
 ## Add database actions for the new entity
 
-1. Switch to the **Stencil_CoreServices_Pat** and go to Logic tab (Ctrl-3)
+1. Switch to the **Stencil_DBActions_Pat** and go to Logic tab (Ctrl-3)
 1. Make sure the folder **TemplateEntityDbActions** is collapsed
 1. Copy folder **TemplateEntityDbActions** and Paste it in **\<your core services module\>** logic tab
-1. Go to Data tab (Ctrl-4) and locate the **TemplateEntity** in the **Stencil_CoreServices_Pat** referenced module
+1. Go to Data tab (Ctrl-4) and locate the **TemplateEntity** in the **Stencil_DBActions_Pat** referenced module
 1. Find all usages of the TemplateEntity (F12)
 1. Use the button: Replace all instances with your new entity (select in the popup)
 1. Remove the TemplateEntity dependency (Del)
@@ -56,4 +60,4 @@ Follow this guideline to setup the database actions.
 
 ## Create BDD tests
 
-TK Nog invullen
+Now follow the [how to create entity BDD tests](/how-to/how-to-create-entity-bdd-tests-from-a-stencil.md) to create the test functionality.

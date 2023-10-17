@@ -48,6 +48,8 @@ N
 
 * [Learn 5 defensive programming techniques from experts]
 * [The Pragmatic Programmer: your journey to mastery, 20th Anniversary Edition, 2nd Edition]
+*[Defensive Programming Techniques Explained with Examples]
 
 [Learn 5 defensive programming techniques from experts]: https://www.techtarget.com/searchsoftwarequality/feature/Learn-5-defensive-programming-techniques-from-experts
 [The Pragmatic Programmer: your journey to mastery, 20th Anniversary Edition, 2nd Edition]: https://www.informit.com/store/pragmatic-programmer-your-journey-to-mastery-20th-anniversary-9780135957059
+[Defensive Programming Techniques Explained with Examples]: https://www.golinuxcloud.com/defensive-programming/

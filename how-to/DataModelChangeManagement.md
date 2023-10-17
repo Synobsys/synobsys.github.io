@@ -5,7 +5,9 @@ title: Data Model Change Management
 # Data Model Change Management
 
 When you make changes to the Data Model this may impact modules in all environments of your factory an can potentially raise blocking deployment issues.
-In the OutSystems reference is described <a href="https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Database_Reference/How_Data_Model_Changes_are_Handled" target="_blank">how Data Model changes are handled</a>. This article describes how to manage data model changes in your factory and when distributing your application (Forge component or ISV delivery) for the following:
+The OutSystems reference is describes [how Data Model changes are handled].
+
+This article describes how to manage data model changes in your factory and when distributing your application (Forge component or ISV delivery) for the following use cases:
 
 * TOC
 {:toc}
@@ -18,23 +20,20 @@ To do this there are several methods available depending on your installation an
 ### Drop attribute with SQL
 
 If you have database access you can use database management tools to drop columns. Be aware that once a column is dropped it's no longer save to revert to a version where that column exists and the data in the column is lost.
-[Access the database of your OutSystems Cloud](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Access_the_database_of_your_OutSystems_Cloud) describes how to get access to the SaaS database.
+[Access the database of your OutSystems Cloud] describes how to get access to the SaaS database.
 
 ### Drop attribute with the DBCleaner_API
 
-**WARNING!** Only to be used by experienced staff who understands the impact.
+**:warning:WARNING!** Only to be used by experienced staff who understands the impact.
 
-You can use the [DBCleaner_API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/DbCleaner_API) to manage your database. OutSystems recommends the use of the [DB Cleaner on Steroids](https://www.outsystems.com/forge/component-overview/5018/db-cleaner-on-steroids) forge component.
+You can use the [DBCleaner_API] to manage your database. OutSystems recommends the use of the [DB Cleaner on Steroids] forge component.
 
-Please refer to [Documentation](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=5018&ProjectName=db-cleaner-on-steroids) to understand the impact of using this component.
+Please refer to [DB Cleaner on Steroids Documentation] to understand the impact of using this component.
 
-**DISCLAIMER**
-
-_This component is provided AS-IS with no warranty and is **not** supported by OutSystems._
-
-_This component takes advantage of private and undocumented Platform APIs, which can change without notice. As a result, this component may unexpectedly break as the Platform is upgraded._
-
-_We advise proper testing to ensure that your applications continue to work as expected when upgrading/patching the Platform._
+>**:exclamation:DISCLAIMER** This component is provided AS-IS with no warranty and is **not** supported by OutSystems.
+>This component takes advantage of private and undocumented Platform APIs, which can change without notice. As a result, this component may unexpectedly break as the Platform is upgraded.
+>
+>We advise proper testing to ensure that your applications continue to work as expected when upgrading/patching the Platform.
 
 **Do not use this component in Production unless proper testing and certainty of the operations and its impacts on the data that exists in the environment.**
 
@@ -43,7 +42,7 @@ _We advise proper testing to ensure that your applications continue to work as e
 Beware of the reuse of deleted attributes that still exists as columns in the database.
 New attributes are always added as new columns at the end of the table. The order in Service Studio has no effect.
 
-## Renaming an Attribute (#RenamingAnAttribute)
+## Renaming an Attribute
 
 Try to avoid renaming an attribute, change the label instead. If a rename is necessary after you deployed to another environment use the following steps:
 
@@ -57,7 +56,7 @@ Try to avoid renaming an attribute, change the label instead. If a rename is nec
 
 ## Changing the data type of an Attribute
 
-First check if the type conversion is supported. If it is possible proceed with changing the datatype else follow the procedure described in [Renaming an Attribute](#RenamingAnAtribute)
+First check if the type conversion is supported. If it is possible proceed with changing the datatype else follow the procedure described in [Renaming an Attribute](#renaming-an-attribute)
 
 ## Changing the Length property of a Text Attribute
 
@@ -68,7 +67,7 @@ First check if the type conversion is supported. If it is possible proceed with 
     1. Deploy to all the environments in your factory
     1. Change the attribute to the new Length
     1. Deploy to all the environments in your factory
-* Old length <= 2000 new length > 2000: Consider placing the attribute in an extension entity following the [isolate large text and binary data](https://success.outsystems.com/Documentation/Best_Practices/Performance_and_Monitoring/Performance_Best_Practices_-_Data_model#Isolate_large_text_and_binary_data) best practice. The procedure is similar to the one described in [renaming an attribute](#)
+* Old length <= 2000 new length > 2000: Consider placing the attribute in an extension entity following the [isolate large text and binary data] best practice. The procedure is similar to the one described in [renaming an attribute](#renaming-an-attribute)
 * Old length > 2000 New length <= 2000 : No auto conversion is possible follow the [renaming an attribute](#) procedure
 
 ## Adding a unique index
@@ -90,3 +89,10 @@ When you make a foreign key mandatory a NOT NULL is added to the column. If ther
 ## Make an attribute mandatory
 
 If you make an attribute mandatory that is not a foreign key no check is made in the database thus empty values are allowed. You must add validation logic to ensure that the field is not empty in both the crud wrappers as in the front end validations.
+
+[how Data Model changes are handled]: https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Database_Reference/How_Data_Model_Changes_are_Handled
+[Access the database of your OutSystems Cloud]: https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Access_the_database_of_your_OutSystems_Cloud
+[DBCleaner_API]: https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/DbCleaner_API
+[DB Cleaner on Steroids]: https://www.outsystems.com/forge/component-overview/5018/db-cleaner-on-steroids
+[DB Cleaner on Steroids Documentation]: https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=5018&ProjectName=db-cleaner-on-steroids
+[isolate large text and binary data]: https://success.outsystems.com/Documentation/Best_Practices/Performance_and_Monitoring/Performance_Best_Practices_-_Data_model#Isolate_large_text_and_binary_data

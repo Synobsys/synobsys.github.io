@@ -20,3 +20,14 @@ Everyone involved in OutSystems development projects
 1. [Referenced OutSystems documentation](outsystems-reference.html)
 1. [Publications](/publications.md)
 1. [Glossary](/common-glossary-template.md)
+
+### OutSystems Developer Cloud (ODC)
+
+Due to its different architecture there are some ODC Specific topics.
+
+1. [Preparing your OutSystems 11 apps to ODC]
+1. [ ] TODO ODC Architecture
+1. [ ] TODO ODC specific standards
+1. [ ] TODO ODC Recipes
+
+[Preparing your OutSystems 11 apps to ODC]: https://raphael-ranieri.medium.com/59f5a60a1f18

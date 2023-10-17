@@ -3,12 +3,9 @@ title: OutSystems Naming Conventions
 ---
 # OutSystems Naming Conventions
 
-* TOC
-{:toc}
-
 ## Language
 
-    TODO Issue #4 ADR and Template for Common Glossary
+* [ ] TODO Create an ADR and Template for Common Glossary
 
 * All OutSystems code (Service Studio and Integration Studio), including comments and documentation will be in English. [ADR-002](adr\ADR-002-standard-language-is-English.html)
 * Business terms in the OutSystems model will be in English and be taken from the [Common Glossary](../common-glossary-template.html).

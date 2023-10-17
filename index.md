@@ -39,5 +39,5 @@ Due to its different architecture there are some ODC Specific topics.
 [Security of OutSystems Developer Cloud]: https://success.outsystems.com/documentation/outsystems_developer_cloud/security_of_outsystems_developer_cloud/
 [Sharing data defined in ODC]: https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/data_in_outsystems_apps/sharing_data_defined_in_outsystems/
 
-* [ODC] OutSystems Developer Cloud
-* [O11] OutSystems 11
+* [ODC]: OutSystems Developer Cloud
+* [O11]: OutSystems 11

@@ -24,6 +24,12 @@ Title Publish Environment YOURENVIRONMENTNAME
 
 ---
 
+## Appropriate record counting in SQL queries
+
+See this documentation article: [Appropriate record counting](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/appropriate_record_counting/)
+
+---
+
 ## 3 ways to LEVEL UP your SQL skills in OutSystems
 
 In this episode, OutSystems Developer Advocate Rui Barbosa shows us 3 different perspectives to take your SQL skills to the next level. See why SQL nodes can be better than always using Aggregates, how Indexes can help you control query execution (and improve performance), and how you can leverage modern SQL syntax in your OutSystems queries!

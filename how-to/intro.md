@@ -13,6 +13,7 @@ Recipes how to perform OutSystems tasks
 ## Tips and Tricks
 
 * [Tips and tricks]
+* [Static Entity Alternatives] to reduce AO consumption.
 
 ## Architecture
 
@@ -75,3 +76,4 @@ Recipes how to perform OutSystems tasks
 [Tips and tricks]: TipsAndTricks.md
 [Test Automation in the Delivery Lifecycle]: https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Test_Automation_in_the_Delivery_Lifecycle
 [How to get started with the BDD test framework]: How-to-get-started-with-the-BDD-testframework.md
+[Static Entity Alternatives]: /how-to/static-entity-alternatives.md

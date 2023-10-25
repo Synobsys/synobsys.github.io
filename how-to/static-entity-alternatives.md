@@ -16,17 +16,17 @@ This article describes the following alternatives:
 
 ## Constant local variables
 
-For a single value you can just define a local variable and give it a default value. To emphasize its constant behavior you can prefix these local variables with `CONST_`. E.g. `CONST_MaxRecords`
+For a single value you can just define a local variable and give it a default value. To emphasize its constant behavior you can prefix these local variables with **Constant**. E.g. **ConstantMaxRecords**
 
-![Local var CONST_MaxRecords](/how-to/images/LocalVarCONST_MaxRecords.png)
+![Local var ConstantMaxRecords](/how-to/images/ConstantMaxRecords.png)
 
 ## Constant functions
 
-When a literal is used multiple times you can create a Function Server Action that returns the fixed value. This may be useful for configuration values etc. Also here prefixing the name with `CONST_` is used. E.g. `CONST_DefaultPageSize`.
+When a literal is used multiple times you can create a Function Server Action that returns the fixed value. This may be useful for configuration values etc. Also here prefixing the name with **Constant** is used. E.g. **ConstantDefaultPageSize**.
 
 Please note: When it's required to te able to change this values at runtime you should use site properties in O11 or Settings in ODC.
 
-![Function Const_DefaultPageSize](/how-to/images/Function_Const_DefaultPageSize.png)
+![Function Const_DefaultPageSize](/how-to/images/Function_ConstantDefaultPageSize.png)
 
 ## JSON import
 

@@ -53,28 +53,28 @@ We provide a JSON with the id and the name and of weekdays.
 * Which gives us a weekday structure that we will use in our logic.
 * Now import the json file in the resources folder.
 
-Server Action WeekDayGet:
+Server Action **WeekDayGet**:
 
-* In the logic tab we create a new folder `Weekday` in the server actions folder.
-* In this folder we create a new server action WeekdayGet with output parameter Weekdays.
+* In the logic tab we create a new folder "**Weekday**" in the server actions folder.
+* In this folder we create a new server action "**WeekdayGet**"" with output parameter "**Weekdays**".
 
 ![Server Action Weekdays](/how-to/images/SA_Weekdays.png)
 
-* Add a BinaryToText action to the logic, set parameter binary data to `Resources.weekdays_json.Content`
-* Add a JSONDeserialize to convert the json to a weekday list
-* Add a an assign to add the converted list to the output list
+* Add a "**BinaryToText**" action to the logic, set parameter binary data to "**Resources.weekdays_json.Content**"
+* Add a "**JSONDeserialize**" to convert the json to a weekday list
+* Add a an "**assign**" to add the converted list to the output list
 
 ![WeekDayGet logic](/how-to/images/WeekDayGetLogic.png)
 
-Server Action Function WeekdayGetById:
+Server Action Function **WeekdayGetById**:
 
-* Create a Server Action WeekdayGetById in the folder Weekday
-* Add an input parameter WeekdayId type integer
-* Add an output parameter Weekday, type Weekday
-* In the action flow add a server action WeekdayGet
-* Add a ListFilter to filter the Weekday List on WeekDayId
-* Raise an Exception if the day is nost found
-* Assign the found weekday from the list to the output parameter
+* Create a Server Action **WeekdayGetById** in the folder **Weekday**
+* Add an input parameter **WeekdayId** type integer
+* Add an output parameter **Weekday**, type Weekday
+* In the action flow add a server action **WeekdayGet**
+* Add a **ListFilter** to filter the Weekday List on WeekDayId
+* Raise an **Exception** if the day is nost found
+* **Assign** the found weekday from the list to the output parameter
 
 ![WeekdayGetById logic](/how-to/images/WeekDayGetById.png)
 
@@ -86,16 +86,16 @@ As an alternative we can import and convert an Excel file.
 
 Given an Excel file Categories with columns Name, Slug and Description we can create a Category structure and CategoryGet and CategoryGetBySlug functions.
 
-* In the Data tab import the Categories.xsls file
-* Create a new structure Category with attributes:
-    * Name
-    * Slug
-    * Description
-* Create a server action CategoryGet with output parameter Categories
-* Add an ExcelToRecordList action to the action flow
-    * Record definition: Category
-    * File content: Resources.Categories_xlsx.Content
-* Assign the ExcelToRecordList1 to Categories
+* In the Data tab import the "**Categories.xsls**" file
+* Create a new structure "**Category**" with attributes:
+    * **Name**
+    * **Slug**
+    * **Description**
+* Create a server action **CategoryGet** with output parameter **Categories**
+* Add an **ExcelToRecordList** action to the action flow
+    * Record definition: **Category**
+    * File content: **Resources.Categories_xlsx.Content**
+* Assign the **ExcelToRecordList1** to **Categories**
 
 ![CategoryGet](/how-to/images/CategoryGet.png)
 

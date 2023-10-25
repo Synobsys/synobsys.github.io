@@ -12,17 +12,17 @@ This article describes the following alternatives:
 1. [Constant local variables](#constant-local-variables)
 1. [Constant functions](#constant-functions)
 1. [JSON import](#json-import)
-1. [Excel import](#excell-import)
+1. [Excel import](#excel-import)
 
 ## Constant local variables
 
-For a single value you can just define a local variable and give it a default value. To emphasize its constant caracter you can prefix these local variables with "CONST_". E.g. CONST_MaxRecords
+For a single value you can just define a local variable and give it a default value. To emphasize its constant behavior you can prefix these local variables with `CONST_`. E.g. `CONST_MaxRecords`
 
 ![Local var CONST_MaxRecords](/how-to/images/LocalVarCONST_MaxRecords.png)
 
 ## Constant functions
 
-When a literal is used multiple times you can create a Function Server Action that returns the fixed value. This may be useful for configuration values etc. Also here prefixing the name with "CONST_" is used. E.g. CONST_DefaultPageSize.
+When a literal is used multiple times you can create a Function Server Action that returns the fixed value. This may be useful for configuration values etc. Also here prefixing the name with `CONST_` is used. E.g. `CONST_DefaultPageSize`.
 
 Please note: When it's required to te able to change this values at runtime you should use site properties in O11 or Settings in ODC.
 
@@ -57,10 +57,13 @@ Server Action WeekDayGet:
 
 * In the logic tab we create a new folder `Weekday` in the server actions folder.
 * In this folder we create a new server action WeekdayGet with output parameter Weekdays.
+
 ![Server Action Weekdays](/how-to/images/SA_Weekdays.png)
+
 * Add a BinaryToText action to the logic, set parameter binary data to `Resources.weekdays_json.Content`
 * Add a JSONDeserialize to convert the json to a weekday list
 * Add a an assign to add the converted list to the output list
+
 ![WeekDayGet logic](/how-to/images/WeekDayGetLogic.png)
 
 Server Action Function WeekdayGetById:
@@ -93,8 +96,10 @@ Given an Excel file Categories with columns Name, Slug and Description we can cr
     * Record definition: Category
     * File content: Resources.Categories_xlsx.Content
 * Assign the ExcelToRecordList1 to Categories
+
 ![CategoryGet](/how-to/images/CategoryGet.png)
 
 *[AO]: Application Object
 *[O11]: OutSystems 11
 *[ODC]: OutSystems Developer Cloud
+*[JSON]: JavaScript Object Notation [Wikipedia JSON](https://en.wikipedia.org/wiki/JSON)

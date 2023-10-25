@@ -9,10 +9,10 @@ The default method to store a list of values in OutSystems is to use a Static En
 
 This article describes the following alternatives:
 
-1. [Constant local variables]
-1. 'Constant' functions
-1. Json import
-1. Excell import
+1. [Constant local variables](#constant-local-variables)
+1. [Constant functions](#constant-functions)
+1. [JSON import](#json-import)
+1. [Excel import](#excell-import)
 
 ## Constant local variables
 
@@ -28,13 +28,13 @@ Please note: When it's required to te able to change this values at runtime you 
 
 ![Function Const_DefaultPageSize](/how-to/images/Function_Const_DefaultPageSize.png)
 
-## Json import
+## JSON import
 
-When you require a record list you can import a json file and convert it to a structure list.
+When you require a record list you can import a JSON file and convert it to a structure list.
 
 ### Example Weekdays
 
-We provide a json with the id and the name and of weekdays.
+We provide a JSON with the id and the name and of weekdays.
 
 ```json
 [
@@ -75,13 +75,13 @@ Server Action Function WeekdayGetById:
 
 ![WeekdayGetById logic](/how-to/images/WeekDayGetById.png)
 
-## Excell import
+## Excel import
 
-As an alternative we can import and convert an Excell file.
+As an alternative we can import and convert an Excel file.
 
 ### Example Categories
 
-Given an excell file Categories with columns Name, Slug and Description we can create a Category structure and CategoryGet and CategoryGetBySlug functions.
+Given an Excel file Categories with columns Name, Slug and Description we can create a Category structure and CategoryGet and CategoryGetBySlug functions.
 
 * In the Data tab import the Categories.xsls file
 * Create a new structure Category with attributes:

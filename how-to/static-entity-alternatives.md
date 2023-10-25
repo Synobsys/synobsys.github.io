@@ -102,4 +102,3 @@ Given an Excel file Categories with columns Name, Slug and Description we can cr
 *[AO]: Application Object
 *[O11]: OutSystems 11
 *[ODC]: OutSystems Developer Cloud
-*[JSON]: JavaScript Object Notation [Wikipedia JSON](https://en.wikipedia.org/wiki/JSON)

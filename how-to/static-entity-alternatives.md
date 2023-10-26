@@ -3,9 +3,9 @@ title: Static Entity Alternatives
 ---
 # {{page.title}}
 
-An computing best practice is not to use literals in your code. This is known as hard-coding and it harder to maintain your code.
+An computing best practice is not to use literals in your code. This is known as hard-coding and it makes it harder to maintain your code.
 
-The default method to store a list of values in OutSystems is to use a Static Entity. The drawback of using static entities is that Each static enitity counts for an Application Object (AO). Since most licences include a limited amount of AO's we want to avoid using them for static entities.
+The default method to store a list of values in OutSystems is to use a Static Entity. The drawback of using static entities is that each static enitity counts for an Application Object (AO). Since most licences include a limited amount of AO's we want to avoid using them for static entities.
 
 This article describes the following alternatives:
 
@@ -24,7 +24,7 @@ For a single value you can just define a local variable and give it a default va
 
 When a literal is used multiple times you can create a Function Server Action that returns the fixed value. This may be useful for configuration values etc. Also here prefixing the name with **Constant** is used. E.g. **ConstantDefaultPageSize**.
 
-Please note: When it's required to te able to change this values at runtime you should use site properties in O11 or Settings in ODC.
+Please note: When it's required to be able to change these values at runtime you should use site properties in O11 or Settings in ODC.
 
 ![Function Const_DefaultPageSize](/how-to/images/Function_ConstantDefaultPageSize.png)
 
@@ -34,7 +34,7 @@ When you require a record list you can import a JSON file and convert it to a st
 
 ### Example Weekdays
 
-We provide a JSON with the id and the name and of weekdays.
+We provide a JSON with the id and the name of the weekdays.
 
 ```json
 [
@@ -48,15 +48,15 @@ We provide a JSON with the id and the name and of weekdays.
 ]
 ```
 
-* In Service Studion we create a structure from json
+* In Service Studio we create a structure from json
 ![Add structure from json](/how-to/images/AddStructureFromJSon.png)
 * Which gives us a weekday structure that we will use in our logic.
 * Now import the json file in the resources folder.
 
 Server Action **WeekDayGet**:
 
-* In the logic tab we create a new folder "**Weekday**" in the server actions folder.
-* In this folder we create a new server action "**WeekdayGet**"" with output parameter "**Weekdays**".
+* In the logic tab we create a new folder "**Weekday**" in the server actions folder
+* In this folder we create a new server action "**WeekdayGet**"" with output parameter "**Weekdays**"
 
 ![Server Action Weekdays](/how-to/images/SA_Weekdays.png)
 
@@ -69,11 +69,11 @@ Server Action **WeekDayGet**:
 Server Action Function **WeekdayGetById**:
 
 * Create a Server Action **WeekdayGetById** in the folder **Weekday**
-* Add an input parameter **WeekdayId** type integer
+* Add an input parameter **WeekdayId**, type integer
 * Add an output parameter **Weekday**, type Weekday
 * In the action flow add a server action **WeekdayGet**
 * Add a **ListFilter** to filter the Weekday List on WeekDayId
-* Raise an **Exception** if the day is nost found
+* Raise an **Exception** if the day is not found
 * **Assign** the found weekday from the list to the output parameter
 
 ![WeekdayGetById logic](/how-to/images/WeekDayGetById.png)

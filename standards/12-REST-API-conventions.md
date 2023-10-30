@@ -12,7 +12,7 @@ TODO:
 
 * [ ] When to expose an API?
 * [ ] How to determine the scope and the purpose of the API?
-* [ ] Resource and proces operations
+* [ ] Resource and process operations
 * [ ] Chaining
 * [ ] API Conventions
 * [ ] API of messaging
@@ -34,7 +34,7 @@ TODO:
 
 Use HTTP verbs to operate on the collections and elements.
 
-* Primair resource- and not action-oriented (such as SOAP/RPC)
+* Primary resource- and not action-oriented (such as SOAP/RPC)
 * Avoid verbs in the API: that's what the standard operations are for
 * Client needs to implement more logic
 * The starting point is two base URLs per resource: collection and object
@@ -169,9 +169,9 @@ Authentication methods:
 
 * Basic - UserId and Password
 * Custom using an API Key
-* Custom using an Authorisation token e.g. JWT, OpenId etc. see [Protect OutSystems REST APIs using OpenID Connect](https://itnext.io/protect-outsystems-rest-apis-using-openid-connect-87a2ac7575c1)
+* Custom using an Authorization token e.g. JWT, OpenId etc. see [Protect OutSystems REST APIs using OpenID Connect](https://itnext.io/protect-outsystems-rest-apis-using-openid-connect-87a2ac7575c1)
 
-#### Custom authenthication with an API Key
+#### Custom authentication with an API Key
 
 Following the steps described in [Add Custom Authentication to an Exposed REST API](https://success.outsystems.com/documentation/11/extensibility_and_integration/rest/expose_rest_apis/add_custom_authentication_to_an_exposed_rest_api/) we will implement authentication using an API Key.
 
@@ -191,7 +191,7 @@ Following the steps described in [Add Custom Authentication to an Exposed REST A
 
 <https://www.npmjs.com/package/swagger-cli>
 
-npm i swagger-cli@2.3.5 –g (dus niet laatste versie gebruiken)
+npm i swagger-cli@2.3.5 –g (Do **NOT** use the latest version)
 
 ### Swagger IO
 

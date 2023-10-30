@@ -5,7 +5,7 @@ title: Static Entity Alternatives
 
 An computing best practice is not to use literals in your code. This is known as hard-coding and it harder to maintain your code.
 
-The default method to store a list of values in OutSystems is to use a Static Entity. The drawback of using static entities is that Each static enitity counts for an Application Object (AO). Since most licences include a limited amount of AO's we want to avoid using them for static entities.
+The default method to store a list of values in OutSystems is to use a Static Entity. The drawback of using static entities is that Each static entity counts for an Application Object (AO). Since most licenses include a limited amount of AO's we want to avoid using them for static entities.
 
 This article describes the following alternatives:
 
@@ -48,7 +48,7 @@ We provide a JSON with the id and the name and of weekdays.
 ]
 ```
 
-* In Service Studion we create a structure from json
+* In Service Studio we create a structure from json
 ![Add structure from json](/how-to/images/AddStructureFromJSon.png)
 * Which gives us a weekday structure that we will use in our logic.
 * Now import the json file in the resources folder.
@@ -73,7 +73,7 @@ Server Action Function **WeekdayGetById**:
 * Add an output parameter **Weekday**, type Weekday
 * In the action flow add a server action **WeekdayGet**
 * Add a **ListFilter** to filter the Weekday List on WeekDayId
-* Raise an **Exception** if the day is nost found
+* Raise an **Exception** if the day is not found
 * **Assign** the found weekday from the list to the output parameter
 
 ![WeekdayGetById logic](/how-to/images/WeekDayGetById.png)
@@ -86,7 +86,7 @@ As an alternative we can import and convert an Excel file.
 
 Given an Excel file Categories with columns Name, Slug and Description we can create a Category structure and CategoryGet and CategoryGetBySlug functions.
 
-* In the Data tab import the "**Categories.xsls**" file
+* In the Data tab import the "**Categories.xlsx**" file
 * Create a new structure "**Category**" with attributes:
     * **Name**
     * **Slug**

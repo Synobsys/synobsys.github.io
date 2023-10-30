@@ -5,6 +5,8 @@ title : How to design and build reusable APIs for your business objects accordin
 
     🏗️ DRAFT This page is under construction 
 
+![restfull image](/how-to/images/rest.png)
+
 * TOC
 {:toc}
 
@@ -52,18 +54,18 @@ In this how-to we'll create an ProductOrdering REST API for the [Northwind] data
         * What are you building: Service
         * Name: \[Domain concept API\] (Sample Product API)
         * Description: ?
-        * Upload icon: upload an meaninfull icon
+        * Upload icon: upload an meaningful icon
         * Create App
-    1. Go to Service Studio, wait until the application synchronised from lifetime and open the application
+    1. Go to Service Studio, wait until the application synchronized from lifetime and open the application
     1. Add Canonical Scheme module
         * Name: SampleProductSchema_Lib
         * Type: Library
         * Set the description to: "Sample Product concept canonical schema."
         * Publish the module
-    1. Add Canonical Business Logic CBL Lmodule
+    1. Add Canonical Business Logic CBL module
         * Name: SampleProduct_CBL
         * Type: Service
-        * Set the description to: "SampleProduct Canonical Business Logis (CBL). Provides server actions to be used for exposing data in web services tranforming the Entity records to the canonical schema."
+        * Set the description to: "SampleProduct Canonical Business Logic (CBL). Provides server actions to be used for exposing data in web services transforming the Entity records to the canonical schema."
         * Publish the module
     1. Add API Module
         * Name: SampleProduct_API
@@ -93,10 +95,10 @@ Because there is no naming convention for rest apis we adhere to the OutSystem
     1. Select an entity to be exposed e.g. Order.
     1. Copy the Order entity and past it in the library module as a structure
     1. Remove the Id attribute. As a rule we don't expose internal table record id's
-    1. There will be errors for all references to other entities resolve this by copying the referenced entity and change the attribute to the coresponding structure. E.g. Order.CustomerId - Customer Identifier -> Order.Customer - Customer structure
+    1. There will be errors for all references to other entities resolve this by copying the referenced entity and change the attribute to the corresponding structure. E.g. Order.CustomerId - Customer Identifier -> Order.Customer - Customer structure
 1. Set the Public attribute of the structures to Yes.
 1. Publish the module
-1. To accomodate pagination we need to create a list with count structure so that we can return a page of records and a count of the total available records. Steps:
+1. To accommodate pagination we need to create a list with count structure so that we can return a page of records and a count of the total available records. Steps:
     1. Create a new "list" structure e.g. ProductsPage
     1. Add a structure attribute Products type product list
     1. Add a structure attribute Count, type LongInteger
@@ -109,7 +111,7 @@ For each method of the API we must provide a Canonical Business logic server act
 
 #### Example retrieve a paged Product list
 
-1. Open the Norhtwind_CBL Module
+1. Open the Northwind_CBL Module
 1. Add a dependency to NorthwindSchemaLib Category, Product and ProductsPage
 1. Add a new server action "ProductGet
 1. Add the following input parameters:
@@ -124,12 +126,12 @@ For each method of the API we must provide a Canonical Business logic server act
     * Add wildcards to the non empty Search parameter
     * Add an aggregate with Product and Category as sources
     * Filter the aggregate on Category and Search
-    * Set Results.Products to the AgregateName.List
-    * Set Results.Count to the AggrageteName.Count
+    * Set Results.Products to the Aggregate Name.List
+    * Set Results.Count to the Aggregate Name.Count
     * Convert the aggregate to SQL
     * Add input parameters StartIndex and MaxRecords to the SQL
     * Add an Integer structure to the output of the SQL
-    * Add a seperate count aggregate and minimize the joins.
+    * Add a separate count aggregate and minimize the joins.
     * Add the following line to the end of the SQL: `OFFSET @StartIndex ROWS FETCH NEXT @MaxRecords  ROWS ONLY`
     * Set the SQL.StartIndex to (Page-1)*PerPage
     * Set MaxRecords to PerPage

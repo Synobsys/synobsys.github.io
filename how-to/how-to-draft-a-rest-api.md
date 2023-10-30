@@ -5,7 +5,7 @@ title : How to design and build reusable APIs for your business objects accordin
 
     🏗️ DRAFT This page is under construction 
 
-![restfull image](/how-to/images/rest.png)
+![rest image](/how-to/images/rest.png)
 
 * TOC
 {:toc}

@@ -59,6 +59,7 @@ Server Action **WeekDayGet**:
 
 * In the logic tab we create a new folder "**Weekday**" in the server actions folder
 * In this folder we create a new server action "**WeekdayGet**"" with output parameter "**Weekdays**"
+* To improve performance set the property "Cache in minutes" a value e.g. 120
 
 ![Server Action Weekdays](/how-to/images/SA_Weekdays.png)
 
@@ -100,6 +101,18 @@ Given an Excel file Categories with columns Name, Slug and Description we can cr
 * Assign the **ExcelToRecordList1** to **Categories**
 
 ![CategoryGet](/how-to/images/CategoryGet.png)
+
+## Pros and Cons
+
+Although the solutions above avoid consuming AO's it add extra complexity to your code. Extra logic is required for the following use cases:
+
+* Joining in aggregates and sql queries
+* Applying translations
+* Multi-tenancy
+
+In addition there can be a significant performance impact.
+
+Therefore, make a careful consideration before choosing a static entity or one of the alternatives.
 
 *[AO]: Application Object
 *[O11]: OutSystems 11

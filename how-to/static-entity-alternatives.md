@@ -7,7 +7,7 @@ title: Static Entity Alternatives
 
 A computing best practice is not to use literals in your code. This is known as hard-coding and it makes it harder to maintain your code.
 
-The default method to store a list of values in OutSystems is to use a Static Entity. The drawback of using static entities is that each static entity counts for an Application Object (AO). Since most licenses include a limited amount of AO's we want to avoid using them for static entities.
+The default method to store a list of values in OutSystems is to use a Static Entity. The drawback of using static entities is that each static entity counts for an Application Object (AO). Since most licenses include a limited amount of AO's consider one of the alternatives to avoid using AO's for static entities.
 
 This article describes the following alternatives:
 

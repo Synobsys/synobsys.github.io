@@ -15,24 +15,55 @@ title : How to design and build reusable APIs for your business objects accordin
 In this how-to we'll create an ProductOrdering REST API for the [Northwind] database forge component using a design first approach.
 
 * [ ] TODO review this material:
-
-* Forum standaardisatie - open standaarden [REST-API Design Rules]
-* [NLGov API Design Rules]
-* [Api stylebook - design guidelines]
-* [REST API Design Guidance]
-* [REST API Tutorial]
-* [API Design Cheat Sheet]
-* [Canonical Models Should Be A Core Component Of Your API Strategy]
-* [\[Wikipedia\] Canonical schema pattern]
-* [The Web API Checklist -- 43 Things To Think About When Designing, Testing, and Releasing your API]
+* [x] [NLGov API Design Rules]
+* [x] [OpenAPI Specification]
+* [x] [Api stylebook - design guidelines]
+* [x] [REST API Design Guidance]
+* [ ] [REST API Tutorial]
+* [ ] [API Design Cheat Sheet]
+* [ ] [Canonical Models Should Be A Core Component Of Your API Strategy]
+* [ ] [\[Wikipedia\] Canonical schema pattern]
+* [ ] [The Web API Checklist -- 43 Things To Think About When Designing, Testing, and Releasing your API]
 
 ## Design the API
 
-* [ ] TODO design canonical schema and api methods see [Schema-First API Design]
-* [RESTful API Design — Step By Step Guide]
-* [How to build a REST API?]
+The api must facilitate creating an order.
+
+![Product Ordering Data Model][ProductOrderingDatamodel]
+
+Derived from the Northwind Order data model we we need the following  canonical structures:
+
+| Structure | Description |
+| --- | --- |
+| Category | Category canonical structure |
+| Customer | Customer canonical structure |
+| CustomersPage | List of customers and count |
+| Order | Order canonical structure |
+| OrderObject | Order and OrderProduct details |
+| OrderProduct | OrderProduct canonical structure |
+| OrdersPage | List of orders and count |
+| Product | Product canonical structure |
+| ProductObject | Product detailed structure |
+| ProductsPage | List of products and count |
+| Shipper | Shipper canonical structure |
+
+To enable product ordering we require the following Api methods:
+
+| Name | HTTP Method | URL Path | Description |
+| -- |--- | --- | --- |
+| CategoryGet | GET | /categories | Returns a list of categories |
+| CustomerGet | GET | /customers | Retrieves a paginated list of customers
+| CustomerGetById | GET | /customers/{customer_id} | Returns the customer details for a given customer. |
+| CustomerOrderGet | GET | /customers/{customer_id}/orders | Retrieves a list of orders for a specific customer. |
+| OrderCreate | POST | /orders | Place an order |
+| OrderGet | GET | /orders | Retrieve a paginates list of orders |
+| OrderGetById | GET | /orders/{order_id} | Return the details of a specific order |
+| ProductGet | GET | /products | Retrieve a paginated list of products that meet the search parameters. |
+| ProductGetById | GET | /products/{ProductId} | Retrieve details of a specific product.
 
 ### Create a canonical schema
+
+* [ ] TODO design canonical schema and api methods see [Schema-First API Design]
 
 <!-- see https://synobsys.outsystemscloud.com/ServiceCenter/Application_Edit.aspx?ApplicationKey=46cc85c0-9123-417e-9ee9-94125d3b0ec0 -->
 
@@ -40,11 +71,16 @@ In this how-to we'll create an ProductOrdering REST API for the [Northwind] data
 
 ### Architecture
 
-* [ ] TODO Insert picture
+![Product Ordering Architecture Canvas](/how-to/images/ProductOrderingArchitecture.png)
 
-* Canonical Schema Library: A library containing the canonical schemas used in the apo
-* Canonical Business Logic:  A service module exposing Server Actions in canonical schema format.
-* API module exposing the REST API
+The product ordering api application consists of the following modules:
+
+* **NortwindDB** The core service module that exposes the Northwind database
+* **NorthwindSchema_Lib** Library containing the canonical schemas used in the api.
+* **Northwind_CBL** A Canonical Business Logic service module exposing Server Actions in canonical schema format.
+* **ProductOrdering_API** API module exposing the REST API
+
+### Implementation steps
 
 1. Create Application Product API
     1. Open Lifetime (\<your environment \>/lifetime/Applications.aspx )
@@ -132,7 +168,7 @@ For each method of the API we must provide a Canonical Business logic server act
     * Add input parameters StartIndex and MaxRecords to the SQL
     * Add an Integer structure to the output of the SQL
     * Add a separate count aggregate and minimize the joins.
-    * Add the following line to the end of the SQL: `OFFSET @StartIndex ROWS FETCH NEXT @MaxRecords  ROWS ONLY`
+    * Add the following line to the end of the SQL: `OFFSET @StartIndex ROWS FETCH NEXT @MaxRecords ROWS ONLY`
     * Set the SQL.StartIndex to (Page-1)*PerPage
     * Set MaxRecords to PerPage
     * Check that the Results output is correct.
@@ -193,7 +229,6 @@ For each method of the API we must provide a Canonical Business logic server act
 [Appropriate record counting]: https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/appropriate_record_counting/
 [REST API Design Guidance]: https://microsoft.github.io/code-with-engineering-playbook/design/design-patterns/rest-api-design-guidance/
 [Api stylebook - design guidelines]: http://apistylebook.com/design/guidelines/
-[REST-API Design Rules]: https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules
 [NLGov API Design Rules]: https://gitdocumentatie.logius.nl/publicatie/api/adr/
-[RESTful API Design — Step By Step Guide]: https://betterprogramming.pub/restful-api-design-step-by-step-guide-2f2c9f9fcdbf
-[How to build a REST API?]: https://blog.back4app.com/how-to-build-a-rest-api/
+[OpenAPI Specification]: ttps://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md
+[ProductOrderingDatamodel]: /how-to/images/ProductOrderingDatamodel.png

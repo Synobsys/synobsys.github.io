@@ -5,6 +5,8 @@ title: OutSystems Standards and Guidelines
 
 The following standards apply to all projects that are carried out under the direction of Synobsys.
 
+For these standards the [comply or explain] rule applies. Deviations from these standards must be documented in an [Architectural Decision Record]
+
 1. [Naming Conventions](2-OutSystemsNamingConventions.md)
 1. [OutSystems Platform Best Practices]
 1. [Code Style Guide](3-CodeStyleGuide.md)
@@ -18,5 +20,9 @@ The following standards apply to all projects that are carried out under the dir
 1. [Standard resolutions for AI Mentor Studio findings](11-resolve-architecture-dashboard-findings.md)
 1. [REST API Conventions](12-REST-API-conventions)
 
+
+
 [OutSystems Platform Best Practices]: https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Platform_Best_Practices
 [The Boy Scout Rule]: https://www.oreilly.com/library/view/97-things-every/9780596809515/ch08.html
+[comply or explain]: https://en.wikipedia.org/wiki/Comply_or_explain
+[Architectural Decision Record]: /adr/ADR-001-documenting-architecture-decisions.md

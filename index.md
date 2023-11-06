@@ -14,6 +14,7 @@ Everyone involved in OutSystems development projects
 ## Contents
 
 1. [Project Delivery Methodology](/delivery-methodology/index.md)
+1. [Training resources](/training/training-overview.md)
 1. [Standards and Guidelines](/standards/1-Standards.md)
 1. [Architecture](/architecture/intro.md)
 1. [How to guides](/how-to/intro.md)

@@ -1,14 +1,16 @@
 ---
-title: Training overview
+title: Training resources
 ---
 # {{page.title}}
+
+This page list the training resources for developers. Either if you want to gain additional knowledge or the fresh up your skills.
+All resources are available for free.
 
 ## Computer Science
 
 ### SQL
 
-* [PostgreSQL for Everybody](https://pg4e.com)
-* [Coursera PostgreSQL for Everybody Specialization](https://www.coursera.org/specializations/postgresql-for-everybody) SQL: From Basic to Advanced. Learn SQL skills you can use in an actual, real-world environment
+* [PostgreSQL for Everybody](https://pg4e.com) or [Coursera PostgreSQL for Everybody Specialization](https://www.coursera.org/specializations/postgresql-for-everybody) SQL: From Basic to Advanced. Learn SQL skills you can use in an actual, real-world environment.
 
 ### Web Development
 
@@ -21,6 +23,14 @@ title: Training overview
 ### Data Structures and Algorithms
 
 * [Resources for Learning Algorithms](https://www.freecodecamp.org/news/learn-data-structures-and-algorithms/#resourcesforlearningalgorithms)
+
+### Security
+
+* [ ] Nothing yet
+
+### Artificial Intelligence
+
+* [ ] Nothing yet
 
 ## OutSystems
 

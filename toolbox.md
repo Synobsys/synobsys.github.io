@@ -6,56 +6,79 @@ title : Developers toolbox
 * TOC
 {:toc}
 
-## OutSystems
+## OutSystems tools
 
-* ODC Service Studio - Available inside the ODC Portal
-* [Service Studio O11] The environment for creating all the parts of the application stack: the data model, application logic, UI, business process flows, integrations, and security policies.
-* [Integration Studio] The environment for creating components to extend the OutSystems platform and to integrate with third-party systems.
-* [Discovery]
-* [AI Mentor Studio]
-* [BDD Test framework]
+### ODC Service Studio
 
-## [Taiga]
+Available inside the ODC Portal
+
+### [Service Studio O11]
+
+The environment for creating all the parts of the application stack: the data model, application logic, UI, business process flows, integrations, and security policies.
+
+### [Integration Studio]
+
+The environment for creating components to extend the OutSystems platform and to integrate with third-party systems.
+
+### [Discovery]
+
+Discovery is a visual tool to help analyze, measure and understand how to improve your factory architecture
+
+### [AI Mentor Studio]
+
+AI Mentor Studio is the OutSystems technical debt monitoring tool. It enables IT leaders to visualize complex cross-portfolio architectures and identify problems while also helping developers follow best practices and avoid common pitfalls.
+
+See [Manage Technical Debt] for a detailed description.
+
+### [BDD Test framework]
+
+## Project Management
+
+### [Taiga]
 
 When carrying out projects under the direction of Synobsys, we use Taiga as the Project Management tool for both Scrum and KanBan.
 
-## [Sparx Enterprise Architect]
+## Design and modeling
+
+### [Sparx Enterprise Architect]
 
 An enterprise wide solution to visualize, analyze, model, test and maintain all of your systems, software, processes and architectures.
 
-## [Archi]
+### [Archi]
 
 The Open Source modelling toolkit for creating ArchiMate models and sketches.
 
-## [Bizagi Modeler]
+### [Bizagi Modeler]
 
 Business process modeling tool to create and document business processes.
 
-## [IBM Blueworks Live]
+### [IBM Blueworks Live]
 
 IBM Blueworks Live is a cloud-based software that provides a dedicated, collaborative anywhere environment to build and improve business processes through process mapping.
 
 Available as part of the Synobsys IBM Partner subscription.
 
-## [Figma]
+### [Figma]
 
 The UI Designers weapon of choice. [OutSystems UI Design kit]
 
-## [Lucidchart]
+### [Lucidchart]
 
 Diagramming tool for flow charts, data modeling, ui sketches, processes etc.
 
-## [Microsoft Visual Studio Code]
+## Coding
+
+### [Microsoft Visual Studio Code]
 
 For editing source code like C#, CSS, JavaScript, Markdown and many many more.
 
-## [Chrome DevTools]
+### [Chrome DevTools]
 
 Google Chrome has a built-in set of one of the software development tools called Chrome DevTools. These tools can help you edit pages while you are coding and debugging problems. It also lets you build stunning websites quickly.
 
 You can debug your CSS and JavaScript faster using these tools. Also, you can perform various functions that can help you improve your productivity. Additionally, you can view and change a web page’s DOM and CSS with DevTools as well.
 
-## [Postman]
+### [Postman]
 
 Postman is one of the best tools for developers for building an application programming interface (API). Using the API Client feature, you can send requests, examine responses, and resolve coding issues.
 
@@ -64,7 +87,7 @@ You can integrate and automate tests in your CI/CD pipeline. Postman can automat
 * You can shorten your time building an API by using Postman’s mock servers.
 * It simplifies the API design and streamlines your front-end and back-end tasks so that you can easily view responses.
 
-## [Stack Overflow]
+### [Stack Overflow]
 
 Stack Overflow is an open community for developers. Anyone who codes can get answers to the toughest coding questions and share knowledge through this community and that makes it one of the best software development tools out there.
 
@@ -73,33 +96,39 @@ You can get answers to over 16.5 million questions and share your knowledge thro
 * Stack Overflow provides a platform for programmers to share knowledge.
 * A huge pool of various questions and detailed answers on programming.
 
-## [PuTTY]
+### [PuTTY]
 
-PuTTY is an SSH and telnet client.
+PuTTY is an SSH and telnet client. Used to create a ssh connection to servers.
 
-## [GitHub]
+### [GitHub]
 
 Source code management system.
 
 [GitHub Features]
 
-## [GitHub Pages]
+### [GitHub Pages]
 
 Create a website directly from a repository on GitHub.com.
 
 The standards and guidelines site is build with [GitHub Pages]
 
-## [Burp Suite Community Edition]
+## Security
+
+### [Burp Suite Community Edition]
 
 Burp Suite Community Edition is a toll-free version of a web vulnerability scanner and penetration testing tool.
 
 Created by PortSwigger, it’s particularly popular among white hat hackers since it makes penetration testing a piece of cake. Still, many non-tech-savvy users have successfully utilized its capacities as well.
 
-## [Jenkins]
+## DevOps
+
+### [Jenkins]
 
 Jenkins is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
 
-## [Apache JMeter]
+## Test tools
+
+### [Apache JMeter]
 
 Apache JMeter may be used to test performance both on static and dynamic resources, Web dynamic applications.
 It can be used to simulate a heavy load on a server, group of servers, network or object to test its strength or to analyze overall performance under different load types.
@@ -135,3 +164,4 @@ JMeter may be used for load testing. Since OutSystems applications are standard 
 [Figma]: https://www.figma.com/
 [OutSystems UI Design kit]: https://www.figma.com/@outsystemsui
 [Lucidchart]: https://www.lucidchart.com/pages/
+[Manage Technical Debt]: https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/

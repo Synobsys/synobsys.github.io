@@ -26,7 +26,7 @@ All resources are available for free.
 
 ### Security
 
-* [ ] Nothing yet
+* [ISC2] [Security Awareness training] for end users
 
 ### Artificial Intelligence
 
@@ -34,11 +34,13 @@ All resources are available for free.
 
 ## OutSystems
 
-Follow one of the training paths that fits your role:
-
-* [ ] Nothing yet
+Follow one of the training paths that fits your role from the [OutSystems Training] pages.
 
 *[ODC]: OutSystems Developer Cloud
 *[HTML]: Hypertext Markup Language
 *[CSS]: Cascading Style Sheets
 *[Javascript]: JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
+
+[OutSystems Training]: https://learn.outsystems.com/training
+[ISC2]: https://www.isc2.org/
+[Security Awareness training]: https://www.coursera.org/learn/security-awareness-training

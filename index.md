@@ -20,6 +20,7 @@ Everyone involved in OutSystems development projects
 1. [How to guides](/how-to/intro.md)
 1. [Referenced OutSystems documentation](outsystems-reference.html)
 1. [Publications](/publications.md)
+1. [Developers Toolbox](/toolbox.md)
 1. [Glossary](/common-glossary-template.md)
 
 ### OutSystems Developer Cloud (ODC)

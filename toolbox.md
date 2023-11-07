@@ -96,6 +96,20 @@ You can get answers to over 16.5 million questions and share your knowledge thro
 * Stack Overflow provides a platform for programmers to share knowledge.
 * A huge pool of various questions and detailed answers on programming.
 
+### [SQuirreL SQL]
+
+Universal SQL Client
+
+### [SQL Server Management Studio (SSMS)]
+
+SQL Server Management Studio (SSMS) is an integrated environment for managing any SQL infrastructure, from SQL Server to Azure SQL Database. SSMS provides tools to configure, monitor, and administer instances of SQL Server and databases. Use SSMS to deploy, monitor, and upgrade the data-tier components used by your applications and build queries and scripts.
+
+Use SSMS to query, design, and manage your databases and data warehouses, wherever they are - on your local computer or in the cloud.
+
+### [IBM Db2 Data Management Console]
+
+Manage, monitor and optimize performance of hundreds of Db2 databases from ground to cloud with the next generation of IBM Data Server Manager.
+
 ### [PuTTY]
 
 PuTTY is an SSH and telnet client. Used to create a ssh connection to servers.
@@ -165,3 +179,6 @@ JMeter may be used for load testing. Since OutSystems applications are standard 
 [OutSystems UI Design kit]: https://www.figma.com/@outsystemsui
 [Lucidchart]: https://www.lucidchart.com/pages/
 [Manage Technical Debt]: https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/
+[SQuirreL SQL]: https://squirrel-sql.sourceforge.io/
+[SQL Server Management Studio (SSMS)]: https://learn.microsoft.com/nl-NL/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
+[IBM Db2 Data Management Console]: https://www.ibm.com/products/db2-data-management-console

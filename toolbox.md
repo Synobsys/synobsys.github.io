@@ -47,6 +47,10 @@ See [Manage Technical Debt] for a detailed description.
 
 When carrying out projects under the direction of Synobsys, we use Taiga as the Project Management tool for both Scrum and KanBan.
 
+### [slack]
+
+Slack is a cloud-based cross-platform instant messaging service.
+
 ## Design and modeling
 
 ### [Sparx Enterprise Architect]
@@ -199,3 +203,4 @@ JMeter may be used for load testing. Since OutSystems applications are standard 
 [SQuirreL SQL]: https://squirrel-sql.sourceforge.io/
 [SQL Server Management Studio (SSMS)]: https://learn.microsoft.com/nl-NL/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
 [IBM Db2 Data Management Console]: https://www.ibm.com/products/db2-data-management-console
+[slack]: https://slack.com/

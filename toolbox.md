@@ -14,6 +14,8 @@ On this page we list tools for all project roles:
 * Tester
 * DevOps
 
+Table of Contents
+
 * TOC
 {:toc}
 
@@ -85,6 +87,10 @@ draw.io is an technology stack for building diagramming applications.
 
 Diagramming tool for flow charts, data modeling, ui sketches, processes etc.
 
+### [MySQL Workbench]
+
+MySQL Workbench is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more.
+
 ## Coding
 
 ### [Microsoft Visual Studio Code]
@@ -114,6 +120,10 @@ You can get answers to over 16.5 million questions and share your knowledge thro
 
 * Stack Overflow provides a platform for programmers to share knowledge.
 * A huge pool of various questions and detailed answers on programming.
+
+### [DBeaver]
+
+DBeaver Community is a free cross-platform database tool for developers, database administrators, analysts, and everyone working with data. It supports all popular SQL databases like MySQL, MariaDB, PostgreSQL, SQLite, Apache Family, and more.
 
 ### [SQuirreL SQL]
 
@@ -212,3 +222,5 @@ JMeter may be used for load testing. Since OutSystems applications are standard 
 [slack]: https://slack.com/
 [draw.io]: https://www.drawio.com/
 [Learn how to diagram with draw.io with this quick start tutorial]: https://youtu.be/Z0D96ZikMkc?si=HViNIZnFdKEAAFky
+[DBeaver]: https://dbeaver.io/
+[MySQL Workbench]: https://www.mysql.com/products/workbench/

@@ -1,7 +1,18 @@
 ---
-title : Developers toolbox
+title : Toolbox
 ---
 # {{page.title}}
+
+On this page we list tools for all project roles:
+
+* Product Owner
+* Scrum Master
+* Business Analyst
+* UX/UI Designer
+* IT-Architect
+* Software Engineer aka (OutSystems) Developer
+* Tester
+* DevOps
 
 * TOC
 {:toc}
@@ -29,8 +40,6 @@ Discovery is a visual tool to help analyze, measure and understand how to improv
 AI Mentor Studio is the OutSystems technical debt monitoring tool. It enables IT leaders to visualize complex cross-portfolio architectures and identify problems while also helping developers follow best practices and avoid common pitfalls.
 
 See [Manage Technical Debt] for a detailed description.
-
-### [BDD Test framework]
 
 ## Project Management
 
@@ -98,7 +107,7 @@ You can get answers to over 16.5 million questions and share your knowledge thro
 
 ### [SQuirreL SQL]
 
-Universal SQL Client
+An universal SQL Client
 
 ### [SQL Server Management Studio (SSMS)]
 
@@ -141,6 +150,14 @@ Created by PortSwigger, it’s particularly popular among white hat hackers sinc
 Jenkins is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
 
 ## Test tools
+
+### [BDD Test framework]
+
+This tool enables test scenarios for OutSystems applications that conform to the principles of Behavior-Driven Development. Test scenarios are built by dragging and dropping web blocks (Scenario + Given / When / Then clauses) on a regular web screen. Each test step is then implemented using its own action, making sure that steps are sequential and occur in the same request.
+
+BDDFramework is particularly suitable for exercising, on the **business logic layer**, the acceptance criteria of the application's main features. This way it promotes a TDD/BDD approach during the delivery cycle.
+
+BDDFramework is recommended when automating the delivery pipeline. It provides a REST API for running tests and obtaining results that can be easily integrated with an external CI/CD orchestrator, such as Jenkins®. Read Component Testing​ for usage guidelines.
 
 ### [Apache JMeter]
 

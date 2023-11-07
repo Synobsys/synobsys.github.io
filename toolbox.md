@@ -75,6 +75,12 @@ Available as part of the Synobsys IBM Partner subscription.
 
 The UI Designers weapon of choice. [OutSystems UI Design kit]
 
+### [draw.io]
+
+draw.io is an technology stack for building diagramming applications.
+
+[Learn how to diagram with draw.io with this quick start tutorial]
+
 ### [Lucidchart]
 
 Diagramming tool for flow charts, data modeling, ui sketches, processes etc.
@@ -204,3 +210,5 @@ JMeter may be used for load testing. Since OutSystems applications are standard 
 [SQL Server Management Studio (SSMS)]: https://learn.microsoft.com/nl-NL/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
 [IBM Db2 Data Management Console]: https://www.ibm.com/products/db2-data-management-console
 [slack]: https://slack.com/
+[draw.io]: https://www.drawio.com/
+[Learn how to diagram with draw.io with this quick start tutorial]: https://youtu.be/Z0D96ZikMkc?si=HViNIZnFdKEAAFky

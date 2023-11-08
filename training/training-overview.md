@@ -44,4 +44,4 @@ Follow one of the training paths that fits your role from the [OutSystems Traini
 
 [OutSystems Training]: https://learn.outsystems.com/training
 [ICS2: Security Awareness training]: https://www.coursera.org/learn/security-awareness-training
-[IBM: Application Security for Developers]: https://www.edx.org/learn/network-security/ibm-application-security-for-developers
+[IBM: Application Security for Developers]: https://www.coursera.org/learn/application-security-for-developers-devops

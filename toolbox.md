@@ -193,7 +193,7 @@ It can be used to simulate a heavy load on a server, group of servers, network o
 
 JMeter may be used for load testing. Since OutSystems applications are standard web applications, any strategy or tool currently used to test traditional web apps can apply. OutSystems recommends the following webinars explaining how to implement simple load testing scenarios using the open-source tool JMeter, for both web and mobile applications (server-side only):
 
-* [How to setup a load test in 5 minutes] :warning: WARNING Resource removed by OutSystems!
+* [How to setup a load test in 5 minutes]
 * [Load testing applications expert talk]
 
 ### [BrowserStack]
@@ -213,7 +213,7 @@ BrowserStack is a cloud web and mobile testing platform that provides developers
 [Burp Suite Community Edition]: https://portswigger.net/burp/communitydownload
 [Jenkins]: https://www.jenkins.io/
 [Apache JMeter]: https://jmeter.apache.org/
-[How to setup a load test in 5 minutes]: https://www.outsystems.com/forums/discussion/19269/webinar-how-to-set-up-a-load-test-in-5-minutes/
+[How to setup a load test in 5 minutes]: https://learn.outsystems.com/training/journeys/tester-654/how-to-set-up-a-load-test-in-5-minutes/o11/2467
 [Load testing applications expert talk]: https://learn.outsystems.com/training/journeys/load-testing-532
 [Taiga]: https://taiga.io/
 [Sparx Enterprise Architect]: https://sparxsystems.com/

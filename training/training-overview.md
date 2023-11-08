@@ -29,6 +29,10 @@ All resources are available for free.
 * [ICS2: Security Awareness training] for end users
 * [IBM: Application Security for Developers]
 
+### Testing
+
+* [Performance Testing with JMeter for absolute beginners]
+
 ### Artificial Intelligence
 
 * [ ] Nothing yet
@@ -36,6 +40,10 @@ All resources are available for free.
 ## OutSystems
 
 Follow one of the training paths that fits your role from the [OutSystems Training] pages.
+
+## UX/UI Design
+
+* [Get Started with Figma]
 
 *[ODC]: OutSystems Developer Cloud
 *[HTML]: Hypertext Markup Language
@@ -45,3 +53,5 @@ Follow one of the training paths that fits your role from the [OutSystems Traini
 [OutSystems Training]: https://learn.outsystems.com/training
 [ICS2: Security Awareness training]: https://www.coursera.org/learn/security-awareness-training
 [IBM: Application Security for Developers]: https://www.coursera.org/learn/application-security-for-developers-devops
+[Performance Testing with JMeter for absolute beginners]: https://www.coursera.org/projects/performance-testing-with-jmeter-for-absolute-beginners
+[Get Started with Figma]: https://www.coursera.org/projects/get-started-figma

@@ -186,8 +186,12 @@ It can be used to simulate a heavy load on a server, group of servers, network o
 
 JMeter may be used for load testing. Since OutSystems applications are standard web applications, any strategy or tool currently used to test traditional web apps can apply. OutSystems recommends the following webinars explaining how to implement simple load testing scenarios using the open-source tool JMeter, for both web and mobile applications (server-side only):
 
-* [How to setup a load test in 5 minutes]
+* [How to setup a load test in 5 minutes] :warning: WARNING Resource removed by OutSystems!
 * [Load testing applications expert talk]
+
+### [BrowserStack]
+
+BrowserStack is a cloud web and mobile testing platform that provides developers with the ability to test their websites and mobile applications across on-demand browsers, operating systems and real mobile devices.
 
 [Service Studio O11]: https://www.outsystems.com/downloads/
 [Integration Studio]: https://www.outsystems.com/downloads/
@@ -202,7 +206,7 @@ JMeter may be used for load testing. Since OutSystems applications are standard 
 [Burp Suite Community Edition]: https://portswigger.net/burp/communitydownload
 [Jenkins]: https://www.jenkins.io/
 [Apache JMeter]: https://jmeter.apache.org/
-[How to setup a load test in 5 minutes]: https://www.outsystems.com/learn/courses/36/webinar-how-to-set-up-a-load-test-in-5-minutes/
+[How to setup a load test in 5 minutes]: https://www.outsystems.com/forums/discussion/19269/webinar-how-to-set-up-a-load-test-in-5-minutes/
 [Load testing applications expert talk]: https://learn.outsystems.com/training/journeys/load-testing-532
 [Taiga]: https://taiga.io/
 [Sparx Enterprise Architect]: https://sparxsystems.com/
@@ -224,3 +228,4 @@ JMeter may be used for load testing. Since OutSystems applications are standard 
 [Learn how to diagram with draw.io with this quick start tutorial]: https://youtu.be/Z0D96ZikMkc?si=HViNIZnFdKEAAFky
 [DBeaver]: https://dbeaver.io/
 [MySQL Workbench]: https://www.mysql.com/products/workbench/
+[BrowserStack]: https://www.browserstack.com/

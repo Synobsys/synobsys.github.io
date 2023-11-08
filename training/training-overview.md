@@ -26,7 +26,8 @@ All resources are available for free.
 
 ### Security
 
-* [ISC2] [Security Awareness training] for end users
+* [ICS2: Security Awareness training] for end users
+* [IBM: Application Security for Developers]
 
 ### Artificial Intelligence
 
@@ -42,5 +43,5 @@ Follow one of the training paths that fits your role from the [OutSystems Traini
 *[Javascript]: JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
 
 [OutSystems Training]: https://learn.outsystems.com/training
-[ISC2]: https://www.isc2.org/
-[Security Awareness training]: https://www.coursera.org/learn/security-awareness-training
+[ICS2: Security Awareness training]: https://www.coursera.org/learn/security-awareness-training
+[IBM: Application Security for Developers]: https://www.edx.org/learn/network-security/ibm-application-security-for-developers

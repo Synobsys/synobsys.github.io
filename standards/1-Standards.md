@@ -20,8 +20,6 @@ For these standards the [comply or explain] rule applies. Deviations from these 
 1. [Standard resolutions for AI Mentor Studio findings](11-resolve-architecture-dashboard-findings.md)
 1. [REST API Conventions](12-REST-API-conventions)
 
-
-
 [OutSystems Platform Best Practices]: https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Platform_Best_Practices
 [The Boy Scout Rule]: https://www.oreilly.com/library/view/97-things-every/9780596809515/ch08.html
 [comply or explain]: https://en.wikipedia.org/wiki/Comply_or_explain

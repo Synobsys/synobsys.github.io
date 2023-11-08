@@ -179,6 +179,13 @@ BDDFramework is particularly suitable for exercising, on the **business logic la
 
 BDDFramework is recommended when automating the delivery pipeline. It provides a REST API for running tests and obtaining results that can be easily integrated with an external CI/CD orchestrator, such as Jenkins®. Read Component Testing​ for usage guidelines.
 
+### [Selenium]
+
+Selenium is an open source umbrella project for a range of tools and libraries aimed at supporting browser automation. It provides a playback tool for authoring functional tests across most modern web browsers, without the need to learn a test scripting language (Selenium IDE).
+It also provides a test domain-specific language (Selenese) to write tests in a number of popular programming languages, including JavaScript (Node.js), C#, Groovy, Java, Perl, PHP, Python, Ruby and Scala. Selenium runs on Windows, Linux, and macOS. It is open-source software released under the Apache License 2.0.
+
+* [How to do UI testing with Selenium]
+
 ### [Apache JMeter]
 
 Apache JMeter may be used to test performance both on static and dynamic resources, Web dynamic applications.
@@ -229,3 +236,5 @@ BrowserStack is a cloud web and mobile testing platform that provides developers
 [DBeaver]: https://dbeaver.io/
 [MySQL Workbench]: https://www.mysql.com/products/workbench/
 [BrowserStack]: https://www.browserstack.com/
+[Selenium]: https://www.selenium.dev/
+[How to do UI testing with Selenium]: https://success.outsystems.com/documentation/how_to_guides/devops/how_to_do_ui_testing_with_selenium/

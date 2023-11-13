@@ -75,7 +75,7 @@ To enable product ordering we require the following Api methods:
 
 The product ordering api application consists of the following modules:
 
-* **NortwindDB** The core service module that exposes the Northwind database
+* **NorthwindDB** The core service module that exposes the Northwind database
 * **NorthwindSchema_Lib** Library containing the canonical schemas used in the api.
 * **Northwind_CBL** A Canonical Business Logic service module exposing Server Actions in canonical schema format.
 * **ProductOrdering_API** API module exposing the REST API

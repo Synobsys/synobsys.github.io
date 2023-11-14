@@ -39,7 +39,6 @@ Install the latest version of the [CRUD wrappers stencils](https://www.outsystem
     * Label
     * Label (plural)
     * Order by attribute
-1. In the Indexes tab review the Unique \<Natural key attribute\> index
 1. Check that the entity and all the attributes have proper descriptions.
 
 ## Add database actions for the new entity
@@ -51,14 +50,15 @@ Install the latest version of the [CRUD wrappers stencils](https://www.outsystem
 1. Find all usages of the TemplateEntity (F12)
 1. Use the button: Replace all instances with your new entity (select in the popup)
 1. Remove the TemplateEntity dependency (Del)
-1. Using (Ctrl + R): find string "TemplateEntity" and replace all ocurrences with your new entity
+1. Using (Ctrl + R): find string "TemplateEntity" and replace all occurrences with your new entity
 
-## Rename the NaturalKey attribute
+## Rename the natural key attribute
 
-A natural key (also known as business key or domain key) is a type of unique key in a database formed of attributes that exist and are used in the external world outside the database (i.e. in the business domain or domain of discourse). In the relational model of data, a natural key is a super key and is therefore a functional determinant for all attributes in a relation. From [Wikipedia: Natural Key]
+A natural key (also known as business key or domain key) is a type of unique key in a database formed of one or more attributes that exist and are used in the external world outside the database (i.e. in the business domain or domain of discourse). In the relational model of data, a natural key is a super key and is therefore a functional determinant for all attributes in a relation. From [Wikipedia: Natural Key]
 
 1. Designate a meaningful name to the Natural Key for your entity and using (Ctrl + R) find string "NaturalKey"and replace all occurrences with that name.
-1. Fix the errors one by one by clicking on each of them
+1. Fix the errors one by one by clicking on each of them.
+1. If the natural key is a composed of multiple attributes change the \<Natural key attribute\> index and the validation actions accordingly.
 1. When done, check all the TBD (To Be Done) items (shown as warnings in the TrueChange tab) and remove them when OK
 1. Check that there are no warnings in the TrueChange tab
 1. 1-Click publish your module.

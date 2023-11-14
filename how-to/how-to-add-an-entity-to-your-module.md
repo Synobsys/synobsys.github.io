@@ -47,8 +47,8 @@ Install the latest version of the [CRUD wrappers stencils](https://www.outsystem
 1. Make sure the folder **TemplateEntityDbActions** is collapsed
 1. Copy folder **TemplateEntityDbActions** and Paste it in **\<your core services module\>** logic tab
 1. Go to Data tab (Ctrl-4) and locate the **TemplateEntity** in the **Stencil_DBActions_Pat** referenced module
-1. Find all usages of the TemplateEntity (F12)
-1. Use the button: Replace all instances with your new entity (select in the popup)
+1. Find all usages of the **TemplateEntity** (F12)
+1. Use the button: **Replace all instances** to replace with your new entity (select in the popup)
 1. Remove the TemplateEntity dependency (Del)
 1. Using (Ctrl + R): find string "TemplateEntity" and replace all occurrences with your new entity
 

@@ -12,7 +12,7 @@ Follow this guideline to setup the database actions.
 
 ## Instal Forge components
 
-Install the latest version of the [CRUD wrappers stencils](https://www.outsystems.com/forge/component-overview/13991/crud-wrappers-stencils) forge component
+Install the latest version of the [CRUD wrappers stencils](https://www.outsystems.com/forge/component-overview/13991/crud-wrappers-stencils) forge component.
 
 ## Setup security
 

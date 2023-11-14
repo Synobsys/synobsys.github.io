@@ -33,7 +33,7 @@ Due to its different architecture there are some ODC Specific topics.
 * [ODC App Architecture]
 * [Sharing data defined in ODC]
 * [ODC specific standards](/ODC_Standards/intro.md)
-* [ODC Recipes](/ODC-recipes.md/intro.md)
+* [ODC Recipes](/ODC-recipes/intro.md)
 
 [Preparing your OutSystems 11 apps to ODC]: https://raphael-ranieri.medium.com/59f5a60a1f18
 [ODC App Architecture]: https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/app_architecture/

@@ -23,4 +23,4 @@ TODO:
 
 *[CRUD]: Create Read Update Delete
 
-[how to create an entity and data actions]: /ODC-recipes/data-actions.md
+[how to create an entity and data actions]: data-actions.md

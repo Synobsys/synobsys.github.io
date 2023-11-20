@@ -7,7 +7,9 @@ A data action is a piece of logic that performs a create update or delete action
 
 ## Exposing data with ODC
 
-Contrary to O11 in ODC entities are exposed read only and server actions are not public. In general we only expose read only entities and only expose data actions via Service actions for specific use cases.
+Contrary to O11 in ODC entities are always exposed read only and server actions are not public.
+
+The rule is to expose entities read only and to use Service Actions to expose the CRUD operations.
 
 ## CRUD Templates
 

@@ -9,7 +9,7 @@ This page list the ODC specific how-to recipes
 
 TODO:
 
-* [how to create an entity and data actions](/ODC-recipes/data-actions.md)
+* [how to create an entity and data actions]
 * [ ] Sharing data between app & Domain Driven Development
 * [ ] [Architecture Fundamentals in ODC]
 * [ ] [Architecture Patterns in ODC]
@@ -22,3 +22,5 @@ TODO:
 [Reuse elements across apps]: https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/app_architecture/reuse_elements_across_apps/
 
 *[CRUD]: Create Read Update Delete
+
+[how to create an entity and data actions]: \ODC-recipes\data-actions.md

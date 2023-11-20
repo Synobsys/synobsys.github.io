@@ -9,7 +9,7 @@ This page list the ODC specific how-to recipes
 
 TODO:
 
-* [ ] CRUD Template
+* [how to create an entity and data actions](/ODC-recipes/data-actions.md)
 * [ ] Sharing data between app & Domain Driven Development
 * [ ] [Architecture Fundamentals in ODC]
 * [ ] [Architecture Patterns in ODC]

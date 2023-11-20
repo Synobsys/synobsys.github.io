@@ -5,6 +5,11 @@ title: ODC Recipe - Create an Entity and Data Actions
 
 A data action is a piece of logic that performs a create update or delete action on one or more entities.
 
+## Contents
+
+* TOC
+{:toc}
+
 ## Exposing data with ODC
 
 Contrary to O11 in ODC entities are always exposed read only and server actions are not public.
@@ -23,39 +28,27 @@ The template has the following elements:
 
 The template entity has the following attributes:
 
-### Id
-
-A generated [UUIDv7] primary key
-
-* [ ] TODO replace GenerateGuid() with UUID7 available on 21-11-2023.
-
-### NaturalKey
-
-A natural key is an attribute that exists in the real world or is used by the business. It can be used to uniquely identify the row.
-An example of a natural key is a Social Security Number (for US citizens). It’s usually a unique number that applies to a person, and has a use for tax purposes.
-
-### Description
-
-A text attribute describing the entity instance
-
-### Audit fields
-
-* CreatedByUserId - UserId
-* CreatedOn - DateTime
-* UpdatedByUserId - UserId
-* UpdatedOn - DateTime
+| Attribute | Description |
+| --- | --- |
+| Id | A generated [UUIDv7] primary key (TODO replace GenerateGuid() with UUID7 available on 21-11-2023.) [Why Auto Increment Is A Terrible Idea] describes why we chose UUID in favor of Auto Increment.|
+| NaturalKey | A natural key is an attribute that exists in the real world or is used by the business. It can be used to uniquely identify the row. An example of a natural key is a Social Security Number (for US citizens). It’s usually a unique number that applies to a person, and has a use for tax purposes. |
+| Description | A text attribute describing the entity instance |
+| CreatedByUserId | The Id of the user who created the record. |
+| CreatedOn | DateTime the record was created |
+| UpdatedByUserId | The Id of the user who updated the record. |
+| UpdatedOn | DateTime the record was updated. We use this attribute to handle concurrent updates as described in [How To Handle Concurrent Updates on Application Data Records] |
 
 ### Unique NaturalKey index
 
 An index to ensure the uniqueness of the natural key.
 
-## TemplateEntityDbActions
+### TemplateEntityDbActions
 
 * TemplateEntity_CreateOrUpdate - Create or update a valid record.
 * TemplateEntity_Delete - Delete a TemplateEntity record
 * TemplateEntity_Validate - Performs the TemplateEntity record validation
 
-## Utility Actions
+### Utility Actions
 
 You may want to put these actions in a library for reuse.
 
@@ -138,7 +131,10 @@ For external resources we don't want to expose the full entity record. Therefore
 
 1. Open the data tab (Ctrl+4) and select and copy **\<new entity name\>**
 1. Paste it inside the Structures Tab
-1. Rename the structure to **\<new entity name\>**CS (Canonical Structure)
+1. Rename the structure to **\<new entity name\>CS** (Canonical Structure)
 
 [UUIDv7]: https://uuid7.com/
 [Natural Key]: https://en.wikipedia.org/wiki/Natural_key
+
+[How To Handle Concurrent Updates on Application Data Records]: https://success.outsystems.com/documentation/how_to_guides/data/how_to_handle_concurrent_updates_on_application_data_records/
+[Why Auto Increment Is A Terrible Idea]: https://www.clever-cloud.com/blog/engineering/2015/05/20/why-auto-increment-is-a-terrible-idea/

@@ -25,7 +25,7 @@ The template entity has the following attributes:
 
 A generated [UUIDv7] primary key
 
-* [ ] TODO replace GenerateGuid() with door UUID7
+* [ ] TODO replace GenerateGuid() with UUID7 available on 21-11-2023.
 
 ### NaturalKey
 

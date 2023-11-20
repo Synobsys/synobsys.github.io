@@ -138,6 +138,5 @@ For external resources we don't want to expose the full entity record. Therefore
 1. Paste it inside the Structures Tab
 1. Rename the structure to **\<new entity name\>**CS (Canonical Structure)
 
-
 [UUIDv7]: https://uuid7.com/
 [Natural Key]: https://en.wikipedia.org/wiki/Natural_key

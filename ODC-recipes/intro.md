@@ -21,5 +21,4 @@ TODO:
 [Building a well-architected app]: https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/app_architecture/building_a_well_architected_app/
 [Reuse elements across apps]: https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/app_architecture/reuse_elements_across_apps/
 
-*[ODC]: OutSystems Developer Cloud
 *[CRUD]: Create Read Update Delete

@@ -56,6 +56,7 @@ An index to ensure the uniqueness of the natural key.
 You may want to put these actions in a library for reuse.
 
 * NotificationListConcat - Concatenates a list of notifications to one string using StringBuilder.
+* CRUDTemplatesCheck - Checks if a user is logged in and has the right role or an API Key is provided by an background process (timer or bpt)
 
 ## Adding a new entity and data actions to an application
 
@@ -63,9 +64,12 @@ You may want to put these actions in a library for reuse.
 
 1. If not already present, add the **CRUD Templates** application from the forge.
 1. If not present copy the [Utility Actions](#utility-actions) to your application or library
+1. If not present copy the **TimerKey** setting to your application or library
 1. Determine the role that is authorized to perform the data actions and create it in **\<Your Application\>**
 1. Add a **ValidationException** to **\<Your Application\>**
 1. Add a **ConcurrentUpdateException** to **\<Your Application\>**
+1. Copy **CRUDTemplatesCheck** and rename it to **\<yourrole\>Check**
+1. Fix the error by checking the \<YourRole\>
 
 ### Creating the new Entity
 

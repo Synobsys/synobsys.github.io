@@ -30,8 +30,8 @@ The template entity has the following attributes:
 
 | Attribute | Description |
 | --- | --- |
-| Id | A generated [UUIDv7] primary key (TODO replace GenerateGuid() with UUID7 available on 21-11-2023.) [Why Auto Increment Is A Terrible Idea] describes why we chose UUID in favor of Auto Increment.|
-| NaturalKey | A natural key is an attribute that exists in the real world or is used by the business. It can be used to uniquely identify the row. An example of a natural key is a Social Security Number (for US citizens). It’s usually a unique number that applies to a person, and has a use for tax purposes. |
+| Id | A generated [UUIDv7] primary key (TODO replace GenerateGuid() with UUID7 available on 21-11-2023.) [Why Auto Increment Is A Terrible Idea] describes why we chose UUID in favor of Auto Increment.See also [Primary Keys: IDs versus GUIDs]|
+| NaturalKey | A [natural key] is an attribute that exists in the real world or is used by the business. It can be used to uniquely identify the row. An example of a natural key is a Social Security Number (for US citizens). It’s usually a unique number that applies to a person, and has a use for tax purposes. |
 | Description | A text attribute describing the entity instance |
 | CreatedByUserId | The Id of the user who created the record. |
 | CreatedOn | DateTime the record was created |
@@ -44,9 +44,10 @@ An index to ensure the uniqueness of the natural key.
 
 ### TemplateEntityDbActions
 
-* TemplateEntity_CreateOrUpdate - Create or update a valid record.
-* TemplateEntity_Delete - Delete a TemplateEntity record
-* TemplateEntity_Validate - Performs the TemplateEntity record validation
+* TemplateEntityCreateOrUpdate - Create or update a valid record.
+* TemplateEntityDelete - Delete a TemplateEntity record
+* TemplateEntityValidate - Performs the TemplateEntity record validation
+* TemplateEntityForgeUpdate - Forges the update of a record overwriting a previous update
 
 ### Utility Actions
 
@@ -133,8 +134,44 @@ For external resources we don't want to expose the full entity record. Therefore
 1. Paste it inside the Structures Tab
 1. Rename the structure to **\<new entity name\>CS** (Canonical Structure)
 
-[UUIDv7]: https://uuid7.com/
-[Natural Key]: https://en.wikipedia.org/wiki/Natural_key
+## UUID vs Autonumbers as Primary Key
 
+Both UUIDs (Universally Unique Identifiers) and autonumbers (auto-incrementing integers) can be used as primary keys in a database, and each has its own set of advantages and disadvantages. The choice between them often depends on the specific requirements of the application and the characteristics of the data. Here are some pros and cons of using UUIDs and autonumbers as primary keys:
+
+### UUIDs (Universally Unique Identifiers):
+
+#### Pros:
+
+1. **Uniqueness Across Systems:** UUIDs are designed to be globally unique, making them suitable for distributed systems. They can be generated independently on different machines without the risk of collision.
+1. **Security:** UUIDs can be generated using secure algorithms, adding a level of security when the generation method is not easily predictable.
+1. **No Centralized Authority:** UUIDs do not require a centralized authority for generation, which can be an advantage in decentralized or distributed systems.
+1. **No Sequence Gaps:** Unlike autonumbers, UUIDs do not have gaps in the sequence, even if records are deleted. This can be beneficial in certain scenarios.
+
+#### Cons:
+
+1. **Storage Space:** UUIDs are typically larger than autonumbers (128 bits for UUIDs vs. 32 or 64 bits for integers), which can result in increased storage requirements, especially in large datasets.
+1. **Human Readability:** UUIDs are not human-readable, which can make debugging and data exploration more challenging.
+1. **Indexing Performance:** Indexing on UUIDs might not be as efficient as on integers, leading to slower query performance, especially in large datasets.
+
+### Autonumbers (Auto-incrementing Integers):
+
+#### Pros:
+
+1. **Compact Storage:** Autonumbers are typically smaller in size compared to UUIDs, leading to more compact storage and potentially better performance in terms of storage space and indexing.
+1. **Query Performance:** Integer-based keys often result in faster query performance, especially when used in joins or sorting operations.
+1. **Human Readability:** Autonumbers are human-readable, which can be advantageous for developers during debugging and data exploration.
+
+#### Cons:
+
+1. **Limited Global Uniqueness:** Autonumbers are only unique within the scope of a single database, which can be a limitation in distributed systems.
+1. **Potential Sequence Gaps:** Autonumbers may have gaps in the sequence if records are deleted, and this might impact certain business requirements or reporting.
+1. **Centralized Authority:** Autonumbers typically rely on a centralized authority for generation, which can be a disadvantage in distributed or decentralized systems.
+
+In conclusion, the choice between UUIDs and autonumbers as primary keys depends on the specific needs and constraints of your application. If global uniqueness and distribution are crucial, UUIDs might be a better choice. If compactness and query performance are more critical, autonumbers could be preferred. It's also not uncommon to use a combination, where a UUID is used for global uniqueness and autonumbers for local relationships or indexing.
+
+[UUIDv7]: https://uuid7.com/
+
+[Natural Key]: https://en.wikipedia.org/wiki/Natural_key
 [How To Handle Concurrent Updates on Application Data Records]: https://success.outsystems.com/documentation/how_to_guides/data/how_to_handle_concurrent_updates_on_application_data_records/
 [Why Auto Increment Is A Terrible Idea]: https://www.clever-cloud.com/blog/engineering/2015/05/20/why-auto-increment-is-a-terrible-idea/
+[Primary Keys: IDs versus GUIDs]: https://blog.codinghorror.com/primary-keys-ids-versus-guids/

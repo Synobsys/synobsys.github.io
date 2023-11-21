@@ -49,6 +49,8 @@ An index to ensure the uniqueness of the natural key.
 * TemplateEntityValidate - Performs the TemplateEntity record validation
 * TemplateEntityForgeUpdate - Forges the update of a record overwriting a previous update
 
+:warning: **WARNING** There is no Login server action. All background processes such as timers and bpt run without a session and user. The CheckRole actions inside the CRUD wrappers will fail!
+
 ### Utility Actions
 
 You may want to put these actions in a library for reuse.

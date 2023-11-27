@@ -71,9 +71,11 @@ Recipes how to perform OutSystems tasks
 
 * [Test Automation in the Delivery Lifecycle]
 * [How to get started with the BDD test framework]
+* [Penetration test preparation]
 
 [OutSystems How-To Guides]: https://success.outsystems.com/Documentation/How-to_Guides
 [Tips and tricks]: TipsAndTricks.md
 [Test Automation in the Delivery Lifecycle]: https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Test_Automation_in_the_Delivery_Lifecycle
 [How to get started with the BDD test framework]: How-to-get-started-with-the-BDD-testframework.md
 [Static Entity Alternatives]: static-entity-alternatives.md
+[Penetration test preparation]: prepare-pentest.md

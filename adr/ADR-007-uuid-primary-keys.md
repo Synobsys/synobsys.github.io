@@ -1,5 +1,5 @@
 ---
-title: ADR 007 - Use UUID primary keys
+title: ADR 007 - Use UUID for primary keys
 ---
 # {{page.title}}
 

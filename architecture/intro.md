@@ -1,6 +1,6 @@
 ---
 summary: Here you can find all existing best practices on Application Architecture.
-en_title: Architecture
+title: Architecture
 ---
 # {{page.title}}
 
@@ -9,8 +9,8 @@ en_title: Architecture
 
 ## Architectural Knowledge Management (AKM)
 
-* [Architecture Decision Records](/adr/intro.mdintro.md)
-* [Approved Forge Components](/standards/10-approved-forge-components.md)
+* [Architecture Decision Records](/adr/intro.md)
+* [Approved Forge Components](/forge-components.md)
 
 ## Patterns
 

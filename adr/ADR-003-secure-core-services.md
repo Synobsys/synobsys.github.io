@@ -4,8 +4,7 @@ title: ADR 3 - Server Actions exposed to Reactive applications must be secured
 
 # {{page.title}}
 
-* TOC
-{:toc}
+## Context
 
 * Public OutSystems Server Actions are exposed as REST services when consumed by Reactive or Mobile web applications.
 * When actions are not secured it's not possible to include the user in the audit trail

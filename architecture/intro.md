@@ -4,9 +4,9 @@ title: Architecture
 ---
 # {{page.title}}
 
-* TOC
+<!--* TOC
 {:toc}
-
+-->
 ## Architectural Knowledge Management (AKM)
 
 * [Architecture Decision Records](/adr/intro.md)

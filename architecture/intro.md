@@ -9,8 +9,8 @@ title: Architecture
 -->
 ## Architectural Knowledge Management (AKM)
 
-* [Architecture Decision Records](/adr/intro.md)
-* [Approved Forge Components](/forge-components.md)
+* [Architecture Decision Records](adr\intro.md)
+* [Approved Forge Components](forge-components.md)
 
 ## Patterns
 

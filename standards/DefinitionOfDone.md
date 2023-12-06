@@ -12,12 +12,12 @@ The Definition of Done (DoD) is used to determine when a task or user story is c
 ## When is a Task DONE?
 
 * Coding is complete:
-    * Coded in accordance with the [OutSystems development standards](index.md),
-    * commented,
-    * documented, (TBD link to documentation guidelines)
-    * developer tested,
-    * peer reviewed,
-    * published without broken references and warnings
+    * [ ] Coded in accordance with the [OutSystems development standards](index.md),
+    * [ ] commented,
+    * [ ] documented, (*TODO link to documentation guidelines*)
+    * [ ] developer tested,
+    * [ ] peer reviewed,
+    * [ ] published without broken references and warnings
 
 ## When is a User story DONE?
 

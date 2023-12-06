@@ -24,13 +24,13 @@ A Story is ready for sprint when:
     * business rules that apply
     * the business objects used
     * mock-up screens and story boards when applicable
-* [ ] Acceptance criteria describe all features of the story. The story is complete once the acceptance criteria have been met. Acceptance criteria are described as scenarios using the **[Given When Then]** format [^1]
+* [ ] Acceptance criteria describe all features of the story. The story is complete once the acceptance criteria have been met. Acceptance criteria are described as scenarios using the **[Given When Then]** format [1]
 * [ ] The story can be completed in one sprint.
 * [ ] No external dependencies prevent the story from being completed.
 * [ ] The story points have been assigned by the team.
 * [ ] The story has been prioritized.
 
-[^1] :We require the Given-When-Then to enable the BDD test framework. See [Your Complete Guide To BDD Testing In OutSystems] see this [Using the Gherkin Language to Write User Stories] tutorial how to use it.
+[1] :We require the Given-When-Then to enable the BDD test framework. See [Your Complete Guide To BDD Testing In OutSystems] see this [Using the Gherkin Language to Write User Stories] tutorial how to use it.
 
 [Given When Then]: https://www.agilealliance.org/glossary/given-when-then/
 [Your Complete Guide To BDD Testing In OutSystems]: https://www.outsystems.com/blog/posts/bdd-testing/

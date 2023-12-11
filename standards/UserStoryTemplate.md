@@ -28,7 +28,7 @@ one another’s
 * Business object: List the involved business objects
 * Acceptance criteria
     * Use **business language**
-    * Add pictures, screenshots or mockups to illustrate the **user experience**
+    * Optionally add pictures, screenshots or mockups to illustrate the **user experience**
     * Provide **real sample data** or as meaningful as possible
     * Identify the impact on the prior and next **business process steps**
     * Use the [**Given-When-Then**](https://www.agilealliance.org/glossary/gwt) template
@@ -64,4 +64,4 @@ one another’s
 
 * Acceptance Criteria (mockup & flow)
 
-![mockup and flow screen sample](images\MockupAndFlow.png)
+![mockup and flow screen sample](/images/MockupAndFlow.png)

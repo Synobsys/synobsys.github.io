@@ -14,14 +14,14 @@ Each server action must include the following checks
 * Is the user logged in?
 * Has the user the proper authorization to perform this action?
 
-We can easily implement this by using the `Check<rolename>Role(UserId:)` function. As a consequence we need an authentication method for system tasks such as timers and processes because there is no user there. For this we will use a "Service Account" to login before performing logic in Timers, BPT etc.
+We can easily implement this by using the `Check<name>Role(UserId:)` function. As a consequence we need an authentication method for system tasks such as timers and processes because there is no user there. For this we will use a "Service Account" to login before performing logic in Timers, BPT etc.
 
-For uniform and easy implementation you must use the following template logic from the `CoreServicesStencil_Pat` module:
+For uniform and easy implementation you must use the **TemplateRoleCheck**  logic from the `CoreServicesStencil_Pat` module:
 
 ## TemplateRoleCheck
 
 Checks if the user has the Template role and throws a not registered exception if False
-![TemplateRoleCheck action flow](images/TemplateRoleCheck.png)
+![TemplateRoleCheck action flow](/images/TemplateRoleCheck.png)
 
 ### Implementation steps
 
@@ -44,7 +44,7 @@ Example Action to login the ServiceAccount
 ## Timer_TemplateAction
 
 Example how to use a system account in Timers, BPT, etc.
-![Timer_TemplateAction](images\TimerTemplateAction.png)
+![Timer_TemplateAction](/images/TimerTemplateAction.png)
 
 ### Implementation steps
 

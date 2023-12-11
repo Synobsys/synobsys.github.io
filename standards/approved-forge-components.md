@@ -29,9 +29,6 @@ This page lists the forge assets that are approved for use in projects.
 | Geo | 5.1.5 | <https://www.outsystems.com/forge/component-overview/439/geo> | Paul | 2021 | - |
 | InjectHTML | 1.0.2 | <https://www.outsystems.com/forge/component-overview/7239/injecthtml> | Paul | 2021-10-01 | - |
 | Multilingual Component | 2.0.5 | Discontinued | - | - | Multilingual Forge component was discontinued on July 5th, 2021. If you wish to continue using a supported translations mechanism in your applications, you should update your Platform Server to 11.12.0 and follow the steps on How to migrate translations from Multilingual Forge component to Multilingual on Service Studio. |
-| Randomizer Number Generator | 2.0.4 | <https://www.outsystems.com/forge/component-overview/677/randomizer-number-generator> | Trusted |  |  |
-| ReactFilePondUpload | 1.2.7 | <https://bsb-lt.outsystemsenterprise.com/lifetime/Application_Details.aspx?ApplicationId=179> | Paul | 2021-10-21 |  |
-| ReactFilePond | 1.2.7 |<https://www.outsystems.com/forge/component-overview/7405/reactfilepondupload> |Trusted | 2021-08-30 | - |
 | Sleep | 2.0.5 | https://www.outsystems.com/forge/component-overview/1244/sleep | Paul | - | - |
 | Shared Folder | 1.0.1 | <https://www.outsystems.com/forge/component-overview/8194/shared-folder> | Paul | 2021-07-21 | - |
 | TimezoneReactiveUtils | 1.0.2 | <https://www.outsystems.com/forge/component-overview/2199/timezonereactiveutils> | Paul | 2021-10-21 | replacement for timezone |

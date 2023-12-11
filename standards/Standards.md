@@ -17,7 +17,7 @@ For these standards the [comply or explain] rule applies. Deviations from these 
 1. [Code Review Checklist](CodeReviewChecklist.md)
 1. Apply the [The Boy Scout Rule]
 1. [Approved forge components](approved-forge-components.md)
-1. [Standard resolutions for AI Mentor Studio findings](11-resolve-architecture-dashboard-findings.md)
+1. [Standard resolutions for AI Mentor Studio findings](resolve-architecture-dashboard-findings.md)
 1. [REST API Conventions](REST-API-conventions.md)
 
 [OutSystems Platform Best Practices]: https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Platform_Best_Practices

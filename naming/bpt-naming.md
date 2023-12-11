@@ -49,4 +49,4 @@ Decisions should be named with an interrogative phrase. The name should be compo
 
 User groups should be named using a _noun_ or _noun phrase_. They are often used for such things as internal roles (e.g., Manager, Associate), systems (e.g., an enterprise application), or internal departments (e.g., shipping, finance).
 
-[ ] **Also include a link to the how to create and use bpt groups**
+[ ] TODO **Also include a link to the how to create and use bpt groups**

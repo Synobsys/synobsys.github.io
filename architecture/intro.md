@@ -16,7 +16,7 @@ title: Architecture
 
 * [Integration Patterns for Core Services Abstraction]
 * [Circuit Breaker Pattern: Make Your Apps Ready to Deal with Timeouts]
-* [ ] TBD Localization Ready data model with Entity Layers for Translated Fields and Non-Translated Fields [How to Design a Localization-Ready System]
+* Localization Ready data model with Entity Layers for Translated Fields and Non-Translated Fields [How to Design a Localization-Ready System]
 
 [Architecture Decision Records]: ../adr/intro.md
 [Approved Forge Components]: ../forge-components.md

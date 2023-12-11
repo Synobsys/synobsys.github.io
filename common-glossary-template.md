@@ -3,13 +3,13 @@ layout: default
 title: Common Glossary
 sorting: 100
 tags: [guide, glossary]
-projectname: Synobsys OutSystems
+project: Synobsys OutSystems
 # Replaces with your ProjectName
 ---
 
 # {{ page.title}}
 
-This glossary introduces {{page.projectname}} common terminology.
+This glossary introduces {{page.project}} common terminology.
 
 * TOC
 {:toc}
@@ -67,7 +67,7 @@ An approach to software development that suggests that:
 1. For most software projects, the primary focus should be on the domain and domain logic; and
 1. Complex domain designs should be based on a [model](#model).
 
-See [Wikipedia: DDD Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) defintion: A sphere of knowledge (ontology), influence, or activity. The subject area to which the user applies a program is the domain of the software.
+See [Wikipedia: DDD Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) definition: A sphere of knowledge (ontology), influence, or activity. The subject area to which the user applies a program is the domain of the software.
 
 ## domain expert
 
@@ -115,7 +115,7 @@ A system of abstractions that describes selected aspects of a domain and can be 
 
 ## model-driven design
 
-A design in which some subset of software elements corresponds closely to elements of a model. Also, a process of codeveloping a model and an implementation that stay aligned with each other.
+A design in which some subset of software elements corresponds closely to elements of a model. Also, a process of code developing a model and an implementation that stay aligned with each other.
 
 ## modeling paradigm
 
@@ -127,7 +127,7 @@ A mechanism for encapsulating storage, retrieval, and search behavior which emul
 
 ## responsibility
 
-An obligation to perform a task or know information (Wirfs-Brock et al. 2003, p. 3).
+An obligation to perform a task or know information.
 
 ## service
 

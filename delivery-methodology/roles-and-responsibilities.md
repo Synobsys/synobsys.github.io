@@ -1,5 +1,5 @@
 ---
-title: Roles & Responisibilities
+title: Roles & Responsibilities
 ---
 # {{page.title}}
 
@@ -8,18 +8,18 @@ title: Roles & Responisibilities
 
 ## Management Team
 
-Composed by customer and deliveryteam members
+Composed by customer and delivery team members
 
 * Provides direction
 * Removes obstacles
-* Makes sure the objectives areaccomplished
+* Makes sure the objectives are accomplished
 
 ### Business Sponsor
 
 * Provides business direction and guidance
 * Decision-making authority
 * Involved in feature negotiation
-* Available on demos and steeringmeetings
+* Available on demos and steering meetings
 
 ### Program or Project Manager
 
@@ -32,8 +32,8 @@ Composed by customer and deliveryteam members
 
 * Expresses Product Backlog items
 * Establishes priorities in the Backlog
-* Ensures Backlog visibility andtransparency
-* Ensures all Backlog User Stories areunderstood
+* Ensures Backlog visibility and transparency
+* Ensures all Backlog User Stories are understood
 * Accepts or delegates acceptance ofUser Stories
 
 ### Delivery Specialist
@@ -53,9 +53,9 @@ Composed by customer and deliveryteam members
 
 ### IT Architect
 
-*Provides roadmaps defining guidelines
-Sets best practices
-Ensures IT vs. Business strategyalignment
+* Provides road maps defining guidelines
+* Sets best practices
+* Ensures IT vs. Business strategy alignment
 
 ## Business Analysis Team
 
@@ -64,10 +64,10 @@ Part of the Customer Team
 * Ensure User Stories accuracy, quality,quantity and prioritization
 * Ensure Product quality
 
-### Business Analist
+### Business Analyst
 
 * Delegated decision-making authority
-* Delegated feature negotiation andfeature delivery acceptance
+* Delegated feature negotiation and feature delivery acceptance
 * Performs Business Analysis
 * Writes User Stories and AcceptanceCriteria
 * Coordinates user acceptance testing(unless Performed by QA Lead)
@@ -101,7 +101,7 @@ Part of the Customer team
 ### QA Team
 
 * Defines test plan, cases, scripts
-* Provides continuous feedback ondelivered stories
+* Provides continuous feedback on delivered stories
 * Delegated User Story acceptance
 * Coordinates user acceptance testing
 
@@ -109,17 +109,17 @@ Part of the Customer team
 
 Application and infrastructure security and support.
 
-* Ensures rapid and frequentdevelopment cycles
-* Defines and sets up the automatedprocesses and the neededinfrastructure
-* Integrates security measures withminimal disruption to operations
+* Ensures rapid and frequent development cycles
+* Defines and sets up the automated processes and the needed infrastructure
+* Integrates security measures with minimal disruption to operations
 
 ## UX/UI Expert Team
 
-Usability and innovative look and feel ofthe product.
+Usability and innovative look and feel of the product.
 
 * Collaborates on Vision and Personas
 * Defines and monitors UX Metrics
 * Conducts user interviews
-* Creates low and high resolutionmockups
+* Creates low and high resolution mockups
 * Conducts usability testing
-* Ensures product meets usability andaccessibility standards
+* Ensures product meets usability and accessibility standards

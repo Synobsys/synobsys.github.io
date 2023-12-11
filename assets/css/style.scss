@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+
 /* adding an icon to external links     */
 a[href^="http"]::after,
 a[href^="https://"]::after
@@ -22,5 +23,5 @@ a[href^="https://synobsys.github.io"]::after
   display: none !important;
 }
 .searchfld{
-  width: 100%;
+  width: 80%;
 }

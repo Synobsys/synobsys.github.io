@@ -19,8 +19,9 @@ See these articles for an explanation of Architecture Decision Records (ADR):
 
 * [ADR 1: We will document Architecture Decisions (AD) with the ADR template](ADR-001-documenting-architecture-decisions.md)
 * [ADR 2: Standard language is English](ADR-002-standard-language-is-English.md)
-* [ADR 3: ADR 3 - Server Actions exposed to Reactive applications must be secured](ADR-003-secure-core-services.md)
+* [ADR 3: Server Actions exposed to Reactive applications must be secured](ADR-003-secure-core-services.md)
 * [ADR 4: BDD framework for Component testing](ADR-004-bdd-framework-for-component-testing.md)
 * [ADR 5: Centralized Styling](ADR-005-centralized-styling.md)
-* [ADR 6: Approved forge components only](ADR-006-approved-forge-components-only.md)
-* [ADR 7: Use UUID for primary keys](ADR-007-uuid-primary-keys.md)
+* *[ADR 6: Approved forge components only](ADR-006-approved-forge-components-only.md) - Proposed*
+* *[ADR 7: Use UUID for primary keys](ADR-007-uuid-primary-keys.md) - Proposed*
+* *[ADR 8: Common Glossary](ADR-008-common-glossary.md) - Proposed*

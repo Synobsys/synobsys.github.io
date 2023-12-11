@@ -35,13 +35,11 @@ If you want to hide a widget you can use the class `hidden` in either the style 
     `// check if the current user has the '<SomeRole>' role
 $parameters.HowToGuideUser = $public.Security.checkIfCurrentUserHasRole($roles.<SomeRole>);`
 1. Entering the following expression in the class or Extended style class attribute: `If(UserHas<SomeRole> (),"","hidden")`
-![TBD add screenshot]()
 
 ### Hiding elements using an _If_ widget
 
 Using the same approach as for the hidden class set the condition of the if to `<UserHasSomeRole>()`
 Be aware of side effects when you put some widgets inside an If widget e.g. hiding a TabsContentItem with an if will break the styling of the tabs.
-![TBD add screenshot]()
 
 ## Editing sensitive data
 
@@ -50,16 +48,17 @@ Scenarios:
 1. You have a page to edit a record and want to hide some fields from unauthorized users. E.g. not An unauthorized user cannot view or edit the salary of an employee
 1. You want to disable editing of some sensitive data. E.g. An unauthorized user can see the price of a product but is not able to change it.
 **Implementation steps**
-TBD
+
+* [ ] TODO
 
 ## Redirecting users to a role based page
 
-To redirect a user to a specific page based on the user his authorization we can create a redicect page and use the JavaScript_API to check the roles to redirect the user. Each page is authorized to the specific role so even if the user is able to manipulate the page or goes directly to the page he will not have unauthorized access.
+To redirect a user to a specific page based on the user his authorization we can create a redirect page and use the JavaScript_API to check the roles to redirect the user. Each page is authorized to the specific role so even if the user is able to manipulate the page or goes directly to the page he will not have unauthorized access.
 
 ### Implementation steps
 
 1. Create a redirect page and
-2. Add an `OnInitialize` event to the page
-3. * Use the [checkIfCurrentUserHasRole](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/JavaScript_API/Security#checkifcurrentuserhasrole) JavaScript_API function to redirect the user to a specific page.
+1. Add an `OnInitialize` event to the page
+1. * Use the [checkIfCurrentUserHasRole](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/JavaScript_API/Security#checkifcurrentuserhasrole) JavaScript_API function to redirect the user to a specific page.
 E.g. If a user has the ProductManager role he will be redirected to the ProductDetail page, if he has the ProductViewer role he will be redirected to the ProductShow page otherwise an not authorized exception is raised.
 ![screenshot of OnInitialize flow](/images/ProductRedirect.png)

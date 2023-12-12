@@ -21,7 +21,7 @@ When you fetch data from the database add a filter to the aggregate to check if 
 ### Fetch data from other sources
 
 Inside the Data Action start with a CheckRole and exit the action with empty output if the user does not have the role.
-
+<!--
 ### Hiding elements in the screen using the _hidden_ class
 
 Be aware that a reactive screen always contains the full code stack of the page hiding data using an if statement still exposes the data to the browser.
@@ -35,6 +35,7 @@ If you want to hide a widget you can use the class `hidden` in either the style 
     `// check if the current user has the '<SomeRole>' role
 $parameters.HowToGuideUser = $public.Security.checkIfCurrentUserHasRole($roles.<SomeRole>);`
 1. Entering the following expression in the class or Extended style class attribute: `If(UserHas<SomeRole> (),"","hidden")`
+-->
 
 ### Hiding elements using an _If_ widget
 

@@ -5,6 +5,7 @@ title: Project Delivery Methodology
 
 * [Delivery Practice]
 * [Roles and Responsibilities]
+* [Preparation checklist](/delivery-methodology/preparation-checklist.md)
 
 ## OutSystems Partner Knowledge base reference material
 

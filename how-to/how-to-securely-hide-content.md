@@ -22,6 +22,7 @@ When you fetch data from the database add a filter to the aggregate to check if 
 
 Inside the Data Action start with a CheckRole and exit the action with empty output if the user does not have the role.
 <!--
+This one is too easy to hack!
 ### Hiding elements in the screen using the _hidden_ class
 
 Be aware that a reactive screen always contains the full code stack of the page hiding data using an if statement still exposes the data to the browser.

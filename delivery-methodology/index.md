@@ -8,8 +8,9 @@ title: Project Delivery Methodology
 
 ## OutSystems Partner Knowledge base reference material
 
-* [Turbocharging your Project Delivery] Partner Success Webinar on Project Delivery
-* [Project Delivery Playbook] download [PDF](/delivery-methodology/OutSystemsDeliveryPlaybook.pdf)
+* [Turbocharging your Project Delivery] Partner Success Webinar on Project Delivery [Slides PDF](/delivery-methodology/TurbochargingYourProjectDelivery.pdf)
+* [Project Delivery Playbook] download [Slides PDF](/delivery-methodology/OutSystemsDeliveryPlaybook.pdf)
+* Navigation the initiation phase [Slides](/delivery-methodology/NavigatingTheInitiationPhase.pdf)
 * [Vision Document Template]
 * [Requirements Gathering & Solution Mapping]
 * [User Experience Design Best Practices Checklist]

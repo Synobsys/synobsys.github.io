@@ -53,6 +53,10 @@ When carrying out projects under the direction of Synobsys, we use Taiga as the 
 
 Slack is a cloud-based cross-platform instant messaging service.
 
+### [Jira]
+
+Jira (Software) is a proprietary product developed by Atlassian that allows bug tracking, issue tracking and agile project management.
+
 ## Design and modeling
 
 ### [Sparx Enterprise Architect]
@@ -238,3 +242,4 @@ BrowserStack is a cloud web and mobile testing platform that provides developers
 [BrowserStack]: https://www.browserstack.com/
 [Selenium]: https://www.selenium.dev/
 [How to do UI testing with Selenium]: https://success.outsystems.com/documentation/how_to_guides/devops/how_to_do_ui_testing_with_selenium/
+[Jira]: https://www.atlassian.com/software/jira

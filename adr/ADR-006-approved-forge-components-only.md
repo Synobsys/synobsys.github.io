@@ -24,7 +24,7 @@ We will only use forge components that are approved by the Center of Excellence
 
 ## Status
 
-Proposed
+Accepted
 
 <!--
 [Proposed | Accepted | Deprecated | Superseded]

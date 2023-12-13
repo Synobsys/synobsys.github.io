@@ -31,6 +31,8 @@ It's better to avoid either blind acceptance or blind reversal.
 
 ## Decision
 
+We will use Architecture Decision Records, as [described by Michael Nygard](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions).
+
 We will keep a collection of records for "architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques.
 
 An architecture decision record is a short text file in a format similar to an Alexandrian pattern. (Though the decisions themselves are not necessarily patterns, they share the characteristic balancing of forces.) Each record describes a set of forces and a single decision in response to those forces. Note that the decision is the central piece here, so specific forces may appear in multiple ADRs.
@@ -71,3 +73,5 @@ The consequences of one ADR are very likely to become the context for subsequent
 Developers and project stakeholders can see the ADRs, even as the team composition changes over time.
 
 The motivation behind previous decisions is visible for everyone, present and future. Nobody is left scratching their heads to understand, "What were they thinking?" and the time to change old decisions will be clear from changes in the project's context.
+
+See Michael Nygard's article, linked above. For a lightweight ADR tool set, see Nat Pryce's [adr-tools](https://github.com/npryce/adr-tools).

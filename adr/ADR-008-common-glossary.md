@@ -57,4 +57,4 @@ Describe here the resulting context, after applying the decision. All consequenc
 
 We must keep a glossary of all terms and definitions in the bounded context the project thus creating an ubiquitous language.
 
-We provided a [common glossary template](common-glossary-template.md)
+We provided a [common glossary template](../common-glossary-template.md)

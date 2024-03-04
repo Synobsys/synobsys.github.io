@@ -52,14 +52,14 @@ To enable product ordering we require the following Api methods:
 | Name | HTTP Method | URL Path | Description |
 | -- |--- | --- | --- |
 | CategoryGet | GET | /categories | Returns a list of categories |
-| CustomerGet | GET | /customers | Retrieves a paginated list of customers
+| CustomerGet | GET | /customers | Retrieves a paginated list of customers |
 | CustomerGetById | GET | /customers/{customer_id} | Returns the customer details for a given customer. |
 | CustomerOrderGet | GET | /customers/{customer_id}/orders | Retrieves a list of orders for a specific customer. |
 | OrderCreate | POST | /orders | Place an order |
 | OrderGet | GET | /orders | Retrieve a paginates list of orders |
 | OrderGetById | GET | /orders/{order_id} | Return the details of a specific order |
 | ProductGet | GET | /products | Retrieve a paginated list of products that meet the search parameters. |
-| ProductGetById | GET | /products/{ProductId} | Retrieve details of a specific product.
+| ProductGetById | GET | /products/{ProductId} | Retrieve details of a specific product. |
 
 ### Create a canonical schema
 

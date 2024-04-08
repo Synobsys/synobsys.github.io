@@ -10,7 +10,7 @@ For these standards the [comply or explain] rule applies. Deviations from these 
 * [Definition of Ready(DoR)](DefinitionOfReady.md)
 * [Definition of Done(DoD)](DefinitionOfDone.md)
 * [User Story Template](UserStoryTemplate.md)
-* [Naming Conventions](..\naming\naming_conventions.md)
+* [Naming Conventions](../naming/naming_conventions.md)
 * [OutSystems Platform Best Practices]
 * [Code Style Guide](CodeStyleGuide.md)
 * [Server Action Security](ServerActionSecurity.md)

@@ -6,7 +6,7 @@ title: User interface naming conventions
 
 ## UI Flows
 
-* [ ] TODO add rules
+* no rules yet
 
 ## Screens
 

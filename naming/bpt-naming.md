@@ -7,8 +7,6 @@ title: Business Process Technology (BPT) naming conventions
 * TOC
 {:toc}
 
-* [ ] **tbd check for completeness**
-
 > Adapted from [Fundamentals of Business Process Management](http:/fundamentals-of-bpm.org), Chapter 3 Essential Process Modeling. [book web site archive](https://web.archive.org/web/20220308011419/http://fundamentals-of-bpm.org/)
 
 [Naming conventions for bpmn diagrams](https://www.trisotech.com/naming-conventions-for-bpmn-diagrams/)
@@ -37,8 +35,6 @@ General verbs like "to make", "to do", "to perform" or "to conduct" should be re
 
 ## Wait
 
-[ ] todo. Not yet clearly defined.
-
 Describe what you are waiting for e.g. `SLABreach50percent` or `ReviewsCompleted`
 
 ## Decision
@@ -48,5 +44,3 @@ Decisions should be named with an interrogative phrase. The name should be compo
 ## User Groups
 
 User groups should be named using a _noun_ or _noun phrase_. They are often used for such things as internal roles (e.g., Manager, Associate), systems (e.g., an enterprise application), or internal departments (e.g., shipping, finance).
-
-[ ] TODO **Also include a link to the how to create and use bpt groups**

@@ -29,7 +29,7 @@ Note: *An “M” indicates a Mobile only module, like _MCS, _MBL or _MCW*
 
 Non Functional requirements or integration modules, reusable in any business context
 
-| Sublayer | Prefix | Description                                    | Example |
+| Sub-layer | Prefix | Description                                    | Example |
 | ---| ------ | ---------------------------------------------- | ------- |
 | Style guide | _Pat,_MPat | Reusable UI **Pat**terns for layout and display only - no Business logic | UserExtension_Pat, Backoffice_Pat |
 | | _Th | **Th**eme, look & feel elements, menu, ... |Internal_Th, Supplier_Th, Backoffice_Th |

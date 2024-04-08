@@ -13,9 +13,9 @@ title: Module naming conventions
 
 Reusable services around business concepts, exporting entities, business rules and web-blocks
 
-Layer | SubLayer | Suffix | Description                                  | Example |
+| Layer | SubLayer | Suffix | Description                                  | Example |
 | --- | --- | ----- | ---------------------------------------------- | ------|
-| Core Modules | API | _API    | Wrapper that expose an **API** for External consumers (REST/SOAP) to the OutSystems plaform, supporting multiple versions.| Pricing_API|
+| Core Modules | API | _API    | Wrapper that expose an **API** for External consumers (REST/SOAP) to the OutSystems platform, supporting multiple versions.| Pricing_API|
 | | | _OAPI | Wrapper that exposes an **API** for internal consumers(Service Actions) (**O**utSystem **API**) to Internal Consumers, keeping core services system agnostic and supporting multiple versions of the API| Pricing_OAPI|
 | | Core Widgets| _CW,_MCW | Isolated **C**ore **W**idgets (Blocks), to manage complexity, composition or to have its own lifecycle | Customer_CW |
 | | Composite logic | _BL, MBL | Isolated **B**usiness **L**ogic (Actions) to manage complexity, composition or to have its own lifecycle | Pricing_BL |
@@ -51,10 +51,10 @@ Non Functional requirements or integration modules, reusable in any business con
 | Application | SF Soccer Fields App | SF |
 | Application | SF Field Core Services | FLC |
 | Application | SF Soccer Fields Core | SFC |
-| Module | SoccerFields |
-| Module | SF_Th |
-| Module | SFC_Booking_CS |
-| Module | SFC_Player_CS |
-| Module | FLC_Field_CS |
-| Module | FLC_Field_IS |
-| Module | FLC_Field_Sync |
+| Module | SoccerFields | |
+| Module | SF_Th | |
+| Module | SFC_Booking_CS | |
+| Module | SFC_Player_CS | |
+| Module | FLC_Field_CS | |
+| Module | FLC_Field_IS | |
+| Module | FLC_Field_Sync | |

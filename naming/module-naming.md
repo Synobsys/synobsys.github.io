@@ -37,7 +37,7 @@ Non Functional requirements or integration modules, reusable in any business con
 |Foundation Services | _IS | **I**ntegration **S**ervices - technical wrapper to consume and normalize an external service | SoccerField_IS |
 | | _FS | **F**oundations **S**ervices to support NFR's (e.g. Audit trailing) | |
 | | _Drv | **Dr**i**v**er module - to have several integration services with different systems, performing the same type of operation (e.g. printers) you can create several drivers exposing the same API, with specialized implementations (like the transparency services pattern) | |
-| | _Lib | Generic **Lib**rary module | Audit_Lib |
+| | _Lib | A generic module of type **Lib**rary | CipherUtils_Lib |
 
 *An “M” indicates a Mobile only module, like _MPat,*
 
@@ -58,3 +58,13 @@ Non Functional requirements or integration modules, reusable in any business con
 | Module | FLC_Field_CS | |
 | Module | FLC_Field_IS | |
 | Module | FLC_Field_Sync | |
+
+## Reference
+
+Review the following OutSystems documentation on module types:
+
+* [Service Modules and Service Applications]
+* [Libraries]
+
+[Service Modules and Service Applications]: https://success.outsystems.com/documentation/11/building_apps/reusing_and_refactoring/use_services_to_expose_functionality/#service-modules-and-service-applications
+[Libraries]: https://success.outsystems.com/documentation/11/building_apps/reusing_and_refactoring/libraries/

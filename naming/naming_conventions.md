@@ -17,7 +17,7 @@ title: OutSystems Naming Conventions
 * [Applications](application-naming.md)
 * [Modules](module-naming.md)
 * [Entities and attributes](entity-naming.md)
-* [Variables](naming/variable-naming.md)
+* [Variables](variable-naming.md)
 * [User Interface](user-interface-naming.md)
 * [Actions](action-naming.md)
 * [REST APIs](rest-api-naming.md)
